@@ -1,13 +1,22 @@
 import { types } from '.'
 import moment from 'moment'
 
-export const loadStaffs = () => {
-  let staffs = require('../../data/staffs.json')
-  return {
-    type: types.LOAD_STAFFS,
-    staffs: staffs,
-  }
-}
+const optimizeResults = [
+  require('../../data/optimize_result1.json'),
+  require('../../data/optimize_result2.json'),
+]
+
+export const loadStaffs = () => (dispatch) => {
+  dispatch({ type: types.LOAD_STAFFS })
+  new Promise(resolve => {
+    resolve(require('../../data/staffs.json'))
+  }).then((results) => {
+    dispatch({
+      type: types.LOADED_STAFFS,
+      staffs: results,
+    })
+  })
+1}
 
 export const showSetting = () => {
   return {
@@ -42,18 +51,25 @@ export const updateDayOffs = dayOffs => {
 }
 
 export const optimize = () => (dispatch, getState) => {
+  const { tab2 } = getState()
+  const { numOfOptimize } = tab2
+
   dispatch({ type: types.OPTIMIZE })
-  setTimeout(() => {
-    const schedules = require('../../data/optimize_result1.json')
-    dispatch({
-      type: types.OPTIMIZED,
-      results: _.map(schedules, event => {
+  new Promise(resolve => {
+    setTimeout(() => {
+      const results = _.map(optimizeResults[(numOfOptimize + 1) % 2], event => {
         return {
           ...event,
           start: moment(event.startDate),
           end: moment(event.endDate),
         }
-      }),
+      })
+      resolve(results)
+    }, 3000)
+  }).then((results) => {
+    dispatch({
+      type: types.OPTIMIZED,
+      results: results,
     })
-  }, 3000)
+  })
 }

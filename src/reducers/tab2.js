@@ -3,6 +3,7 @@ import _ from 'lodash'
 import { types } from '../actions'
 
 const initState = {
+  loadingStaffs: false,
   staffs: [],
   results: [],
   dayOffs: [],
@@ -11,12 +12,21 @@ const initState = {
   profileStaffId: null,
   visibleProfile: false,
   visibleSetting: false,
+  numOfOptimize: 0,
+}
+
+const loadStaffs = (state, action) => {
+  return {
+    ...state,
+    loadingStaffs: true,
+  }
 }
 
 const loadedStaffs = (state, action) => {
   return {
     ...state,
-    staffs: action.staffs
+    loadingStaffs: false,
+    staffs: action.staffs,
   }
 }
 
@@ -72,11 +82,13 @@ const optimized = (state, action) => {
     optimizating: false,
     optimized: true,
     results: action.results,
+    numOfOptimize: state.numOfOptimize + 1,
   }
 }
 
 const handlers = handleActions({
-  [types.LOAD_STAFFS]: loadedStaffs,
+  [types.LOAD_STAFFS]: loadStaffs,
+  [types.LOADED_STAFFS]: loadedStaffs,
   [types.SHOW_PROFILE]: showProfile,
   [types.CLOSE_PROFILE]: closeProfile,
   [types.SHOW_SETTING]: showSetting,
