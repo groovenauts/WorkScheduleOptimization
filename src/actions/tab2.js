@@ -37,6 +37,13 @@ export const showProfile = (staffId) => {
   }  
 }
 
+export const showProfileInSetting = (staffId) => {
+  return {
+    type: types.SHOW_NESTED_PROFILE,
+    staffId: staffId,
+  }  
+}
+
 export const closeProfile = () => {
   return {
     type: types.CLOSE_PROFILE

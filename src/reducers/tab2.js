@@ -11,6 +11,7 @@ const initState = {
   optimized: false,
   profileStaffId: null,
   visibleProfile: false,
+  visibleNestedProfile: false,
   visibleSetting: false,
   numOfOptimize: 0,
 }
@@ -34,6 +35,16 @@ const showProfile = (state, action) => {
   return {
     ...state,
     visibleProfile: true,
+    visibleNestedProfile: false,
+    profileStaffId: action.staffId,
+  }
+}
+
+const showProfileInSetting = (state, action) => {
+  return {
+    ...state,
+    visibleProfile: true,
+    visibleNestedProfile: true,
     profileStaffId: action.staffId,
   }
 }
@@ -42,6 +53,7 @@ const closeProfile = (state, action) => {
   return {
     ...state,
     visibleProfile: false,
+    visibleNestedProfile: false,
   }
 }
 
@@ -90,6 +102,7 @@ const handlers = handleActions({
   [types.LOAD_STAFFS]: loadStaffs,
   [types.LOADED_STAFFS]: loadedStaffs,
   [types.SHOW_PROFILE]: showProfile,
+  [types.SHOW_NESTED_PROFILE]: showProfileInSetting,
   [types.CLOSE_PROFILE]: closeProfile,
   [types.SHOW_SETTING]: showSetting,
   [types.CLOSE_SETTING]: closeSetting,

@@ -72,6 +72,7 @@ class Setting extends React.Component {
           }}
           onClickStaff={staffId => onClickStaff(staffId)}
         />
+        {this.props.children}
         <div className="footer">
           <Button onClick={() => onClose()}>{"キャンセル"}</Button>
           <Button type="primary" style={{marginLeft: 10}} onClick={() => onSubmit(dayOffs)}>{"設定完了"}</Button>

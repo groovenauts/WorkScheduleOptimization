@@ -25,8 +25,21 @@ class Tab2 extends React.Component {
     const { actions } = this.props
     actions.loadStaffs()
   }
+  renderProfile(visible) {
+    const { actions, staffs, results, profileStaffId } = this.props
+    return (
+      <Profile
+        visible={visible}
+        {..._.isNull(profileStaffId) ? {} : {
+          ..._.find(staffs, staff => staff.id == profileStaffId),
+          schedules: _.filter(results, event => event.staff_id == profileStaffId),
+        }}
+        onClose={() => actions.closeProfile()}
+        />
+    )
+  }
   render() {
-    const { year, month, days, wdays, hours, height, actions, staffs, results, dayOffs, loadingStaffs, profileStaffId, visibleProfile, visibleSetting, optimizating } = this.props
+    const { year, month, days, wdays, hours, height, actions, staffs, results, dayOffs, loadingStaffs, visibleProfile, visibleNestedProfile, visibleSetting, optimizating } = this.props
     return (
       <div id="tab2" ref={refs => this.element = refs}>
         <div className="header">
@@ -58,18 +71,13 @@ class Tab2 extends React.Component {
           staffs={staffs}
           dayOffs={dayOffs}
           visible={visibleSetting}
-          onClickStaff={id => actions.showProfile(id)}
+          onClickStaff={id => actions.showProfileInSetting(id)}
           onClose={() => actions.closeSetting()}
           onSubmit={(dayOffs) => actions.updateDayOffs(dayOffs)}
-          />
-        <Profile
-          visible={visibleProfile}
-          {..._.isNull(profileStaffId) ? {} : {
-            ..._.find(staffs, staff => staff.id == profileStaffId),
-            schedules: _.filter(results, event => event.staff_id == profileStaffId),
-          }}
-          onClose={() => actions.closeProfile()}
-          />
+          >
+          { this.renderProfile(visibleNestedProfile) }
+        </Setting>
+        { this.renderProfile(visibleProfile) }
         <Predicting visible={loadingStaffs || optimizating} text={optimizating && "シフトを最適化しています"}/>
       </div>
     )
@@ -91,6 +99,7 @@ const mapStateToProps = state => {
     optimizating: state.tab2.optimizating,
     profileStaffId: state.tab2.profileStaffId,
     visibleProfile: state.tab2.visibleProfile,
+    visibleNestedProfile: state.tab2.visibleNestedProfile,
     visibleSetting: state.tab2.visibleSetting,
   }
 }
