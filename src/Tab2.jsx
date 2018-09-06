@@ -11,7 +11,8 @@ import {
 import Gunttchart from './Gunttchart'
 import Setting from './Setting'
 import Profile from './Profile'
-import Predicting from './Processing'
+import Mask from './Mask'
+import Loading from './Loading'
 
 import * as actions from './actions/tab2'
 
@@ -94,7 +95,9 @@ class Tab2 extends React.Component {
           { this.renderProfile(visibleNestedProfile) }
         </Setting>
         { this.renderProfile(visibleProfile) }
-        <Predicting visible={loadingStaffs || optimizating} text={optimizating && "シフトを最適化しています"}/>
+        <Mask visible={loadingStaffs || optimizating}>
+          <Loading text={optimizating && "シフトを最適化しています"} />
+        </Mask>
       </div>
     )
   }

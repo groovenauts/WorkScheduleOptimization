@@ -13,8 +13,7 @@ class Processing extends React.PureComponent {
     return (
       <div id="mask"　style={style}>
         <div className={"center"}>
-          <Icon type="loading" theme="outlined" style={{fontSize: 40}} />
-          <span>{text}</span>
+          {this.props.children}
         </div>
       </div>
     )

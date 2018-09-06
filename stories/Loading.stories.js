@@ -4,9 +4,10 @@ import { action } from '@storybook/addon-actions'
 import moment from 'moment'
 
 import { antdDecorator } from './Decorator'
-import Processing from '../src/Processing'
+import Mask from '../src/Mask'
+import Loading from '../src/Loading'
 
-storiesOf('Processing', module)
+storiesOf('Mask/Loading', module)
   .addDecorator(getStory => antdDecorator(getStory))
-  .add("normal", () => <Processing visible={true} />)
-  .add("with text", () => <Processing visible={true} text={"Loading..."} />)
+  .add("normal", () => <Mask visible={true}><Loading /></Mask>)
+  .add("with text", () => <Mask visible={true}><Loading text={"Loading..."} /></Mask>)

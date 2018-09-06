@@ -9,7 +9,8 @@ import {
 
 import { blue400 } from './utils/color'
 import BarChart from './BarChart'
-import Predicting from './Processing'
+import Mask from './Mask'
+import Loading from './Loading'
 
 import * as actions from './actions/tab1'
 
@@ -44,7 +45,9 @@ class Tab1 extends React.Component {
             yDataKeys={[{key: 'num', label: `${month}月`, color: blue400}]}
             />
         }
-        <Predicting visible={predicting} text={"入電を予測中"}/>
+        <Mask visible={predicting}>
+          <Loading text={"入電を予測中"} />
+        </Mask>
       </div>
     )
   }
