@@ -1,0 +1,50 @@
+@import './color.scss';
+
+.gunttchart {
+  .column-header {
+    font-size: 12px;
+    text-align: center;
+  }
+  .column-name {
+    font-size: 13px;
+    margin-left: 6px;
+  }
+  .data-index {
+    font-size: 12px;
+    text-align: center;
+  }
+  .data-name {
+    font-size: 12px;
+    margin-left: 6px;
+    color: $primary-color;
+    cursor: pointer;
+  }
+}
+.table {
+  width: 100%;
+  overflow: hidden;
+}
+
+.cell {
+  height: 21px;
+  background-color: $primary-color;
+  position: relative;
+  cursor: default;
+
+  &.b1 { background-color: $md-light-blue-100; }
+  &.b2 { background-color: $md-light-blue-200; }
+  &.b3 { background-color: $md-light-blue-300; }
+  &.b4 { background-color: $md-light-blue-400; }
+  &.b5 { background-color: $md-light-blue-500; }
+  &.b6 { background-color: $md-light-blue-600; }
+  &.b7 { background-color: $md-light-blue-700; }
+  &.b8 { background-color: $md-light-blue-800; }
+  &.b9 { background-color: $md-light-blue-900; }
+
+  .label {
+    white-space: nowrap;
+    font-size: 9px;
+    color: white;
+    text-align: center;
+  }
+}

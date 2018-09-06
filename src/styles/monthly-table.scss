@@ -1,0 +1,35 @@
+@import './color.scss';
+
+.monthly-table {
+  .column-header {
+    font-size: 12px;
+    text-align: center;
+  }
+  .column-name {
+    font-size: 13px;
+    margin-left: 6px;
+  }
+  .data-index {
+    font-size: 12px;
+    text-align: center;
+  }
+  .data-name {
+    font-size: 12px;
+    margin-left: 6px;
+    color: $primary-color;
+    cursor: pointer;
+  }
+}
+
+.table-cell {
+  display: block;
+  text-align: center;
+  height: 21px;
+}
+
+.vacation-icon {
+  color: #FFC107;
+  &:hover {
+    opacity: 0.7;
+  }
+}

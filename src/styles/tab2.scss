@@ -1,0 +1,25 @@
+
+#tab2 {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    span {
+      cursor: pointer;
+      &:hover {
+        color: #0277bd;
+      }
+    }
+    i {
+      cursor: pointer;
+      font-size: 18px;
+    }
+  }
+}
