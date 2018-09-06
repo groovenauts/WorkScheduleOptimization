@@ -49,6 +49,13 @@ const showProfileInSetting = (state, action) => {
   }
 }
 
+const changeProfile = (state, action) => {
+  return {
+    ...state,
+    profileStaffId: action.staffId,
+  }
+}
+
 const closeProfile = (state, action) => {
   return {
     ...state,
@@ -103,6 +110,7 @@ const handlers = handleActions({
   [types.LOADED_STAFFS]: loadedStaffs,
   [types.SHOW_PROFILE]: showProfile,
   [types.SHOW_NESTED_PROFILE]: showProfileInSetting,
+  [types.CHANGE_PROFILE]: changeProfile,
   [types.CLOSE_PROFILE]: closeProfile,
   [types.SHOW_SETTING]: showSetting,
   [types.CLOSE_SETTING]: closeSetting,

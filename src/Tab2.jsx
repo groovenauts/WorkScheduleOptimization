@@ -27,14 +27,30 @@ class Tab2 extends React.Component {
   }
   renderProfile(visible) {
     const { actions, staffs, results, profileStaffId } = this.props
+    let prop = {}
+    let staffIndex = -1
+    if (!_.isNull(profileStaffId)) {
+      staffIndex = _.findIndex(staffs, staff => staff.id == profileStaffId)
+      prop = {
+        ...staffs[staffIndex],
+        schedules: _.filter(results, event => event.staff_id == profileStaffId),
+      }
+    }
+    if (staffIndex !== -1) {
+      const prepStaff = staffs[staffIndex - 1]
+      const nextStaff = staffs[staffIndex + 1]
+      if (prepStaff) {
+        prop.onPrev = () => actions.changeProfile(prepStaff.id)
+      }
+      if (nextStaff) {
+        prop.onNext = () => actions.changeProfile(nextStaff.id)
+      }
+    }
     return (
       <Profile
         visible={visible}
-        {..._.isNull(profileStaffId) ? {} : {
-          ..._.find(staffs, staff => staff.id == profileStaffId),
-          schedules: _.filter(results, event => event.staff_id == profileStaffId),
-        }}
-        onClose={() => actions.closeProfile()}
+        {...prop}
+        onClose={() => actions.changeProfile()}
         />
     )
   }

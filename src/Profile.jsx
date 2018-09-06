@@ -23,6 +23,8 @@ class Profile extends React.Component {
       width,
       visible,
       schedules,
+      onPrev,
+      onNext,
       onClose,
     } = this.props
     return (
@@ -36,18 +38,34 @@ class Profile extends React.Component {
         visible={visible}
         >
         <div className="profile-header">
-          <div className="profile-image">
-            <Avatar style={{ color: '#fff', backgroundColor: getColor(gender) }} size={64} icon={'user'} />
+          <div className={`icon ${_.isFunction(onPrev) ? '':'disabled'}`}>
+            <Icon type="left" theme="outlined" onClick={() => {
+              if (_.isFunction(onPrev)) {
+                onPrev()
+              }
+            }}/>
           </div>
-          <div className="profile-detail">
-            <div className="name">
-              <h1>{`${first_name} ${last_name}`}</h1>
-              <p>{name_yomi}</p>
+          <div className="profile-detail-wrapper">
+            <div className="profile-image">
+              <Avatar style={{ color: '#fff', backgroundColor: getColor(gender) }} size={64} icon={'user'} />
             </div>
-            <div className="details">
-              <span className="phone"><Icon type="phone" theme="filled" style={{marginRight: 4}}/>{phone}</span>
-              <span className="mail"><Icon type="mail" theme="filled" style={{marginRight: 4}}/>{email}</span>
+            <div className="profile-detail">
+              <div className="name">
+                <h1>{`${first_name} ${last_name}`}</h1>
+                <p>{name_yomi}</p>
+              </div>
+              <div className="details">
+                <span className="phone"><Icon type="phone" theme="filled" style={{marginRight: 4}}/>{phone}</span>
+                <span className="mail"><Icon type="mail" theme="filled" style={{marginRight: 4}}/>{email}</span>
+              </div>
             </div>
+          </div>
+          <div className={`icon ${_.isFunction(onNext) ? '':'disabled'}`}>
+            <Icon type="right" theme="outlined" onClick={() => {
+              if (_.isFunction(onNext)) {
+                onNext()
+              }
+            }}/>
           </div>
         </div>
         <div className="profile-content">

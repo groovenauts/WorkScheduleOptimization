@@ -44,6 +44,13 @@ export const showProfileInSetting = (staffId) => {
   }  
 }
 
+export const changeProfile = (staffId) => {
+  return {
+    type: types.CHANGE_PROFILE,
+    staffId: staffId,
+  }
+}
+
 export const closeProfile = () => {
   return {
     type: types.CLOSE_PROFILE
