@@ -76,15 +76,12 @@ class Gunttchart extends React.Component {
               label = (
                 <Popover
                   content={
-                    <div>
-                      <span>{`${cell.format('M月D日 (dd)')}  ${onEvent.start.format('HH:MM')} - ${onEvent.end.format('HH:MM')} (${workingHours}H)`}</span>
-                      <br />
-                      <span style={{fontSize: 11, color: blue400, cursor: 'pointer'}} onClick={() => onClickStaff(staff.id)}>
-                        {`${staff.first_name} ${staff.last_name} のスケジュールを見る`}
-                        <Icon type="eye" theme="outlined" style={{marginLeft: 4}}/>
-                      </span>
-                    </div>
+                    <span>{`${cell.format('M月D日 (dd)')}  ${onEvent.start.format('HH:MM')} - ${onEvent.end.format('HH:MM')} (${workingHours}H)`}</span>
                   }
+                  title={
+                    <span style={{color: blue400, cursor: 'pointer'}} onClick={() => onClickStaff(staff.id)}>
+                      {`${staff.first_name} ${staff.last_name}`}
+                    </span>}
                   >
                   <p className="label">
                     {`${workingHours}H`}
