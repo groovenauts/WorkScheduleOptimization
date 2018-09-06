@@ -13,6 +13,8 @@ stories.add("normal", () => (
     title={"Title"}
     visible={true}
     height={500}
+    year={2018}
+    month={9}
     onClose={action('onClose')}
     onSubmit={action('onSubmit')}
   />

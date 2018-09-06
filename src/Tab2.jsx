@@ -70,7 +70,7 @@ class Tab2 extends React.Component {
           onClickStaff={id => actions.showProfile(id)}
           />
         <Setting
-          title={`休日設定 (${year}/${month})`}
+          title={"設定"}
           width={800}
           height={height}
           year={year}
@@ -82,8 +82,10 @@ class Tab2 extends React.Component {
           visible={visibleSetting}
           onClickStaff={id => actions.showProfileInSetting(id)}
           onClose={() => actions.closeSetting()}
-          onSubmit={(dayOffs) => actions.updateDayOffs(dayOffs)}
-          >
+          onSubmit={(dayOffs) => {
+            actions.updateDayOffs(dayOffs)
+            actions.optimize()
+          }}>
           { this.renderProfile(visibleNestedProfile) }
         </Setting>
         { this.renderProfile(visibleProfile) }
