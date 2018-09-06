@@ -52,14 +52,6 @@ html, body {
   text-align: center;
 }
 
-// .table {
-//   table {
-//     > tbody {
-//       > tr {
-//         > td {
-//           margin: 4px;
-//         }
-//       }
-//     }
-//   }
-// }
+.ant-fullcalendar-header {
+  display: none;
+}
