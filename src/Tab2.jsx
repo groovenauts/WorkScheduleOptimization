@@ -26,7 +26,7 @@ class Tab2 extends React.Component {
     actions.loadStaffs()
   }
   render() {
-    const { year, month, days, wdays, hours, height, actions, staffs, results, dayOffs, profileStaffId, visibleProfile, visibleSetting, optimizating } = this.props
+    const { year, month, days, wdays, hours, height, actions, staffs, results, dayOffs, loadingStaffs, profileStaffId, visibleProfile, visibleSetting, optimizating } = this.props
     return (
       <div id="tab2" ref={refs => this.element = refs}>
         <div className="header">
@@ -70,7 +70,7 @@ class Tab2 extends React.Component {
           }}
           onClose={() => actions.closeProfile()}
           />
-        <Predicting visible={optimizating} text={"シフトを最適化しています"}/>
+        <Predicting visible={loadingStaffs || optimizating} text={optimizating && "シフトを最適化しています"}/>
       </div>
     )
   }
@@ -87,6 +87,7 @@ const mapStateToProps = state => {
     staffs: state.tab2.staffs,
     results: state.tab2.results,
     dayOffs: state.tab2.dayOffs,
+    loadingStaffs: state.tab2.loadingStaffs,
     optimizating: state.tab2.optimizating,
     profileStaffId: state.tab2.profileStaffId,
     visibleProfile: state.tab2.visibleProfile,

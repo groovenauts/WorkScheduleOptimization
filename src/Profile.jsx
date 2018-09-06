@@ -25,7 +25,6 @@ class Profile extends React.Component {
       schedules,
       onClose,
     } = this.props
-    console.log("Profile", this.props)
     return (
       <Drawer
         width={width || 460}
