@@ -15,8 +15,7 @@ import Loading from './Loading'
 import * as actions from './actions/tab1'
 
 const TAB_HEIGHT = 44
-const TAB_CONTAINER_HEADER = 32
-const MARGIN_BOTTOM = 40
+const MARGIN_BOTTOM = 30
 
 class Tab1 extends React.Component {
   constructor(props) {
@@ -28,25 +27,28 @@ class Tab1 extends React.Component {
     this.props.actions.init()
   }
   render() {
-    const { actions, width, height, month, predicting, results } = this.props
+    const { actions, width, height, month, predicting, predicted, results } = this.props
     return (
       <div id="tab1" ref={refs => this.element = refs}>
-        <div className="header">
-          <Button type="primary" onClick={ ()=> actions.predict() }>
-            予測する
-          </Button>
-        </div>
         {_.isNumber(width) && _.isNumber(height) &&
           <BarChart
             width={width - 40}
-            height={height - (TAB_HEIGHT + TAB_CONTAINER_HEADER + MARGIN_BOTTOM)}
+            height={height - (TAB_HEIGHT + MARGIN_BOTTOM)}
             data={results}
             xDataKey={'day'}
             yDataKeys={[{key: 'num', label: `${month}月`, color: blue400}]}
             />
         }
-        <Mask visible={predicting}>
-          <Loading text={"入電を予測中"} />
+        <Mask visible={predicting || !predicted}>
+          { predicting ?
+            <Loading text={"入電を予測中"} />
+            :
+            !predicted ?
+              <Button type="primary" onClick={ ()=> actions.predict() }>
+                予測する
+              </Button>
+            : null
+          }
         </Mask>
       </div>
     )
@@ -59,6 +61,7 @@ const mapStateToProps = state => {
     height: state.app.height,
     month: state.app.month,
     predicting: state.tab1.predicting,
+    predicted: state.tab1.predicted,
     results: state.tab1.results,
   }
 }

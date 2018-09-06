@@ -17,9 +17,8 @@ import Loading from './Loading'
 import * as actions from './actions/tab2'
 
 const TAB_HEIGHT = 44
-const TAB_CONTAINER_HEADER = 32
 const TABLE_HEADER = 44
-const MARGIN_BOTTOM = 50
+const MARGIN_BOTTOM = 40
 
 class Tab2 extends React.Component {
   componentDidMount() {
@@ -59,20 +58,13 @@ class Tab2 extends React.Component {
     const { year, month, days, wdays, hours, height, actions, staffs, results, dayOffs, loadingStaffs, visibleProfile, visibleNestedProfile, visibleSetting, optimizating } = this.props
     return (
       <div id="tab2" ref={refs => this.element = refs}>
-        <div className="header">
-          <div></div>
-          <Button type="primary" onClick={ ()=>actions.optimize() }>
-            最適化する
-          </Button>
-          <Icon type="setting" theme="filled" onClick={ ()=>actions.showSetting() }/>
-        </div>
         <Gunttchart
           year={year}
           month={month}
           days={days}
           wdays={wdays}
           hours={hours}
-          height={height - (TAB_HEIGHT + TAB_CONTAINER_HEADER + TABLE_HEADER + MARGIN_BOTTOM)}
+          height={height - (TAB_HEIGHT + TABLE_HEADER + MARGIN_BOTTOM)}
           staffs={staffs}
           events={results}
           onClickStaff={id => actions.showProfile(id)}
@@ -95,8 +87,15 @@ class Tab2 extends React.Component {
           { this.renderProfile(visibleNestedProfile) }
         </Setting>
         { this.renderProfile(visibleProfile) }
-        <Mask visible={loadingStaffs || optimizating}>
-          <Loading text={optimizating && "シフトを最適化しています"} />
+        <Mask visible={loadingStaffs || optimizating || _.isEmpty(results)}>
+          { loadingStaffs ? null :
+            optimizating ? <Loading text={optimizating && "シフトを最適化しています"} /> :
+            _.isEmpty(results) ? 
+            <Button type="primary" onClick={ ()=>actions.optimize() }>
+              最適化する
+            </Button>
+            : null
+          }
         </Mask>
       </div>
     )
