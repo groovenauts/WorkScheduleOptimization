@@ -23,6 +23,7 @@
     "moment": "^2.22.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-epic-spinners": "^0.2.1",
     "react-redux": "^5.0.7",
     "recharts": "^1.1.0",
     "redux": "^4.0.0",
