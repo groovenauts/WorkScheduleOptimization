@@ -59,6 +59,7 @@ class Profile extends React.Component {
             <div className="profile-detail">
               <div className="name">
                 <h1>{`${first_name} ${last_name}`}</h1>
+                <p className="age">{`(${moment().diff(moment(birthday, "YYYY/M/D"), 'years')})`}</p>
                 <p>{name_yomi}</p>
               </div>
               <div className="details">
