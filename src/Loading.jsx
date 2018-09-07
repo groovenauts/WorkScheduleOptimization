@@ -1,7 +1,14 @@
 import React from 'react'
 import {
-  Icon,
-} from 'antd'
+  FulfillingSquareSpinner,
+  BreedingRhombusSpinner,
+  FulfillingBouncingCircleSpinner,
+  SemipolarSpinner,
+  SelfBuildingSquareSpinner,
+  RadarSpinner,
+} from 'react-epic-spinners'
+
+import { primaryColor } from './utils/color'
 
 class Loading extends React.PureComponent {
   render() {
@@ -10,10 +17,21 @@ class Loading extends React.PureComponent {
     if (!visible) {
       style['display'] = 'none'
     }
+    const loadingComponent = _.sample([
+      FulfillingSquareSpinner,
+      BreedingRhombusSpinner,
+      FulfillingBouncingCircleSpinner,
+      SemipolarSpinner,
+      SelfBuildingSquareSpinner,
+      RadarSpinner,
+    ])
     return (
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
-        <Icon type="loading" theme="outlined" style={{fontSize: 40, marginBottom: 20}} />
-        <span style={{fontSize: 14}}>{text}</span>
+        {React.createElement(loadingComponent, {
+          color: primaryColor,
+          size: "40",
+        })}
+        {text && <span style={{fontSize: 14, marginTop: 20}}>{text}</span>}
       </div>
     )
   }
