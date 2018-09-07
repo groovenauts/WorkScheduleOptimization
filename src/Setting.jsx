@@ -17,12 +17,22 @@ class Setting extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      edited: false,
+      editDate: null,
       dayOffs: props.dayOffs || [],
     }
   }
+  shouldComponentUpdate(nextProps, nextState) {
+    const { editDate } = this.state
+    const { width, height, visible } = this.props;
+    return (
+      editDate !== nextState.editDate ||
+      width !== nextProps.width ||
+      height !== nextProps.height ||
+      visible !== nextProps.visible
+    )
+  }
   render() {
-    const { edited, dayOffs } = this.state
+    const { editDate, dayOffs } = this.state
     const {
       title,
       width,
@@ -60,13 +70,13 @@ class Setting extends React.Component {
           dayOffs={dayOffs}
           onUnClickCell={eventId => {
             this.setState({
-              edited: true,
+              editDate: new Date(),
               dayOffs: _.reject(dayOffs, {id: eventId})
             })
           }}
           onClickCell={(staffId, year, month, day) => {
             this.setState({
-              edited: true,
+              editDate: new Date(),
               dayOffs: _.concat(dayOffs, [{
                 id: randomString(6),
                 staff_id: staffId,
@@ -81,7 +91,7 @@ class Setting extends React.Component {
         {this.props.children}
         <div className="footer">
           <Button onClick={() => onClose()}>{"キャンセル"}</Button>
-          <Button type="primary" style={{marginLeft: 10}} onClick={edited ? ()=>onSubmit(dayOffs) : ()=>{}} disabled={!edited}>{"最適化する"}</Button>
+          <Button type="primary" style={{marginLeft: 10}} onClick={editDate ? ()=>onSubmit(dayOffs) : ()=>{}} disabled={!editDate}>{"最適化する"}</Button>
         </div>
       </Drawer>
     )

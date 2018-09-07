@@ -11,6 +11,13 @@ import { getColor } from './utils'
 import Calendar from './Calendar'
 
 class Profile extends React.Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    const { visible, id } = this.props;
+    return (
+      visible !== nextProps.visible ||
+      id !== nextProps.id
+    )
+  }
   render() {
     const {
       first_name,
