@@ -44,7 +44,7 @@ class App extends React.Component {
       <LocaleProvider locale={jaJP}>
         <Layout>
           <Layout.Content>
-            <Tabs activeTabKey={activeTabKey} onChange={key => actions.changeTab(key)}>
+            <Tabs activeKey={activeTabKey} onChange={key => actions.changeTab(key)}>
               <Tabs.TabPane tab={<span><Icon type="phone" theme="filled" />入電予測</span>} key="1">
                 <Tab1 />
               </Tabs.TabPane>
