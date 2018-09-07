@@ -50,7 +50,7 @@ class Tab2 extends React.Component {
       <Profile
         visible={visible}
         {...prop}
-        onClose={() => actions.changeProfile()}
+        onClose={() => actions.closeProfile()}
         />
     )
   }
