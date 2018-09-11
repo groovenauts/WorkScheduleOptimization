@@ -3,21 +3,29 @@ import {
   Icon,
 } from 'antd'
 
-class Processing extends React.PureComponent {
+class Mask extends React.PureComponent {
   render() {
-    const { visible, text } = this.props
-    let style = {}
-    if (!visible) {
-      style['display'] = 'none'
+    const { visible, style, text } = this.props
+    let defaultStyle = {
+      ...style
     }
+    if (!visible) {
+      defaultStyle['display'] = 'none'
+    }
+    let children = []
+    React.Children.forEach(this.props.children, child => {
+      if (child){
+        children.push(child);
+      }
+    })
     return (
-      <div id="mask"　style={style}>
-        <div className={"center"}>
-          {this.props.children}
+      <div id="mask"　style={defaultStyle} className="fadeIn">
+        <div className={"center slideUp"}>
+          {children}
         </div>
       </div>
     )
   }
 }
 
-export default Processing
+export default Mask

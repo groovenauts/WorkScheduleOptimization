@@ -1,3 +1,3 @@
 
-export const blue400 = '#42A5F5'
+export const primaryColor = '#0a00cb'
 

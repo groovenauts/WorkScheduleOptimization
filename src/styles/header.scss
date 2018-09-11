@@ -1,0 +1,93 @@
+@import 'animation.css';
+
+.header {
+  $color: #0a00cb;
+  color: white;
+  padding-right: 26px;
+  padding-left: 26px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .menu-button {
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    color: white;
+    padding-left: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 180px;
+    display: inline-block;
+    position: relative;
+    transition: all 600ms ease;
+    &:first-of-type {
+      margin-right: 20px;
+    }
+
+    span {
+      display: block;
+      position: relative;
+      z-index: 1;
+      transform: translate(0, 0);
+    }
+    svg {
+      z-index: 0;
+      fill: rgba(255,255,255,1);
+      position: absolute;
+      left: 12%;
+      top: 16%;
+      transition: all 600ms ease-out;
+    }
+
+    &:hover {
+      color: #0a00cb;
+      background: white;
+      transition-duration: 800ms;
+      svg {
+        fill: rgba(255,255,255,1);
+        transform: translate(-50%, -50%) rotate(60deg) scale(4);
+      }
+    }
+    &.active {
+      color: #0a00cb;
+      background: white;
+      svg {
+        fill: #0a00cb;
+      }
+      &:hover {
+        svg {
+          fill: #0a00cb;
+          animation-name: slideUp;
+          -webkit-animation-name: slideUp;
+          animation-duration: 1.5s;
+          -webkit-animation-duration: 1.5s;
+          animation-iteration-count: infinite;
+        }
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+
+    > .item {
+      font-style: italic;
+      margin-right: 4px;
+    }
+    > .down-icon {
+      font-size: 10px;
+      margin-right: 6px;
+    }
+    > .setting-icon {
+      font-size: 16px;
+    }
+  }
+}

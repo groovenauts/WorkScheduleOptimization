@@ -71,15 +71,18 @@ export const optimize = () => (dispatch, getState) => {
   dispatch({ type: types.OPTIMIZE })
   new Promise(resolve => {
     setTimeout(() => {
-      const results = _.map(optimizeResults[(numOfOptimize + 1) % 2], event => {
-        return {
-          ...event,
-          start: moment(event.startDate),
-          end: moment(event.endDate),
-        }
-      })
+      const results =  _.chain(optimizeResults[(numOfOptimize + 1) % 2])
+                        .map(event => {
+                          return {
+                            ...event,
+                            start: moment(event.startDate),
+                            end: moment(event.endDate),
+                          }
+                        })
+                        .orderBy(['start'], ['asc'])
+                        .value()
       resolve(results)
-    }, 3000)
+    }, 1000 * 8)
   }).then((results) => {
     dispatch({
       type: types.OPTIMIZED,

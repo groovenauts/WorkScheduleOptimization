@@ -1,16 +1,26 @@
 @import './color.scss';
 
+.content-wrapper {
+  border-radius: 6px;
+  background-color: white;
+}
+
 .gunttchart {
   .column-header {
     font-size: 12px;
     text-align: center;
+
+    &.italic {
+      font-style: italic;
+    }
   }
   .column-name {
     font-size: 13px;
     margin-left: 6px;
   }
   .data-index {
-    font-size: 14px;
+    font-size: 11px;
+    font-style: italic;
     text-align: center;
   }
   .data-name {
@@ -32,19 +42,17 @@
 
 .cell {
   height: 21px;
-  background-color: $primary-color;
+  background-color: #FFB74D;
   position: relative;
   cursor: default;
 
-  &.b1 { background-color: $md-light-blue-100; }
-  &.b2 { background-color: $md-light-blue-200; }
-  &.b3 { background-color: $md-light-blue-300; }
-  &.b4 { background-color: $md-light-blue-400; }
-  &.b5 { background-color: $md-light-blue-500; }
-  &.b6 { background-color: $md-light-blue-600; }
-  &.b7 { background-color: $md-light-blue-700; }
-  &.b8 { background-color: $md-light-blue-800; }
-  &.b9 { background-color: $md-light-blue-900; }
+  &.b3 { background-color: #FFB74D; }
+  &.b4 { background-color: #FFA726; }
+  &.b5 { background-color: #FF9800; }
+  &.b6 { background-color: #FB8C00; }
+  &.b7 { background-color: #F57C00; }
+  &.b8 { background-color: #EF6C00; }
+  &.b9 { background-color: #E65100; }
 
   .label {
     white-space: nowrap;

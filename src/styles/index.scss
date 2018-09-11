@@ -1,10 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:700,400,300,200,100);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700);
 
+@import 'color.scss';
+@import 'header.scss';
 @import 'monthly-table.scss';
 @import 'setting.scss';
 @import 'profile.scss';
 @import 'gunttchart.scss';
+@import 'intro.scss';
 @import 'tab1.scss';
 @import 'tab2.scss';
 @import 'mask.scss';
@@ -27,47 +30,86 @@ html, body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
 
-#container {
+#root, #container {
+  width:  100%;
+  height: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  overflow: auto;
+  overflow: hidden;
+
+  .gradiention {
+    background: linear-gradient(300deg, #080037, #0a00cb);
+    background-size: 400% 400%;
+    
+    -webkit-animation: move-gradient 15s ease infinite;
+    -moz-animation: move-gradient 15s ease infinite;
+    animation: move-gradient 15s ease infinite;
+    
+    @-webkit-keyframes move-gradient {
+        0%{background-position:7% 0%}
+        50%{background-position:94% 100%}
+        100%{background-position:7% 0%}
+    }
+    @-moz-keyframes move-gradient {
+        0%{background-position:7% 0%}
+        50%{background-position:94% 100%}
+        100%{background-position:7% 0%}
+    }
+    @keyframes move-gradient { 
+        0%{background-position:7% 0%}
+        50%{background-position:94% 100%}
+        100%{background-position:7% 0%}
+    }
+  }
 }
 
-.logo {
-  height: 30px;
-  width: 30px;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto;
-  background-image: url("./img/logo_blue.svg");
+.table {
+  padding: 4px;
+  border-radius: 6px;
 }
 
-.header-nav {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  > .content {
-    height: 44px;
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
+.hover-rotate {
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  &:hover {
+    svg {
+      animation: spin 0.6s;
+      animation-iteration-count: 1;
+    }
+  }
+}
 
-    > .item {
-      font-style: italic;
-      margin-right: 4px;
+.rocket-launch {
+  @keyframes launch {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
     }
-    > .down-icon {
-      font-size: 10px;
-      margin-right: 6px;
+    100% {
+      transform: translateY(-100px);
+      opacity: 0;
     }
-    > .setting-icon {
-      font-size: 16px;
-    }
+  }
+  svg {
+    animation-name: launch;
+    animation-duration: 1.5s;
+    // animation-iteration-count: 1;
   }
 }
 

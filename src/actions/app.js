@@ -8,6 +8,12 @@ export const resizeWindow = (width, height) => {
   }
 }
 
+export const start = () => {
+  return {
+    type: types.START,
+  }
+}
+
 export const changeTab = activeKey => {
   return {
     type: types.CHANGE_TAB,

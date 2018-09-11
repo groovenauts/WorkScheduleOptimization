@@ -8,6 +8,8 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: 'index.html' },
       { from: 'favicon.ico' },
+      { from: 'lib/jquery-3.3.1.min.js' },
+      { from: 'lib/jquery.firefly-0.7.min.js' },
     ]),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
@@ -44,6 +46,12 @@ module.exports = {
       {
         test: /\.svg$/,
         loader: "url-loader?mimetype=image/svg+xml"
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [{
+          loader: 'file-loader',
+        }]
       }
     ]
   },

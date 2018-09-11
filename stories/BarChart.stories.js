@@ -6,11 +6,6 @@ import { antdDecorator } from './Decorator'
 import BarChart from '../src/BarChart'
 
 const style = {marginBottom: 20, border: 'solid 1px #e9e9e9', height: 400, width: 800};
-const colors = {
-  teal400: '#26A69A',
-  blue400: '#42A5F5',
-  lime400: '#D4E157',
-}
 
 let stories = storiesOf('BarChart', module)
 stories.addDecorator(getStory => antdDecorator(getStory))
@@ -30,7 +25,7 @@ const props = {
   ],
   xDataKey: "name",
   yDataKeys: [
-    {key: "num", label: "Nums", color: colors.blue400},
+    {key: "num", label: "Nums", color: '#42A5F5'},
   ]
 }
 

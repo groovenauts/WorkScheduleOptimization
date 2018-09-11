@@ -91,7 +91,7 @@ class Setting extends React.Component {
         {this.props.children}
         <div className="footer">
           <Button onClick={() => onClose()}>{"キャンセル"}</Button>
-          <Button type="primary" style={{marginLeft: 10}} onClick={editDate ? ()=>onSubmit(dayOffs) : ()=>{}} disabled={!editDate}>{"最適化する"}</Button>
+          <Button type="primary" style={{marginLeft: 10}} onClick={editDate ? ()=>onSubmit(dayOffs) : ()=>{}} disabled={!editDate}>{"シフトを最適化"}</Button>
         </div>
       </Drawer>
     )

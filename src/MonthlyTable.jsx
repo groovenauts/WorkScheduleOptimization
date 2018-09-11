@@ -8,6 +8,10 @@ import {
 } from 'antd'
 
 class MonthlyTable extends React.Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    const { dayOffs } = this.props;
+    return !_.isEqual(dayOffs, nextProps.dayOffs)
+  }
   render() {
     const { year, month, days, wdays, height, staffs, dayOffs, onClickStaff, onClickCell, onUnClickCell } = this.props
     const columnWidth = 20
@@ -40,7 +44,7 @@ class MonthlyTable extends React.Component {
     columns.unshift({
       key: "index",
       dataIndex: "index",
-      title: <span className={"column-header"}>No</span>,
+      title: <span className={"column-header italic"}>No</span>,
       fixed: true,
       width: 20,
     })
@@ -73,7 +77,7 @@ class MonthlyTable extends React.Component {
                   }
                 }
               }}>
-              {event && <Icon type="star" theme="filled" className="vacation-icon" />}
+              {event && <Icon type="star" theme="filled" className="vacation-icon bigEntrance" />}
             </div>
           )
         }

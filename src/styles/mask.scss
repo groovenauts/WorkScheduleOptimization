@@ -1,13 +1,14 @@
 @import 'color.scss';
 
 #mask {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba($md-white, 0.7);
-  z-index: 999;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: rgba(white, 0.7);
+  z-index: 100;
 
   .center {
     height: 100%;

@@ -11,7 +11,8 @@ const DEFAULT_MONTH = 9
 const initState = {
   width: _.get(window, 'innerWidth', 0),
   height: _.get(window, 'innerHeight', 0),
-  activeTabKey: "1",
+  started: false,
+  activeTabKey: 1,
   year: DEFAULT_YEAR,
   month: DEFAULT_MONTH,
   ..._.tap({}, param => {
@@ -28,6 +29,13 @@ const windowSize = (state, action) => {
   return { ...state, width, height }
 }
 
+const start = (state, action) => {
+  return {
+    ...state,
+    started: true
+  }
+}
+
 const changeTab = (state, action) => {
   return {
     ...state,
@@ -37,6 +45,7 @@ const changeTab = (state, action) => {
 
 const handlers = handleActions({
   [types.RESIZE_WINDOW]: windowSize,
+  [types.START]: start,
   [types.CHANGE_TAB]: changeTab,
 }, initState);
 

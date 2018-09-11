@@ -25,6 +25,7 @@ export const init = () => (dispatch, getState) => {
   const { year, month } = app
   dispatch({
     type: types.TAB1_INIT,
+    // results: []
     results: _.map(formatData(year, month, result), o => {
       return {
         day: o.day,
@@ -42,5 +43,5 @@ export const predict = () => (dispatch, getState) => {
       type: types.PREDICTED,
       results: formatData(year, month, result)
     })
-  }, 3000)
+  }, 1000 * 8)
 }

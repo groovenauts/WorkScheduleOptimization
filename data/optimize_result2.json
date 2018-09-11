@@ -1,21 +1,27 @@
 [
   {
+    "id": "1HvKNZf2",
+    "staff_id": 20,
+    "startDate": "2018-08-31T15:00:00.000Z",
+    "endDate": "2018-08-31T22:00:00.000Z"
+  },
+  {
+    "id": "wCdnOKXs",
+    "staff_id": 23,
+    "startDate": "2018-08-31T15:00:00.000Z",
+    "endDate": "2018-08-31T22:00:00.000Z"
+  },
+  {
+    "id": "WrfC4u7r",
+    "staff_id": 4,
+    "startDate": "2018-08-31T17:00:00.000Z",
+    "endDate": "2018-08-31T21:00:00.000Z"
+  },
+  {
     "id": "oe9qKQWq",
     "staff_id": 3,
     "startDate": "2018-08-31T18:00:00.000Z",
     "endDate": "2018-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "W5EiOzG6",
-    "staff_id": 39,
-    "startDate": "2018-08-31T18:00:00.000Z",
-    "endDate": "2018-09-01T01:00:00.000Z"
-  },
-  {
-    "id": "y2iMQFXp",
-    "staff_id": 49,
-    "startDate": "2018-08-31T18:00:00.000Z",
-    "endDate": "2018-08-31T22:00:00.000Z"
   },
   {
     "id": "wZxgtnBx",
@@ -42,24 +48,6 @@
     "endDate": "2018-09-01T02:00:00.000Z"
   },
   {
-    "id": "6VhMoyvt",
-    "staff_id": 47,
-    "startDate": "2018-09-01T00:00:00.000Z",
-    "endDate": "2018-09-01T05:00:00.000Z"
-  },
-  {
-    "id": "ewvCywmG",
-    "staff_id": 40,
-    "startDate": "2018-09-01T01:00:00.000Z",
-    "endDate": "2018-09-01T08:00:00.000Z"
-  },
-  {
-    "id": "aSVD4Lrf",
-    "staff_id": 41,
-    "startDate": "2018-09-01T01:00:00.000Z",
-    "endDate": "2018-09-01T07:00:00.000Z"
-  },
-  {
     "id": "JkzLeaHI",
     "staff_id": 19,
     "startDate": "2018-09-01T03:00:00.000Z",
@@ -72,33 +60,9 @@
     "endDate": "2018-09-01T08:00:00.000Z"
   },
   {
-    "id": "Vd9E1Fca",
-    "staff_id": 33,
-    "startDate": "2018-09-01T04:00:00.000Z",
-    "endDate": "2018-09-01T09:00:00.000Z"
-  },
-  {
-    "id": "SCj99dkX",
-    "staff_id": 38,
-    "startDate": "2018-09-01T04:00:00.000Z",
-    "endDate": "2018-09-01T09:00:00.000Z"
-  },
-  {
-    "id": "xSoUBaXp",
-    "staff_id": 46,
-    "startDate": "2018-09-01T04:00:00.000Z",
-    "endDate": "2018-09-01T09:00:00.000Z"
-  },
-  {
     "id": "RZlF1N7c",
     "staff_id": 1,
     "startDate": "2018-09-01T06:00:00.000Z",
-    "endDate": "2018-09-01T14:00:00.000Z"
-  },
-  {
-    "id": "VfgAURnt",
-    "staff_id": 44,
-    "startDate": "2018-09-01T07:00:00.000Z",
     "endDate": "2018-09-01T14:00:00.000Z"
   },
   {
@@ -132,28 +96,10 @@
     "endDate": "2018-09-01T19:00:00.000Z"
   },
   {
-    "id": "u3XTw4hX",
-    "staff_id": 37,
-    "startDate": "2018-09-01T13:00:00.000Z",
-    "endDate": "2018-09-01T20:00:00.000Z"
-  },
-  {
     "id": "zwTQcDHA",
     "staff_id": 17,
     "startDate": "2018-09-01T14:00:00.000Z",
     "endDate": "2018-09-01T19:00:00.000Z"
-  },
-  {
-    "id": "BBAo6dus",
-    "staff_id": 43,
-    "startDate": "2018-09-01T15:00:00.000Z",
-    "endDate": "2018-09-01T20:00:00.000Z"
-  },
-  {
-    "id": "O0P1ghHF",
-    "staff_id": 47,
-    "startDate": "2018-09-01T17:00:00.000Z",
-    "endDate": "2018-09-01T22:00:00.000Z"
   },
   {
     "id": "PXpiNWBc",
@@ -168,12 +114,6 @@
     "endDate": "2018-09-02T02:00:00.000Z"
   },
   {
-    "id": "c37DTnmW",
-    "staff_id": 31,
-    "startDate": "2018-09-01T20:00:00.000Z",
-    "endDate": "2018-09-02T04:00:00.000Z"
-  },
-  {
     "id": "5UTWb2N4",
     "staff_id": 17,
     "startDate": "2018-09-01T22:00:00.000Z",
@@ -186,40 +126,10 @@
     "endDate": "2018-09-02T03:00:00.000Z"
   },
   {
-    "id": "8DHZ7kNI",
-    "staff_id": 48,
-    "startDate": "2018-09-01T23:00:00.000Z",
-    "endDate": "2018-09-02T04:00:00.000Z"
-  },
-  {
-    "id": "cghkpdOm",
-    "staff_id": 42,
-    "startDate": "2018-09-02T00:00:00.000Z",
-    "endDate": "2018-09-02T08:00:00.000Z"
-  },
-  {
     "id": "xZkxbFTp",
     "staff_id": 20,
     "startDate": "2018-09-02T01:00:00.000Z",
     "endDate": "2018-09-02T08:00:00.000Z"
-  },
-  {
-    "id": "VrNyGyDp",
-    "staff_id": 50,
-    "startDate": "2018-09-02T01:00:00.000Z",
-    "endDate": "2018-09-02T05:00:00.000Z"
-  },
-  {
-    "id": "eWkpbziy",
-    "staff_id": 32,
-    "startDate": "2018-09-02T03:00:00.000Z",
-    "endDate": "2018-09-02T11:00:00.000Z"
-  },
-  {
-    "id": "CW0NsToB",
-    "staff_id": 41,
-    "startDate": "2018-09-02T03:00:00.000Z",
-    "endDate": "2018-09-02T09:00:00.000Z"
   },
   {
     "id": "j8TdxoSo",
@@ -264,30 +174,6 @@
     "endDate": "2018-09-02T15:00:00.000Z"
   },
   {
-    "id": "1XWimeeX",
-    "staff_id": 49,
-    "startDate": "2018-09-02T07:00:00.000Z",
-    "endDate": "2018-09-02T11:00:00.000Z"
-  },
-  {
-    "id": "vITG1ffF",
-    "staff_id": 37,
-    "startDate": "2018-09-02T08:00:00.000Z",
-    "endDate": "2018-09-02T15:00:00.000Z"
-  },
-  {
-    "id": "xuFWY5jH",
-    "staff_id": 45,
-    "startDate": "2018-09-02T08:00:00.000Z",
-    "endDate": "2018-09-02T12:00:00.000Z"
-  },
-  {
-    "id": "TSxQXTh9",
-    "staff_id": 33,
-    "startDate": "2018-09-02T10:00:00.000Z",
-    "endDate": "2018-09-02T15:00:00.000Z"
-  },
-  {
     "id": "SJOm7zOX",
     "staff_id": 1,
     "startDate": "2018-09-02T11:00:00.000Z",
@@ -304,12 +190,6 @@
     "staff_id": 19,
     "startDate": "2018-09-02T15:00:00.000Z",
     "endDate": "2018-09-02T20:00:00.000Z"
-  },
-  {
-    "id": "Q3AlVJ4F",
-    "staff_id": 32,
-    "startDate": "2018-09-02T15:00:00.000Z",
-    "endDate": "2018-09-02T23:00:00.000Z"
   },
   {
     "id": "BA6JVgki",
@@ -336,22 +216,10 @@
     "endDate": "2018-09-03T06:00:00.000Z"
   },
   {
-    "id": "nqfcHxl3",
-    "staff_id": 34,
-    "startDate": "2018-09-02T23:00:00.000Z",
-    "endDate": "2018-09-03T04:00:00.000Z"
-  },
-  {
     "id": "5mLds6vY",
     "staff_id": 20,
     "startDate": "2018-09-03T00:00:00.000Z",
     "endDate": "2018-09-03T07:00:00.000Z"
-  },
-  {
-    "id": "sHEp4Xse",
-    "staff_id": 47,
-    "startDate": "2018-09-03T00:00:00.000Z",
-    "endDate": "2018-09-03T05:00:00.000Z"
   },
   {
     "id": "ckJakeBV",
@@ -372,12 +240,6 @@
     "endDate": "2018-09-03T13:00:00.000Z"
   },
   {
-    "id": "AKnvwYZb",
-    "staff_id": 39,
-    "startDate": "2018-09-03T05:00:00.000Z",
-    "endDate": "2018-09-03T12:00:00.000Z"
-  },
-  {
     "id": "GYEzgy9V",
     "staff_id": 4,
     "startDate": "2018-09-03T06:00:00.000Z",
@@ -396,12 +258,6 @@
     "endDate": "2018-09-03T12:00:00.000Z"
   },
   {
-    "id": "aV1Qfqq3",
-    "staff_id": 43,
-    "startDate": "2018-09-03T07:00:00.000Z",
-    "endDate": "2018-09-03T12:00:00.000Z"
-  },
-  {
     "id": "ac6pA2EH",
     "staff_id": 30,
     "startDate": "2018-09-03T09:00:00.000Z",
@@ -414,36 +270,6 @@
     "endDate": "2018-09-03T19:00:00.000Z"
   },
   {
-    "id": "WKHxyr5G",
-    "staff_id": 33,
-    "startDate": "2018-09-03T11:00:00.000Z",
-    "endDate": "2018-09-03T16:00:00.000Z"
-  },
-  {
-    "id": "Biw1T1n2",
-    "staff_id": 46,
-    "startDate": "2018-09-03T11:00:00.000Z",
-    "endDate": "2018-09-03T16:00:00.000Z"
-  },
-  {
-    "id": "Ja1BhsIn",
-    "staff_id": 48,
-    "startDate": "2018-09-03T12:00:00.000Z",
-    "endDate": "2018-09-03T17:00:00.000Z"
-  },
-  {
-    "id": "Z4rniP13",
-    "staff_id": 31,
-    "startDate": "2018-09-03T14:00:00.000Z",
-    "endDate": "2018-09-03T22:00:00.000Z"
-  },
-  {
-    "id": "NKnrqEvE",
-    "staff_id": 36,
-    "startDate": "2018-09-03T14:00:00.000Z",
-    "endDate": "2018-09-03T18:00:00.000Z"
-  },
-  {
     "id": "i2choyww",
     "staff_id": 21,
     "startDate": "2018-09-03T15:00:00.000Z",
@@ -454,30 +280,6 @@
     "staff_id": 13,
     "startDate": "2018-09-03T16:00:00.000Z",
     "endDate": "2018-09-03T21:00:00.000Z"
-  },
-  {
-    "id": "gcyr5wN6",
-    "staff_id": 38,
-    "startDate": "2018-09-03T16:00:00.000Z",
-    "endDate": "2018-09-03T21:00:00.000Z"
-  },
-  {
-    "id": "0v2LX9UI",
-    "staff_id": 39,
-    "startDate": "2018-09-03T17:00:00.000Z",
-    "endDate": "2018-09-04T00:00:00.000Z"
-  },
-  {
-    "id": "fOybxtuK",
-    "staff_id": 31,
-    "startDate": "2018-09-03T19:00:00.000Z",
-    "endDate": "2018-09-04T03:00:00.000Z"
-  },
-  {
-    "id": "Ngb0dClu",
-    "staff_id": 37,
-    "startDate": "2018-09-03T19:00:00.000Z",
-    "endDate": "2018-09-04T02:00:00.000Z"
   },
   {
     "id": "KhHBH9o5",
@@ -504,12 +306,6 @@
     "endDate": "2018-09-04T04:00:00.000Z"
   },
   {
-    "id": "fHKMIhFH",
-    "staff_id": 33,
-    "startDate": "2018-09-04T00:00:00.000Z",
-    "endDate": "2018-09-04T05:00:00.000Z"
-  },
-  {
     "id": "O8hp3OYC",
     "staff_id": 6,
     "startDate": "2018-09-04T01:00:00.000Z",
@@ -522,34 +318,10 @@
     "endDate": "2018-09-04T09:00:00.000Z"
   },
   {
-    "id": "baTQA655",
-    "staff_id": 36,
-    "startDate": "2018-09-04T01:00:00.000Z",
-    "endDate": "2018-09-04T05:00:00.000Z"
-  },
-  {
-    "id": "HRiWqslD",
-    "staff_id": 34,
-    "startDate": "2018-09-04T02:00:00.000Z",
-    "endDate": "2018-09-04T07:00:00.000Z"
-  },
-  {
-    "id": "aCOfgU74",
-    "staff_id": 45,
-    "startDate": "2018-09-04T02:00:00.000Z",
-    "endDate": "2018-09-04T06:00:00.000Z"
-  },
-  {
     "id": "yFm1y05x",
     "staff_id": 20,
     "startDate": "2018-09-04T03:00:00.000Z",
     "endDate": "2018-09-04T10:00:00.000Z"
-  },
-  {
-    "id": "LlbFo8xb",
-    "staff_id": 32,
-    "startDate": "2018-09-04T03:00:00.000Z",
-    "endDate": "2018-09-04T11:00:00.000Z"
   },
   {
     "id": "KMkzY43R",
@@ -574,18 +346,6 @@
     "staff_id": 1,
     "startDate": "2018-09-04T08:00:00.000Z",
     "endDate": "2018-09-04T16:00:00.000Z"
-  },
-  {
-    "id": "jUiv6h7f",
-    "staff_id": 43,
-    "startDate": "2018-09-04T09:00:00.000Z",
-    "endDate": "2018-09-04T14:00:00.000Z"
-  },
-  {
-    "id": "wbfMyhvr",
-    "staff_id": 42,
-    "startDate": "2018-09-04T10:00:00.000Z",
-    "endDate": "2018-09-04T18:00:00.000Z"
   },
   {
     "id": "0u9CJMmb",
@@ -624,12 +384,6 @@
     "endDate": "2018-09-05T02:00:00.000Z"
   },
   {
-    "id": "opeWNG9W",
-    "staff_id": 39,
-    "startDate": "2018-09-04T18:00:00.000Z",
-    "endDate": "2018-09-05T01:00:00.000Z"
-  },
-  {
     "id": "PJeOydrG",
     "staff_id": 19,
     "startDate": "2018-09-04T20:00:00.000Z",
@@ -646,18 +400,6 @@
     "staff_id": 10,
     "startDate": "2018-09-04T23:00:00.000Z",
     "endDate": "2018-09-05T03:00:00.000Z"
-  },
-  {
-    "id": "lDVpNNp6",
-    "staff_id": 34,
-    "startDate": "2018-09-04T23:00:00.000Z",
-    "endDate": "2018-09-05T04:00:00.000Z"
-  },
-  {
-    "id": "rbte07LP",
-    "staff_id": 44,
-    "startDate": "2018-09-04T23:00:00.000Z",
-    "endDate": "2018-09-05T06:00:00.000Z"
   },
   {
     "id": "kq0KxXQu",
@@ -690,40 +432,16 @@
     "endDate": "2018-09-05T14:00:00.000Z"
   },
   {
-    "id": "gKQl0Daq",
-    "staff_id": 32,
-    "startDate": "2018-09-05T07:00:00.000Z",
-    "endDate": "2018-09-05T15:00:00.000Z"
-  },
-  {
     "id": "nOrOft1l",
     "staff_id": 26,
     "startDate": "2018-09-05T10:00:00.000Z",
     "endDate": "2018-09-05T14:00:00.000Z"
   },
   {
-    "id": "fbbgKgrY",
-    "staff_id": 31,
-    "startDate": "2018-09-05T12:00:00.000Z",
-    "endDate": "2018-09-05T20:00:00.000Z"
-  },
-  {
-    "id": "3T1WJrKq",
-    "staff_id": 35,
-    "startDate": "2018-09-05T13:00:00.000Z",
-    "endDate": "2018-09-05T21:00:00.000Z"
-  },
-  {
     "id": "HhDdsepI",
     "staff_id": 3,
     "startDate": "2018-09-05T14:00:00.000Z",
     "endDate": "2018-09-05T20:00:00.000Z"
-  },
-  {
-    "id": "HyhA5daY",
-    "staff_id": 33,
-    "startDate": "2018-09-05T14:00:00.000Z",
-    "endDate": "2018-09-05T19:00:00.000Z"
   },
   {
     "id": "fZKth8fa",
@@ -738,52 +456,10 @@
     "endDate": "2018-09-05T20:00:00.000Z"
   },
   {
-    "id": "taP4yGfQ",
-    "staff_id": 31,
-    "startDate": "2018-09-05T16:00:00.000Z",
-    "endDate": "2018-09-06T00:00:00.000Z"
-  },
-  {
-    "id": "HHifTsBS",
-    "staff_id": 38,
-    "startDate": "2018-09-05T16:00:00.000Z",
-    "endDate": "2018-09-05T21:00:00.000Z"
-  },
-  {
-    "id": "3PAbaoGV",
-    "staff_id": 36,
-    "startDate": "2018-09-05T17:00:00.000Z",
-    "endDate": "2018-09-05T21:00:00.000Z"
-  },
-  {
     "id": "3K7H0o8n",
     "staff_id": 4,
     "startDate": "2018-09-05T18:00:00.000Z",
     "endDate": "2018-09-05T22:00:00.000Z"
-  },
-  {
-    "id": "dZ1u52iD",
-    "staff_id": 33,
-    "startDate": "2018-09-05T21:00:00.000Z",
-    "endDate": "2018-09-06T02:00:00.000Z"
-  },
-  {
-    "id": "o6LZtGPB",
-    "staff_id": 41,
-    "startDate": "2018-09-05T21:00:00.000Z",
-    "endDate": "2018-09-06T03:00:00.000Z"
-  },
-  {
-    "id": "9GVcJwUQ",
-    "staff_id": 45,
-    "startDate": "2018-09-05T22:00:00.000Z",
-    "endDate": "2018-09-06T02:00:00.000Z"
-  },
-  {
-    "id": "Xnl64wmB",
-    "staff_id": 47,
-    "startDate": "2018-09-05T22:00:00.000Z",
-    "endDate": "2018-09-06T03:00:00.000Z"
   },
   {
     "id": "I5FFQ2oa",
@@ -804,12 +480,6 @@
     "endDate": "2018-09-06T09:00:00.000Z"
   },
   {
-    "id": "NbHBlE7T",
-    "staff_id": 50,
-    "startDate": "2018-09-06T02:00:00.000Z",
-    "endDate": "2018-09-06T06:00:00.000Z"
-  },
-  {
     "id": "wWLiQERZ",
     "staff_id": 1,
     "startDate": "2018-09-06T03:00:00.000Z",
@@ -822,40 +492,16 @@
     "endDate": "2018-09-06T09:00:00.000Z"
   },
   {
-    "id": "odFN8raq",
-    "staff_id": 44,
-    "startDate": "2018-09-06T06:00:00.000Z",
-    "endDate": "2018-09-06T13:00:00.000Z"
-  },
-  {
     "id": "CWJ90iLS",
     "staff_id": 20,
     "startDate": "2018-09-06T09:00:00.000Z",
     "endDate": "2018-09-06T16:00:00.000Z"
   },
   {
-    "id": "83BWmjEY",
-    "staff_id": 43,
-    "startDate": "2018-09-06T09:00:00.000Z",
-    "endDate": "2018-09-06T14:00:00.000Z"
-  },
-  {
     "id": "mImMshZu",
     "staff_id": 30,
     "startDate": "2018-09-06T11:00:00.000Z",
     "endDate": "2018-09-06T16:00:00.000Z"
-  },
-  {
-    "id": "s3lPstuq",
-    "staff_id": 32,
-    "startDate": "2018-09-06T11:00:00.000Z",
-    "endDate": "2018-09-06T19:00:00.000Z"
-  },
-  {
-    "id": "MLsTxasb",
-    "staff_id": 37,
-    "startDate": "2018-09-06T15:00:00.000Z",
-    "endDate": "2018-09-06T22:00:00.000Z"
   },
   {
     "id": "0kMV07QL",
@@ -868,12 +514,6 @@
     "staff_id": 27,
     "startDate": "2018-09-06T16:00:00.000Z",
     "endDate": "2018-09-06T21:00:00.000Z"
-  },
-  {
-    "id": "nV2Bm71b",
-    "staff_id": 35,
-    "startDate": "2018-09-06T16:00:00.000Z",
-    "endDate": "2018-09-07T00:00:00.000Z"
   },
   {
     "id": "HNjV0Rpw",
@@ -892,12 +532,6 @@
     "staff_id": 24,
     "startDate": "2018-09-06T20:00:00.000Z",
     "endDate": "2018-09-07T04:00:00.000Z"
-  },
-  {
-    "id": "e5gGJdHP",
-    "staff_id": 40,
-    "startDate": "2018-09-06T20:00:00.000Z",
-    "endDate": "2018-09-07T03:00:00.000Z"
   },
   {
     "id": "mgOfKQ2A",
@@ -948,12 +582,6 @@
     "endDate": "2018-09-07T13:00:00.000Z"
   },
   {
-    "id": "KSDeUT2Y",
-    "staff_id": 39,
-    "startDate": "2018-09-07T08:00:00.000Z",
-    "endDate": "2018-09-07T15:00:00.000Z"
-  },
-  {
     "id": "miF0jxFz",
     "staff_id": 3,
     "startDate": "2018-09-07T12:00:00.000Z",
@@ -964,36 +592,6 @@
     "staff_id": 13,
     "startDate": "2018-09-07T12:00:00.000Z",
     "endDate": "2018-09-07T17:00:00.000Z"
-  },
-  {
-    "id": "B1kyQaEb",
-    "staff_id": 49,
-    "startDate": "2018-09-07T12:00:00.000Z",
-    "endDate": "2018-09-07T16:00:00.000Z"
-  },
-  {
-    "id": "VaJu4b7I",
-    "staff_id": 41,
-    "startDate": "2018-09-07T13:00:00.000Z",
-    "endDate": "2018-09-07T19:00:00.000Z"
-  },
-  {
-    "id": "NI4uylRX",
-    "staff_id": 48,
-    "startDate": "2018-09-07T13:00:00.000Z",
-    "endDate": "2018-09-07T18:00:00.000Z"
-  },
-  {
-    "id": "Cjd8WYcN",
-    "staff_id": 32,
-    "startDate": "2018-09-07T14:00:00.000Z",
-    "endDate": "2018-09-07T22:00:00.000Z"
-  },
-  {
-    "id": "ObCF1B1n",
-    "staff_id": 44,
-    "startDate": "2018-09-07T14:00:00.000Z",
-    "endDate": "2018-09-07T21:00:00.000Z"
   },
   {
     "id": "XSxEKRFj",
@@ -1014,18 +612,6 @@
     "endDate": "2018-09-08T03:00:00.000Z"
   },
   {
-    "id": "BJJnMLdj",
-    "staff_id": 35,
-    "startDate": "2018-09-07T19:00:00.000Z",
-    "endDate": "2018-09-08T03:00:00.000Z"
-  },
-  {
-    "id": "JHWaRuRN",
-    "staff_id": 48,
-    "startDate": "2018-09-07T19:00:00.000Z",
-    "endDate": "2018-09-08T00:00:00.000Z"
-  },
-  {
     "id": "NPlfJSI2",
     "staff_id": 6,
     "startDate": "2018-09-07T21:00:00.000Z",
@@ -1038,46 +624,16 @@
     "endDate": "2018-09-08T02:00:00.000Z"
   },
   {
-    "id": "eIwWRInk",
-    "staff_id": 36,
-    "startDate": "2018-09-08T00:00:00.000Z",
-    "endDate": "2018-09-08T04:00:00.000Z"
-  },
-  {
     "id": "T6oyzSa6",
     "staff_id": 22,
     "startDate": "2018-09-08T01:00:00.000Z",
     "endDate": "2018-09-08T05:00:00.000Z"
   },
   {
-    "id": "t7T35JGn",
-    "staff_id": 43,
-    "startDate": "2018-09-08T04:00:00.000Z",
-    "endDate": "2018-09-08T09:00:00.000Z"
-  },
-  {
-    "id": "dkV9jWPK",
-    "staff_id": 37,
-    "startDate": "2018-09-08T06:00:00.000Z",
-    "endDate": "2018-09-08T13:00:00.000Z"
-  },
-  {
-    "id": "YD3tzqkM",
-    "staff_id": 41,
-    "startDate": "2018-09-08T08:00:00.000Z",
-    "endDate": "2018-09-08T14:00:00.000Z"
-  },
-  {
     "id": "vjETotOk",
     "staff_id": 14,
     "startDate": "2018-09-08T09:00:00.000Z",
     "endDate": "2018-09-08T16:00:00.000Z"
-  },
-  {
-    "id": "edRucSar",
-    "staff_id": 47,
-    "startDate": "2018-09-08T09:00:00.000Z",
-    "endDate": "2018-09-08T14:00:00.000Z"
   },
   {
     "id": "UzVlWvE1",
@@ -1108,18 +664,6 @@
     "staff_id": 15,
     "startDate": "2018-09-08T15:00:00.000Z",
     "endDate": "2018-09-08T19:00:00.000Z"
-  },
-  {
-    "id": "1pCdgMi8",
-    "staff_id": 34,
-    "startDate": "2018-09-08T15:00:00.000Z",
-    "endDate": "2018-09-08T20:00:00.000Z"
-  },
-  {
-    "id": "dlLUdyjT",
-    "staff_id": 32,
-    "startDate": "2018-09-08T16:00:00.000Z",
-    "endDate": "2018-09-09T00:00:00.000Z"
   },
   {
     "id": "Yaof5axb",
@@ -1206,24 +750,6 @@
     "endDate": "2018-09-09T10:00:00.000Z"
   },
   {
-    "id": "SSpRGPOo",
-    "staff_id": 44,
-    "startDate": "2018-09-09T02:00:00.000Z",
-    "endDate": "2018-09-09T09:00:00.000Z"
-  },
-  {
-    "id": "sYaDpTGT",
-    "staff_id": 37,
-    "startDate": "2018-09-09T04:00:00.000Z",
-    "endDate": "2018-09-09T11:00:00.000Z"
-  },
-  {
-    "id": "bEDptXhx",
-    "staff_id": 38,
-    "startDate": "2018-09-09T04:00:00.000Z",
-    "endDate": "2018-09-09T09:00:00.000Z"
-  },
-  {
     "id": "9cgEBDTB",
     "staff_id": 3,
     "startDate": "2018-09-09T05:00:00.000Z",
@@ -1248,46 +774,10 @@
     "endDate": "2018-09-09T10:00:00.000Z"
   },
   {
-    "id": "MxPgDVYq",
-    "staff_id": 41,
-    "startDate": "2018-09-09T08:00:00.000Z",
-    "endDate": "2018-09-09T14:00:00.000Z"
-  },
-  {
-    "id": "TpYGqeFc",
-    "staff_id": 31,
-    "startDate": "2018-09-09T09:00:00.000Z",
-    "endDate": "2018-09-09T17:00:00.000Z"
-  },
-  {
-    "id": "M7cf3NnS",
-    "staff_id": 36,
-    "startDate": "2018-09-09T09:00:00.000Z",
-    "endDate": "2018-09-09T13:00:00.000Z"
-  },
-  {
-    "id": "QHQZVf0K",
-    "staff_id": 46,
-    "startDate": "2018-09-09T10:00:00.000Z",
-    "endDate": "2018-09-09T15:00:00.000Z"
-  },
-  {
-    "id": "Yli6r13w",
-    "staff_id": 47,
-    "startDate": "2018-09-09T11:00:00.000Z",
-    "endDate": "2018-09-09T16:00:00.000Z"
-  },
-  {
     "id": "P4odIGAc",
     "staff_id": 17,
     "startDate": "2018-09-09T12:00:00.000Z",
     "endDate": "2018-09-09T17:00:00.000Z"
-  },
-  {
-    "id": "2QjCpvvm",
-    "staff_id": 33,
-    "startDate": "2018-09-09T14:00:00.000Z",
-    "endDate": "2018-09-09T19:00:00.000Z"
   },
   {
     "id": "721sji8e",
@@ -1296,34 +786,10 @@
     "endDate": "2018-09-09T22:00:00.000Z"
   },
   {
-    "id": "MatODxdE",
-    "staff_id": 31,
-    "startDate": "2018-09-09T15:00:00.000Z",
-    "endDate": "2018-09-09T23:00:00.000Z"
-  },
-  {
-    "id": "oFbGgYaE",
-    "staff_id": 46,
-    "startDate": "2018-09-09T15:00:00.000Z",
-    "endDate": "2018-09-09T20:00:00.000Z"
-  },
-  {
     "id": "mjKLrNgs",
     "staff_id": 30,
     "startDate": "2018-09-09T18:00:00.000Z",
     "endDate": "2018-09-09T23:00:00.000Z"
-  },
-  {
-    "id": "NoLvGLHj",
-    "staff_id": 43,
-    "startDate": "2018-09-09T18:00:00.000Z",
-    "endDate": "2018-09-09T23:00:00.000Z"
-  },
-  {
-    "id": "0m6qjWHW",
-    "staff_id": 33,
-    "startDate": "2018-09-09T19:00:00.000Z",
-    "endDate": "2018-09-10T00:00:00.000Z"
   },
   {
     "id": "uAev3Y0F",
@@ -1368,12 +834,6 @@
     "endDate": "2018-09-10T10:00:00.000Z"
   },
   {
-    "id": "y45yzQCU",
-    "staff_id": 34,
-    "startDate": "2018-09-10T03:00:00.000Z",
-    "endDate": "2018-09-10T08:00:00.000Z"
-  },
-  {
     "id": "aaZTJxj1",
     "staff_id": 14,
     "startDate": "2018-09-10T04:00:00.000Z",
@@ -1410,12 +870,6 @@
     "endDate": "2018-09-10T14:00:00.000Z"
   },
   {
-    "id": "4j8ikqJ6",
-    "staff_id": 49,
-    "startDate": "2018-09-10T10:00:00.000Z",
-    "endDate": "2018-09-10T14:00:00.000Z"
-  },
-  {
     "id": "HGgKgYFu",
     "staff_id": 11,
     "startDate": "2018-09-10T14:00:00.000Z",
@@ -1432,12 +886,6 @@
     "staff_id": 11,
     "startDate": "2018-09-10T16:00:00.000Z",
     "endDate": "2018-09-11T00:00:00.000Z"
-  },
-  {
-    "id": "7TrzOJhd",
-    "staff_id": 47,
-    "startDate": "2018-09-10T16:00:00.000Z",
-    "endDate": "2018-09-10T21:00:00.000Z"
   },
   {
     "id": "4rKamQpO",
@@ -1464,32 +912,14 @@
     "endDate": "2018-09-11T01:00:00.000Z"
   },
   {
-    "id": "4W23K8Bh",
-    "staff_id": 50,
-    "startDate": "2018-09-10T22:00:00.000Z",
-    "endDate": "2018-09-11T02:00:00.000Z"
-  },
-  {
     "id": "xWwZpPpM",
     "staff_id": 3,
     "startDate": "2018-09-11T01:00:00.000Z",
     "endDate": "2018-09-11T07:00:00.000Z"
   },
   {
-    "id": "ZPEyFBb5",
-    "staff_id": 34,
-    "startDate": "2018-09-11T01:00:00.000Z",
-    "endDate": "2018-09-11T06:00:00.000Z"
-  },
-  {
     "id": "tUbCOLBj",
     "staff_id": 13,
-    "startDate": "2018-09-11T02:00:00.000Z",
-    "endDate": "2018-09-11T07:00:00.000Z"
-  },
-  {
-    "id": "sJlBoAEb",
-    "staff_id": 33,
     "startDate": "2018-09-11T02:00:00.000Z",
     "endDate": "2018-09-11T07:00:00.000Z"
   },
@@ -1518,18 +948,6 @@
     "endDate": "2018-09-11T13:00:00.000Z"
   },
   {
-    "id": "Ov3wl02v",
-    "staff_id": 39,
-    "startDate": "2018-09-11T06:00:00.000Z",
-    "endDate": "2018-09-11T13:00:00.000Z"
-  },
-  {
-    "id": "UJyJk9kP",
-    "staff_id": 42,
-    "startDate": "2018-09-11T06:00:00.000Z",
-    "endDate": "2018-09-11T14:00:00.000Z"
-  },
-  {
     "id": "6hbFVKNG",
     "staff_id": 1,
     "startDate": "2018-09-11T07:00:00.000Z",
@@ -1538,12 +956,6 @@
   {
     "id": "gPoh2EqW",
     "staff_id": 16,
-    "startDate": "2018-09-11T08:00:00.000Z",
-    "endDate": "2018-09-11T16:00:00.000Z"
-  },
-  {
-    "id": "KCp3Ywyk",
-    "staff_id": 32,
     "startDate": "2018-09-11T08:00:00.000Z",
     "endDate": "2018-09-11T16:00:00.000Z"
   },
@@ -1560,20 +972,8 @@
     "endDate": "2018-09-11T17:00:00.000Z"
   },
   {
-    "id": "IJRFKjYK",
-    "staff_id": 41,
-    "startDate": "2018-09-11T10:00:00.000Z",
-    "endDate": "2018-09-11T16:00:00.000Z"
-  },
-  {
     "id": "MA3fQQhP",
     "staff_id": 27,
-    "startDate": "2018-09-11T11:00:00.000Z",
-    "endDate": "2018-09-11T16:00:00.000Z"
-  },
-  {
-    "id": "4TXUSFfI",
-    "staff_id": 48,
     "startDate": "2018-09-11T11:00:00.000Z",
     "endDate": "2018-09-11T16:00:00.000Z"
   },
@@ -1582,18 +982,6 @@
     "staff_id": 10,
     "startDate": "2018-09-11T13:00:00.000Z",
     "endDate": "2018-09-11T17:00:00.000Z"
-  },
-  {
-    "id": "1xydlBud",
-    "staff_id": 31,
-    "startDate": "2018-09-11T13:00:00.000Z",
-    "endDate": "2018-09-11T21:00:00.000Z"
-  },
-  {
-    "id": "rIGBkIBo",
-    "staff_id": 34,
-    "startDate": "2018-09-11T15:00:00.000Z",
-    "endDate": "2018-09-11T20:00:00.000Z"
   },
   {
     "id": "prRtwr3r",
@@ -1614,22 +1002,10 @@
     "endDate": "2018-09-12T01:00:00.000Z"
   },
   {
-    "id": "QTTmACgi",
-    "staff_id": 49,
-    "startDate": "2018-09-11T18:00:00.000Z",
-    "endDate": "2018-09-11T22:00:00.000Z"
-  },
-  {
     "id": "HzF77HlH",
     "staff_id": 24,
     "startDate": "2018-09-11T19:00:00.000Z",
     "endDate": "2018-09-12T03:00:00.000Z"
-  },
-  {
-    "id": "Pj21TlIk",
-    "staff_id": 45,
-    "startDate": "2018-09-11T19:00:00.000Z",
-    "endDate": "2018-09-11T23:00:00.000Z"
   },
   {
     "id": "4o7Rv4aX",
@@ -1648,12 +1024,6 @@
     "staff_id": 1,
     "startDate": "2018-09-11T23:00:00.000Z",
     "endDate": "2018-09-12T07:00:00.000Z"
-  },
-  {
-    "id": "pRawRQ1J",
-    "staff_id": 33,
-    "startDate": "2018-09-11T23:00:00.000Z",
-    "endDate": "2018-09-12T04:00:00.000Z"
   },
   {
     "id": "BqqquXeY",
@@ -1680,24 +1050,6 @@
     "endDate": "2018-09-12T08:00:00.000Z"
   },
   {
-    "id": "hrOiXf4E",
-    "staff_id": 44,
-    "startDate": "2018-09-12T04:00:00.000Z",
-    "endDate": "2018-09-12T11:00:00.000Z"
-  },
-  {
-    "id": "m2oLPqlG",
-    "staff_id": 41,
-    "startDate": "2018-09-12T05:00:00.000Z",
-    "endDate": "2018-09-12T11:00:00.000Z"
-  },
-  {
-    "id": "8cFCBacW",
-    "staff_id": 48,
-    "startDate": "2018-09-12T05:00:00.000Z",
-    "endDate": "2018-09-12T10:00:00.000Z"
-  },
-  {
     "id": "8B2dtUe5",
     "staff_id": 21,
     "startDate": "2018-09-12T06:00:00.000Z",
@@ -1710,58 +1062,16 @@
     "endDate": "2018-09-12T13:00:00.000Z"
   },
   {
-    "id": "qReceMe1",
-    "staff_id": 32,
-    "startDate": "2018-09-12T07:00:00.000Z",
-    "endDate": "2018-09-12T15:00:00.000Z"
-  },
-  {
     "id": "16hG2MUh",
     "staff_id": 30,
     "startDate": "2018-09-12T09:00:00.000Z",
     "endDate": "2018-09-12T14:00:00.000Z"
   },
   {
-    "id": "oR14KSm6",
-    "staff_id": 36,
-    "startDate": "2018-09-12T09:00:00.000Z",
-    "endDate": "2018-09-12T13:00:00.000Z"
-  },
-  {
-    "id": "hCTnquCy",
-    "staff_id": 47,
-    "startDate": "2018-09-12T09:00:00.000Z",
-    "endDate": "2018-09-12T14:00:00.000Z"
-  },
-  {
-    "id": "OXMj67KN",
-    "staff_id": 31,
-    "startDate": "2018-09-12T10:00:00.000Z",
-    "endDate": "2018-09-12T18:00:00.000Z"
-  },
-  {
-    "id": "yErWhtrM",
-    "staff_id": 38,
-    "startDate": "2018-09-12T10:00:00.000Z",
-    "endDate": "2018-09-12T15:00:00.000Z"
-  },
-  {
     "id": "ET9VFe21",
     "staff_id": 15,
     "startDate": "2018-09-12T11:00:00.000Z",
     "endDate": "2018-09-12T15:00:00.000Z"
-  },
-  {
-    "id": "0DjhJhWz",
-    "staff_id": 45,
-    "startDate": "2018-09-12T15:00:00.000Z",
-    "endDate": "2018-09-12T19:00:00.000Z"
-  },
-  {
-    "id": "LYVBlldv",
-    "staff_id": 41,
-    "startDate": "2018-09-12T16:00:00.000Z",
-    "endDate": "2018-09-12T22:00:00.000Z"
   },
   {
     "id": "Ty0njU7I",
@@ -1788,12 +1098,6 @@
     "endDate": "2018-09-13T06:00:00.000Z"
   },
   {
-    "id": "aKHMIfKi",
-    "staff_id": 34,
-    "startDate": "2018-09-13T00:00:00.000Z",
-    "endDate": "2018-09-13T05:00:00.000Z"
-  },
-  {
     "id": "6La1mF0e",
     "staff_id": 3,
     "startDate": "2018-09-13T01:00:00.000Z",
@@ -1804,12 +1108,6 @@
     "staff_id": 19,
     "startDate": "2018-09-13T02:00:00.000Z",
     "endDate": "2018-09-13T07:00:00.000Z"
-  },
-  {
-    "id": "MRrbYgfn",
-    "staff_id": 32,
-    "startDate": "2018-09-13T02:00:00.000Z",
-    "endDate": "2018-09-13T10:00:00.000Z"
   },
   {
     "id": "iHzDYICC",
@@ -1824,32 +1122,14 @@
     "endDate": "2018-09-13T11:00:00.000Z"
   },
   {
-    "id": "c9kGE26m",
-    "staff_id": 50,
-    "startDate": "2018-09-13T03:00:00.000Z",
-    "endDate": "2018-09-13T07:00:00.000Z"
-  },
-  {
     "id": "iSsncSfJ",
     "staff_id": 8,
     "startDate": "2018-09-13T05:00:00.000Z",
     "endDate": "2018-09-13T13:00:00.000Z"
   },
   {
-    "id": "R6bTTkOo",
-    "staff_id": 49,
-    "startDate": "2018-09-13T06:00:00.000Z",
-    "endDate": "2018-09-13T10:00:00.000Z"
-  },
-  {
     "id": "i2Lhx19A",
     "staff_id": 26,
-    "startDate": "2018-09-13T08:00:00.000Z",
-    "endDate": "2018-09-13T12:00:00.000Z"
-  },
-  {
-    "id": "BvgjXVWA",
-    "staff_id": 36,
     "startDate": "2018-09-13T08:00:00.000Z",
     "endDate": "2018-09-13T12:00:00.000Z"
   },
@@ -1860,26 +1140,8 @@
     "endDate": "2018-09-13T13:00:00.000Z"
   },
   {
-    "id": "9PVRtYcQ",
-    "staff_id": 31,
-    "startDate": "2018-09-13T10:00:00.000Z",
-    "endDate": "2018-09-13T18:00:00.000Z"
-  },
-  {
-    "id": "QbPrByoT",
-    "staff_id": 44,
-    "startDate": "2018-09-13T12:00:00.000Z",
-    "endDate": "2018-09-13T19:00:00.000Z"
-  },
-  {
     "id": "8mdkaNka",
     "staff_id": 13,
-    "startDate": "2018-09-13T13:00:00.000Z",
-    "endDate": "2018-09-13T18:00:00.000Z"
-  },
-  {
-    "id": "4Jn4EdTA",
-    "staff_id": 38,
     "startDate": "2018-09-13T13:00:00.000Z",
     "endDate": "2018-09-13T18:00:00.000Z"
   },
@@ -1896,18 +1158,6 @@
     "endDate": "2018-09-13T22:00:00.000Z"
   },
   {
-    "id": "4p59Z5ME",
-    "staff_id": 47,
-    "startDate": "2018-09-13T14:00:00.000Z",
-    "endDate": "2018-09-13T19:00:00.000Z"
-  },
-  {
-    "id": "SLvtP4kL",
-    "staff_id": 38,
-    "startDate": "2018-09-13T15:00:00.000Z",
-    "endDate": "2018-09-13T20:00:00.000Z"
-  },
-  {
     "id": "7mrl6P7O",
     "staff_id": 5,
     "startDate": "2018-09-13T16:00:00.000Z",
@@ -1917,12 +1167,6 @@
     "id": "S3cof4eJ",
     "staff_id": 9,
     "startDate": "2018-09-13T17:00:00.000Z",
-    "endDate": "2018-09-14T01:00:00.000Z"
-  },
-  {
-    "id": "YCmTRq8R",
-    "staff_id": 39,
-    "startDate": "2018-09-13T18:00:00.000Z",
     "endDate": "2018-09-14T01:00:00.000Z"
   },
   {
@@ -1950,38 +1194,8 @@
     "endDate": "2018-09-14T04:00:00.000Z"
   },
   {
-    "id": "JaF0lbYX",
-    "staff_id": 34,
-    "startDate": "2018-09-13T22:00:00.000Z",
-    "endDate": "2018-09-14T03:00:00.000Z"
-  },
-  {
-    "id": "Mv5pQGhG",
-    "staff_id": 47,
-    "startDate": "2018-09-13T22:00:00.000Z",
-    "endDate": "2018-09-14T03:00:00.000Z"
-  },
-  {
-    "id": "WocCirZS",
-    "staff_id": 37,
-    "startDate": "2018-09-14T01:00:00.000Z",
-    "endDate": "2018-09-14T08:00:00.000Z"
-  },
-  {
-    "id": "48Hu5U2L",
-    "staff_id": 33,
-    "startDate": "2018-09-14T08:00:00.000Z",
-    "endDate": "2018-09-14T13:00:00.000Z"
-  },
-  {
     "id": "YRWUbtj4",
     "staff_id": 7,
-    "startDate": "2018-09-14T09:00:00.000Z",
-    "endDate": "2018-09-14T13:00:00.000Z"
-  },
-  {
-    "id": "Cf2CcqGt",
-    "staff_id": 36,
     "startDate": "2018-09-14T09:00:00.000Z",
     "endDate": "2018-09-14T13:00:00.000Z"
   },
@@ -1990,12 +1204,6 @@
     "staff_id": 22,
     "startDate": "2018-09-14T10:00:00.000Z",
     "endDate": "2018-09-14T14:00:00.000Z"
-  },
-  {
-    "id": "3iQv6vmA",
-    "staff_id": 41,
-    "startDate": "2018-09-14T10:00:00.000Z",
-    "endDate": "2018-09-14T16:00:00.000Z"
   },
   {
     "id": "4tE1R6aw",
@@ -2016,12 +1224,6 @@
     "endDate": "2018-09-14T15:00:00.000Z"
   },
   {
-    "id": "FKsD0YEB",
-    "staff_id": 44,
-    "startDate": "2018-09-14T11:00:00.000Z",
-    "endDate": "2018-09-14T18:00:00.000Z"
-  },
-  {
     "id": "r2hGXub0",
     "staff_id": 6,
     "startDate": "2018-09-14T13:00:00.000Z",
@@ -2034,20 +1236,8 @@
     "endDate": "2018-09-14T18:00:00.000Z"
   },
   {
-    "id": "XHSORmJg",
-    "staff_id": 43,
-    "startDate": "2018-09-14T13:00:00.000Z",
-    "endDate": "2018-09-14T18:00:00.000Z"
-  },
-  {
     "id": "vQaOUNfg",
     "staff_id": 21,
-    "startDate": "2018-09-14T14:00:00.000Z",
-    "endDate": "2018-09-14T18:00:00.000Z"
-  },
-  {
-    "id": "iKqK6adX",
-    "staff_id": 49,
     "startDate": "2018-09-14T14:00:00.000Z",
     "endDate": "2018-09-14T18:00:00.000Z"
   },
@@ -2058,22 +1248,10 @@
     "endDate": "2018-09-14T19:00:00.000Z"
   },
   {
-    "id": "GwX1FBsy",
-    "staff_id": 39,
-    "startDate": "2018-09-14T15:00:00.000Z",
-    "endDate": "2018-09-14T22:00:00.000Z"
-  },
-  {
     "id": "3nfmobgo",
     "staff_id": 30,
     "startDate": "2018-09-14T16:00:00.000Z",
     "endDate": "2018-09-14T21:00:00.000Z"
-  },
-  {
-    "id": "RlGWnaMz",
-    "staff_id": 46,
-    "startDate": "2018-09-14T19:00:00.000Z",
-    "endDate": "2018-09-15T00:00:00.000Z"
   },
   {
     "id": "RzteaSho",
@@ -2086,12 +1264,6 @@
     "staff_id": 15,
     "startDate": "2018-09-14T21:00:00.000Z",
     "endDate": "2018-09-15T01:00:00.000Z"
-  },
-  {
-    "id": "GFGx9EjL",
-    "staff_id": 32,
-    "startDate": "2018-09-14T21:00:00.000Z",
-    "endDate": "2018-09-15T05:00:00.000Z"
   },
   {
     "id": "rGtrtoNQ",
@@ -2112,22 +1284,10 @@
     "endDate": "2018-09-15T08:00:00.000Z"
   },
   {
-    "id": "zJZm9jUE",
-    "staff_id": 38,
-    "startDate": "2018-09-15T07:00:00.000Z",
-    "endDate": "2018-09-15T12:00:00.000Z"
-  },
-  {
     "id": "1NkbcLa7",
     "staff_id": 13,
     "startDate": "2018-09-15T08:00:00.000Z",
     "endDate": "2018-09-15T13:00:00.000Z"
-  },
-  {
-    "id": "jRrSVDB4",
-    "staff_id": 41,
-    "startDate": "2018-09-15T09:00:00.000Z",
-    "endDate": "2018-09-15T15:00:00.000Z"
   },
   {
     "id": "PmxQjC0R",
@@ -2172,12 +1332,6 @@
     "endDate": "2018-09-16T00:00:00.000Z"
   },
   {
-    "id": "0wLDY8Al",
-    "staff_id": 40,
-    "startDate": "2018-09-15T17:00:00.000Z",
-    "endDate": "2018-09-16T00:00:00.000Z"
-  },
-  {
     "id": "T72ULJfj",
     "staff_id": 12,
     "startDate": "2018-09-15T19:00:00.000Z",
@@ -2190,22 +1344,10 @@
     "endDate": "2018-09-16T02:00:00.000Z"
   },
   {
-    "id": "vJUGNJ9B",
-    "staff_id": 41,
-    "startDate": "2018-09-15T21:00:00.000Z",
-    "endDate": "2018-09-16T03:00:00.000Z"
-  },
-  {
     "id": "fpizEsKI",
     "staff_id": 26,
     "startDate": "2018-09-16T00:00:00.000Z",
     "endDate": "2018-09-16T04:00:00.000Z"
-  },
-  {
-    "id": "7qjuHaL2",
-    "staff_id": 43,
-    "startDate": "2018-09-16T00:00:00.000Z",
-    "endDate": "2018-09-16T05:00:00.000Z"
   },
   {
     "id": "jJkKMgtV",
@@ -2244,12 +1386,6 @@
     "endDate": "2018-09-16T09:00:00.000Z"
   },
   {
-    "id": "SsCpxvww",
-    "staff_id": 38,
-    "startDate": "2018-09-16T05:00:00.000Z",
-    "endDate": "2018-09-16T10:00:00.000Z"
-  },
-  {
     "id": "lkndzBUV",
     "staff_id": 2,
     "startDate": "2018-09-16T08:00:00.000Z",
@@ -2262,50 +1398,8 @@
     "endDate": "2018-09-16T19:00:00.000Z"
   },
   {
-    "id": "WWXdC3fY",
-    "staff_id": 50,
-    "startDate": "2018-09-16T11:00:00.000Z",
-    "endDate": "2018-09-16T15:00:00.000Z"
-  },
-  {
-    "id": "aOLpLRMT",
-    "staff_id": 39,
-    "startDate": "2018-09-16T12:00:00.000Z",
-    "endDate": "2018-09-16T19:00:00.000Z"
-  },
-  {
-    "id": "vpCaF7PN",
-    "staff_id": 46,
-    "startDate": "2018-09-16T13:00:00.000Z",
-    "endDate": "2018-09-16T18:00:00.000Z"
-  },
-  {
-    "id": "eGhJ5b6A",
-    "staff_id": 33,
-    "startDate": "2018-09-16T15:00:00.000Z",
-    "endDate": "2018-09-16T20:00:00.000Z"
-  },
-  {
-    "id": "ojy4GKsY",
-    "staff_id": 49,
-    "startDate": "2018-09-16T16:00:00.000Z",
-    "endDate": "2018-09-16T20:00:00.000Z"
-  },
-  {
     "id": "7KnI4967",
     "staff_id": 4,
-    "startDate": "2018-09-16T17:00:00.000Z",
-    "endDate": "2018-09-16T21:00:00.000Z"
-  },
-  {
-    "id": "eMPNZhMU",
-    "staff_id": 46,
-    "startDate": "2018-09-16T17:00:00.000Z",
-    "endDate": "2018-09-16T22:00:00.000Z"
-  },
-  {
-    "id": "uKJB59zJ",
-    "staff_id": 50,
     "startDate": "2018-09-16T17:00:00.000Z",
     "endDate": "2018-09-16T21:00:00.000Z"
   },
@@ -2332,12 +1426,6 @@
     "staff_id": 30,
     "startDate": "2018-09-17T00:00:00.000Z",
     "endDate": "2018-09-17T05:00:00.000Z"
-  },
-  {
-    "id": "ORCLrEHc",
-    "staff_id": 47,
-    "startDate": "2018-09-17T02:00:00.000Z",
-    "endDate": "2018-09-17T07:00:00.000Z"
   },
   {
     "id": "54sH2Lci",
@@ -2370,22 +1458,10 @@
     "endDate": "2018-09-17T14:00:00.000Z"
   },
   {
-    "id": "s8lZUOJx",
-    "staff_id": 37,
-    "startDate": "2018-09-17T06:00:00.000Z",
-    "endDate": "2018-09-17T13:00:00.000Z"
-  },
-  {
     "id": "hfKnhTcR",
     "staff_id": 27,
     "startDate": "2018-09-17T07:00:00.000Z",
     "endDate": "2018-09-17T12:00:00.000Z"
-  },
-  {
-    "id": "H0RItWRh",
-    "staff_id": 36,
-    "startDate": "2018-09-17T07:00:00.000Z",
-    "endDate": "2018-09-17T11:00:00.000Z"
   },
   {
     "id": "QknKTWPL",
@@ -2400,12 +1476,6 @@
     "endDate": "2018-09-17T16:00:00.000Z"
   },
   {
-    "id": "cIrvHFnt",
-    "staff_id": 44,
-    "startDate": "2018-09-17T12:00:00.000Z",
-    "endDate": "2018-09-17T19:00:00.000Z"
-  },
-  {
     "id": "zQVfvr7C",
     "staff_id": 11,
     "startDate": "2018-09-17T13:00:00.000Z",
@@ -2416,12 +1486,6 @@
     "staff_id": 1,
     "startDate": "2018-09-17T15:00:00.000Z",
     "endDate": "2018-09-17T23:00:00.000Z"
-  },
-  {
-    "id": "YaEmRTYO",
-    "staff_id": 40,
-    "startDate": "2018-09-17T15:00:00.000Z",
-    "endDate": "2018-09-17T22:00:00.000Z"
   },
   {
     "id": "kesALJlp",
@@ -2440,12 +1504,6 @@
     "staff_id": 13,
     "startDate": "2018-09-17T18:00:00.000Z",
     "endDate": "2018-09-17T23:00:00.000Z"
-  },
-  {
-    "id": "XFhl2nVR",
-    "staff_id": 50,
-    "startDate": "2018-09-17T20:00:00.000Z",
-    "endDate": "2018-09-18T00:00:00.000Z"
   },
   {
     "id": "jHnne6jq",
@@ -2472,46 +1530,16 @@
     "endDate": "2018-09-18T06:00:00.000Z"
   },
   {
-    "id": "arUwS3jt",
-    "staff_id": 31,
-    "startDate": "2018-09-17T23:00:00.000Z",
-    "endDate": "2018-09-18T07:00:00.000Z"
-  },
-  {
     "id": "7joosbcy",
     "staff_id": 21,
     "startDate": "2018-09-18T01:00:00.000Z",
     "endDate": "2018-09-18T05:00:00.000Z"
   },
   {
-    "id": "KcQZwceA",
-    "staff_id": 43,
-    "startDate": "2018-09-18T02:00:00.000Z",
-    "endDate": "2018-09-18T07:00:00.000Z"
-  },
-  {
     "id": "EVjMpHPv",
     "staff_id": 16,
     "startDate": "2018-09-18T05:00:00.000Z",
     "endDate": "2018-09-18T13:00:00.000Z"
-  },
-  {
-    "id": "W4ElWCy9",
-    "staff_id": 34,
-    "startDate": "2018-09-18T08:00:00.000Z",
-    "endDate": "2018-09-18T13:00:00.000Z"
-  },
-  {
-    "id": "QsWgSh3J",
-    "staff_id": 33,
-    "startDate": "2018-09-18T09:00:00.000Z",
-    "endDate": "2018-09-18T14:00:00.000Z"
-  },
-  {
-    "id": "bA9v7qaB",
-    "staff_id": 38,
-    "startDate": "2018-09-18T09:00:00.000Z",
-    "endDate": "2018-09-18T14:00:00.000Z"
   },
   {
     "id": "ztX2opyj",
@@ -2532,40 +1560,10 @@
     "endDate": "2018-09-18T19:00:00.000Z"
   },
   {
-    "id": "jTDRwZqI",
-    "staff_id": 45,
-    "startDate": "2018-09-18T11:00:00.000Z",
-    "endDate": "2018-09-18T15:00:00.000Z"
-  },
-  {
     "id": "JFBLtKw9",
     "staff_id": 30,
     "startDate": "2018-09-18T12:00:00.000Z",
     "endDate": "2018-09-18T17:00:00.000Z"
-  },
-  {
-    "id": "xD01F1Gp",
-    "staff_id": 41,
-    "startDate": "2018-09-18T12:00:00.000Z",
-    "endDate": "2018-09-18T18:00:00.000Z"
-  },
-  {
-    "id": "NvyFPZsk",
-    "staff_id": 48,
-    "startDate": "2018-09-18T12:00:00.000Z",
-    "endDate": "2018-09-18T17:00:00.000Z"
-  },
-  {
-    "id": "MhX7f2rL",
-    "staff_id": 39,
-    "startDate": "2018-09-18T13:00:00.000Z",
-    "endDate": "2018-09-18T20:00:00.000Z"
-  },
-  {
-    "id": "cAxticNc",
-    "staff_id": 35,
-    "startDate": "2018-09-18T14:00:00.000Z",
-    "endDate": "2018-09-18T22:00:00.000Z"
   },
   {
     "id": "EjKLwDyi",
@@ -2586,18 +1584,6 @@
     "endDate": "2018-09-18T20:00:00.000Z"
   },
   {
-    "id": "DFCSL24K",
-    "staff_id": 38,
-    "startDate": "2018-09-18T17:00:00.000Z",
-    "endDate": "2018-09-18T22:00:00.000Z"
-  },
-  {
-    "id": "enveZll8",
-    "staff_id": 37,
-    "startDate": "2018-09-18T18:00:00.000Z",
-    "endDate": "2018-09-19T01:00:00.000Z"
-  },
-  {
     "id": "k3hGqfXd",
     "staff_id": 11,
     "startDate": "2018-09-18T19:00:00.000Z",
@@ -2610,46 +1596,16 @@
     "endDate": "2018-09-19T00:00:00.000Z"
   },
   {
-    "id": "t0Wk83B4",
-    "staff_id": 45,
-    "startDate": "2018-09-18T19:00:00.000Z",
-    "endDate": "2018-09-18T23:00:00.000Z"
-  },
-  {
     "id": "w8gfA6Ke",
     "staff_id": 30,
     "startDate": "2018-09-18T21:00:00.000Z",
     "endDate": "2018-09-19T02:00:00.000Z"
   },
   {
-    "id": "RRZDcvuV",
-    "staff_id": 40,
-    "startDate": "2018-09-18T21:00:00.000Z",
-    "endDate": "2018-09-19T04:00:00.000Z"
-  },
-  {
-    "id": "nF5Np8RM",
-    "staff_id": 42,
-    "startDate": "2018-09-19T00:00:00.000Z",
-    "endDate": "2018-09-19T08:00:00.000Z"
-  },
-  {
-    "id": "zyfAfo4e",
-    "staff_id": 33,
-    "startDate": "2018-09-19T02:00:00.000Z",
-    "endDate": "2018-09-19T07:00:00.000Z"
-  },
-  {
     "id": "zv4uWtzW",
     "staff_id": 26,
     "startDate": "2018-09-19T03:00:00.000Z",
     "endDate": "2018-09-19T07:00:00.000Z"
-  },
-  {
-    "id": "h63YiMk5",
-    "staff_id": 46,
-    "startDate": "2018-09-19T03:00:00.000Z",
-    "endDate": "2018-09-19T08:00:00.000Z"
   },
   {
     "id": "flbURjLx",
@@ -2664,18 +1620,6 @@
     "endDate": "2018-09-19T13:00:00.000Z"
   },
   {
-    "id": "Qlv7NCk5",
-    "staff_id": 44,
-    "startDate": "2018-09-19T05:00:00.000Z",
-    "endDate": "2018-09-19T12:00:00.000Z"
-  },
-  {
-    "id": "NDZKuDM9",
-    "staff_id": 47,
-    "startDate": "2018-09-19T05:00:00.000Z",
-    "endDate": "2018-09-19T10:00:00.000Z"
-  },
-  {
     "id": "bfA8F7UT",
     "staff_id": 13,
     "startDate": "2018-09-19T06:00:00.000Z",
@@ -2688,22 +1632,10 @@
     "endDate": "2018-09-19T13:00:00.000Z"
   },
   {
-    "id": "3x1bbZAF",
-    "staff_id": 32,
-    "startDate": "2018-09-19T09:00:00.000Z",
-    "endDate": "2018-09-19T17:00:00.000Z"
-  },
-  {
     "id": "b6kPTD7U",
     "staff_id": 3,
     "startDate": "2018-09-19T10:00:00.000Z",
     "endDate": "2018-09-19T16:00:00.000Z"
-  },
-  {
-    "id": "f7oHPIYU",
-    "staff_id": 36,
-    "startDate": "2018-09-19T10:00:00.000Z",
-    "endDate": "2018-09-19T14:00:00.000Z"
   },
   {
     "id": "B8S4YOx9",
@@ -2742,12 +1674,6 @@
     "endDate": "2018-09-20T01:00:00.000Z"
   },
   {
-    "id": "6NIfs2qC",
-    "staff_id": 40,
-    "startDate": "2018-09-19T20:00:00.000Z",
-    "endDate": "2018-09-20T03:00:00.000Z"
-  },
-  {
     "id": "7UQPtrz1",
     "staff_id": 17,
     "startDate": "2018-09-19T22:00:00.000Z",
@@ -2760,34 +1686,10 @@
     "endDate": "2018-09-20T04:00:00.000Z"
   },
   {
-    "id": "Q3MHiwWn",
-    "staff_id": 48,
-    "startDate": "2018-09-20T00:00:00.000Z",
-    "endDate": "2018-09-20T05:00:00.000Z"
-  },
-  {
     "id": "VewMxC3S",
     "staff_id": 27,
     "startDate": "2018-09-20T02:00:00.000Z",
     "endDate": "2018-09-20T07:00:00.000Z"
-  },
-  {
-    "id": "8TxfOAAW",
-    "staff_id": 43,
-    "startDate": "2018-09-20T02:00:00.000Z",
-    "endDate": "2018-09-20T07:00:00.000Z"
-  },
-  {
-    "id": "0DvqjxgA",
-    "staff_id": 47,
-    "startDate": "2018-09-20T05:00:00.000Z",
-    "endDate": "2018-09-20T10:00:00.000Z"
-  },
-  {
-    "id": "MJV8J0vF",
-    "staff_id": 37,
-    "startDate": "2018-09-20T07:00:00.000Z",
-    "endDate": "2018-09-20T14:00:00.000Z"
   },
   {
     "id": "k6eVq1Gb",
@@ -2796,22 +1698,10 @@
     "endDate": "2018-09-20T12:00:00.000Z"
   },
   {
-    "id": "wS60n7kN",
-    "staff_id": 45,
-    "startDate": "2018-09-20T08:00:00.000Z",
-    "endDate": "2018-09-20T12:00:00.000Z"
-  },
-  {
     "id": "txxArB5G",
     "staff_id": 6,
     "startDate": "2018-09-20T10:00:00.000Z",
     "endDate": "2018-09-20T18:00:00.000Z"
-  },
-  {
-    "id": "fzjlXSgx",
-    "staff_id": 35,
-    "startDate": "2018-09-20T11:00:00.000Z",
-    "endDate": "2018-09-20T19:00:00.000Z"
   },
   {
     "id": "zD1aHXsb",
@@ -2844,32 +1734,14 @@
     "endDate": "2018-09-21T01:00:00.000Z"
   },
   {
-    "id": "a3T6xUtW",
-    "staff_id": 34,
-    "startDate": "2018-09-20T17:00:00.000Z",
-    "endDate": "2018-09-20T22:00:00.000Z"
-  },
-  {
     "id": "OjMLLJjf",
     "staff_id": 16,
     "startDate": "2018-09-20T18:00:00.000Z",
     "endDate": "2018-09-21T02:00:00.000Z"
   },
   {
-    "id": "Kr4ErbIt",
-    "staff_id": 38,
-    "startDate": "2018-09-20T20:00:00.000Z",
-    "endDate": "2018-09-21T01:00:00.000Z"
-  },
-  {
     "id": "8WStHNZi",
     "staff_id": 15,
-    "startDate": "2018-09-20T23:00:00.000Z",
-    "endDate": "2018-09-21T03:00:00.000Z"
-  },
-  {
-    "id": "EbTuGl9i",
-    "staff_id": 36,
     "startDate": "2018-09-20T23:00:00.000Z",
     "endDate": "2018-09-21T03:00:00.000Z"
   },
@@ -2886,18 +1758,6 @@
     "endDate": "2018-09-21T09:00:00.000Z"
   },
   {
-    "id": "rHEE604Z",
-    "staff_id": 46,
-    "startDate": "2018-09-21T01:00:00.000Z",
-    "endDate": "2018-09-21T06:00:00.000Z"
-  },
-  {
-    "id": "4nDoDB6W",
-    "staff_id": 50,
-    "startDate": "2018-09-21T02:00:00.000Z",
-    "endDate": "2018-09-21T06:00:00.000Z"
-  },
-  {
     "id": "zKeXx7dr",
     "staff_id": 22,
     "startDate": "2018-09-21T03:00:00.000Z",
@@ -2910,46 +1770,10 @@
     "endDate": "2018-09-21T12:00:00.000Z"
   },
   {
-    "id": "52FaJypw",
-    "staff_id": 31,
-    "startDate": "2018-09-21T04:00:00.000Z",
-    "endDate": "2018-09-21T12:00:00.000Z"
-  },
-  {
-    "id": "ZokmP9Ep",
-    "staff_id": 32,
-    "startDate": "2018-09-21T04:00:00.000Z",
-    "endDate": "2018-09-21T12:00:00.000Z"
-  },
-  {
     "id": "5ybX3doC",
     "staff_id": 30,
     "startDate": "2018-09-21T05:00:00.000Z",
     "endDate": "2018-09-21T10:00:00.000Z"
-  },
-  {
-    "id": "cqYfnS5c",
-    "staff_id": 44,
-    "startDate": "2018-09-21T06:00:00.000Z",
-    "endDate": "2018-09-21T13:00:00.000Z"
-  },
-  {
-    "id": "9g0NR1AT",
-    "staff_id": 39,
-    "startDate": "2018-09-21T07:00:00.000Z",
-    "endDate": "2018-09-21T14:00:00.000Z"
-  },
-  {
-    "id": "qrUuVJdN",
-    "staff_id": 35,
-    "startDate": "2018-09-21T08:00:00.000Z",
-    "endDate": "2018-09-21T16:00:00.000Z"
-  },
-  {
-    "id": "sT9VwCW9",
-    "staff_id": 43,
-    "startDate": "2018-09-21T08:00:00.000Z",
-    "endDate": "2018-09-21T13:00:00.000Z"
   },
   {
     "id": "shjLQEHR",
@@ -3006,12 +1830,6 @@
     "endDate": "2018-09-21T22:00:00.000Z"
   },
   {
-    "id": "ByvPpBjo",
-    "staff_id": 37,
-    "startDate": "2018-09-21T16:00:00.000Z",
-    "endDate": "2018-09-21T23:00:00.000Z"
-  },
-  {
     "id": "W8fy8Hkz",
     "staff_id": 30,
     "startDate": "2018-09-21T18:00:00.000Z",
@@ -3024,12 +1842,6 @@
     "endDate": "2018-09-21T23:00:00.000Z"
   },
   {
-    "id": "2A82pPAF",
-    "staff_id": 35,
-    "startDate": "2018-09-21T19:00:00.000Z",
-    "endDate": "2018-09-22T03:00:00.000Z"
-  },
-  {
     "id": "0QtDSXYR",
     "staff_id": 6,
     "startDate": "2018-09-21T20:00:00.000Z",
@@ -3040,12 +1852,6 @@
     "staff_id": 9,
     "startDate": "2018-09-21T21:00:00.000Z",
     "endDate": "2018-09-22T05:00:00.000Z"
-  },
-  {
-    "id": "Rai4pRER",
-    "staff_id": 33,
-    "startDate": "2018-09-21T22:00:00.000Z",
-    "endDate": "2018-09-22T03:00:00.000Z"
   },
   {
     "id": "tQUfLhev",
@@ -3066,28 +1872,10 @@
     "endDate": "2018-09-22T04:00:00.000Z"
   },
   {
-    "id": "YbiIolAL",
-    "staff_id": 32,
-    "startDate": "2018-09-22T00:00:00.000Z",
-    "endDate": "2018-09-22T08:00:00.000Z"
-  },
-  {
-    "id": "CDrhYqXp",
-    "staff_id": 42,
-    "startDate": "2018-09-22T00:00:00.000Z",
-    "endDate": "2018-09-22T08:00:00.000Z"
-  },
-  {
     "id": "8Cq2TLzT",
     "staff_id": 20,
     "startDate": "2018-09-22T01:00:00.000Z",
     "endDate": "2018-09-22T08:00:00.000Z"
-  },
-  {
-    "id": "XoRndJz2",
-    "staff_id": 44,
-    "startDate": "2018-09-22T04:00:00.000Z",
-    "endDate": "2018-09-22T11:00:00.000Z"
   },
   {
     "id": "wUUyvBwI",
@@ -3106,24 +1894,6 @@
     "staff_id": 25,
     "startDate": "2018-09-22T06:00:00.000Z",
     "endDate": "2018-09-22T10:00:00.000Z"
-  },
-  {
-    "id": "jbclUl6Q",
-    "staff_id": 34,
-    "startDate": "2018-09-22T06:00:00.000Z",
-    "endDate": "2018-09-22T11:00:00.000Z"
-  },
-  {
-    "id": "xQiRLe6A",
-    "staff_id": 43,
-    "startDate": "2018-09-22T07:00:00.000Z",
-    "endDate": "2018-09-22T12:00:00.000Z"
-  },
-  {
-    "id": "pBf0nLXM",
-    "staff_id": 46,
-    "startDate": "2018-09-22T07:00:00.000Z",
-    "endDate": "2018-09-22T12:00:00.000Z"
   },
   {
     "id": "NtchyV7n",
@@ -3150,52 +1920,16 @@
     "endDate": "2018-09-22T20:00:00.000Z"
   },
   {
-    "id": "MWSXK4f2",
-    "staff_id": 47,
-    "startDate": "2018-09-22T12:00:00.000Z",
-    "endDate": "2018-09-22T17:00:00.000Z"
-  },
-  {
-    "id": "YoaXgEvZ",
-    "staff_id": 48,
-    "startDate": "2018-09-22T12:00:00.000Z",
-    "endDate": "2018-09-22T17:00:00.000Z"
-  },
-  {
-    "id": "pW8a2pLF",
-    "staff_id": 50,
-    "startDate": "2018-09-22T13:00:00.000Z",
-    "endDate": "2018-09-22T17:00:00.000Z"
-  },
-  {
     "id": "ypPjcees",
     "staff_id": 11,
     "startDate": "2018-09-22T14:00:00.000Z",
     "endDate": "2018-09-22T22:00:00.000Z"
   },
   {
-    "id": "XpXeYJCs",
-    "staff_id": 39,
-    "startDate": "2018-09-22T14:00:00.000Z",
-    "endDate": "2018-09-22T21:00:00.000Z"
-  },
-  {
     "id": "jncgrvC1",
     "staff_id": 13,
     "startDate": "2018-09-22T17:00:00.000Z",
     "endDate": "2018-09-22T22:00:00.000Z"
-  },
-  {
-    "id": "jwQ7gSHh",
-    "staff_id": 41,
-    "startDate": "2018-09-22T17:00:00.000Z",
-    "endDate": "2018-09-22T23:00:00.000Z"
-  },
-  {
-    "id": "ikUbu9bK",
-    "staff_id": 31,
-    "startDate": "2018-09-22T21:00:00.000Z",
-    "endDate": "2018-09-23T05:00:00.000Z"
   },
   {
     "id": "bozaz4MS",
@@ -3216,20 +1950,8 @@
     "endDate": "2018-09-23T08:00:00.000Z"
   },
   {
-    "id": "agnLQukI",
-    "staff_id": 38,
-    "startDate": "2018-09-23T01:00:00.000Z",
-    "endDate": "2018-09-23T06:00:00.000Z"
-  },
-  {
     "id": "uZoDJzG6",
     "staff_id": 20,
-    "startDate": "2018-09-23T02:00:00.000Z",
-    "endDate": "2018-09-23T09:00:00.000Z"
-  },
-  {
-    "id": "bA7xUPXA",
-    "staff_id": 40,
     "startDate": "2018-09-23T02:00:00.000Z",
     "endDate": "2018-09-23T09:00:00.000Z"
   },
@@ -3252,26 +1974,8 @@
     "endDate": "2018-09-23T12:00:00.000Z"
   },
   {
-    "id": "5DvcMBia",
-    "staff_id": 36,
-    "startDate": "2018-09-23T05:00:00.000Z",
-    "endDate": "2018-09-23T09:00:00.000Z"
-  },
-  {
-    "id": "f03MuRoT",
-    "staff_id": 34,
-    "startDate": "2018-09-23T06:00:00.000Z",
-    "endDate": "2018-09-23T11:00:00.000Z"
-  },
-  {
     "id": "vakNQ5ru",
     "staff_id": 8,
-    "startDate": "2018-09-23T08:00:00.000Z",
-    "endDate": "2018-09-23T16:00:00.000Z"
-  },
-  {
-    "id": "d8Q0fV9Q",
-    "staff_id": 42,
     "startDate": "2018-09-23T08:00:00.000Z",
     "endDate": "2018-09-23T16:00:00.000Z"
   },
@@ -3284,12 +1988,6 @@
   {
     "id": "lgiWgEoJ",
     "staff_id": 7,
-    "startDate": "2018-09-23T10:00:00.000Z",
-    "endDate": "2018-09-23T14:00:00.000Z"
-  },
-  {
-    "id": "WHyYQgu4",
-    "staff_id": 49,
     "startDate": "2018-09-23T10:00:00.000Z",
     "endDate": "2018-09-23T14:00:00.000Z"
   },
@@ -3318,12 +2016,6 @@
     "endDate": "2018-09-24T01:00:00.000Z"
   },
   {
-    "id": "p3EMDZKd",
-    "staff_id": 49,
-    "startDate": "2018-09-23T17:00:00.000Z",
-    "endDate": "2018-09-23T21:00:00.000Z"
-  },
-  {
     "id": "xgOrLdRZ",
     "staff_id": 13,
     "startDate": "2018-09-23T18:00:00.000Z",
@@ -3334,12 +2026,6 @@
     "staff_id": 27,
     "startDate": "2018-09-23T18:00:00.000Z",
     "endDate": "2018-09-23T23:00:00.000Z"
-  },
-  {
-    "id": "B2Et3wTi",
-    "staff_id": 41,
-    "startDate": "2018-09-23T18:00:00.000Z",
-    "endDate": "2018-09-24T00:00:00.000Z"
   },
   {
     "id": "ZptRFRnl",
@@ -3360,52 +2046,16 @@
     "endDate": "2018-09-24T01:00:00.000Z"
   },
   {
-    "id": "G8v8fph2",
-    "staff_id": 38,
-    "startDate": "2018-09-23T21:00:00.000Z",
-    "endDate": "2018-09-24T02:00:00.000Z"
-  },
-  {
-    "id": "bxootOhZ",
-    "staff_id": 33,
-    "startDate": "2018-09-23T22:00:00.000Z",
-    "endDate": "2018-09-24T03:00:00.000Z"
-  },
-  {
-    "id": "0whZA0xn",
-    "staff_id": 39,
-    "startDate": "2018-09-23T22:00:00.000Z",
-    "endDate": "2018-09-24T05:00:00.000Z"
-  },
-  {
-    "id": "ovyVo3r5",
-    "staff_id": 44,
-    "startDate": "2018-09-23T23:00:00.000Z",
-    "endDate": "2018-09-24T06:00:00.000Z"
-  },
-  {
     "id": "6NjqFYY8",
     "staff_id": 22,
     "startDate": "2018-09-24T00:00:00.000Z",
     "endDate": "2018-09-24T04:00:00.000Z"
   },
   {
-    "id": "iK4mKP4i",
-    "staff_id": 37,
-    "startDate": "2018-09-24T00:00:00.000Z",
-    "endDate": "2018-09-24T07:00:00.000Z"
-  },
-  {
     "id": "7pgUxLLm",
     "staff_id": 29,
     "startDate": "2018-09-24T01:00:00.000Z",
     "endDate": "2018-09-24T05:00:00.000Z"
-  },
-  {
-    "id": "E3wGFlrh",
-    "staff_id": 50,
-    "startDate": "2018-09-24T02:00:00.000Z",
-    "endDate": "2018-09-24T06:00:00.000Z"
   },
   {
     "id": "5Alrsmtk",
@@ -3420,28 +2070,10 @@
     "endDate": "2018-09-24T08:00:00.000Z"
   },
   {
-    "id": "wIMvdBdd",
-    "staff_id": 47,
-    "startDate": "2018-09-24T08:00:00.000Z",
-    "endDate": "2018-09-24T13:00:00.000Z"
-  },
-  {
-    "id": "LsbkDEXu",
-    "staff_id": 43,
-    "startDate": "2018-09-24T09:00:00.000Z",
-    "endDate": "2018-09-24T14:00:00.000Z"
-  },
-  {
     "id": "NdpbTHHf",
     "staff_id": 10,
     "startDate": "2018-09-24T11:00:00.000Z",
     "endDate": "2018-09-24T15:00:00.000Z"
-  },
-  {
-    "id": "q85n5iPP",
-    "staff_id": 32,
-    "startDate": "2018-09-24T12:00:00.000Z",
-    "endDate": "2018-09-24T20:00:00.000Z"
   },
   {
     "id": "cDskU2GQ",
@@ -3456,22 +2088,10 @@
     "endDate": "2018-09-24T22:00:00.000Z"
   },
   {
-    "id": "U22XDA65",
-    "staff_id": 40,
-    "startDate": "2018-09-24T14:00:00.000Z",
-    "endDate": "2018-09-24T21:00:00.000Z"
-  },
-  {
     "id": "myY6VjGr",
     "staff_id": 15,
     "startDate": "2018-09-24T15:00:00.000Z",
     "endDate": "2018-09-24T19:00:00.000Z"
-  },
-  {
-    "id": "2HywQFxP",
-    "staff_id": 40,
-    "startDate": "2018-09-24T15:00:00.000Z",
-    "endDate": "2018-09-24T22:00:00.000Z"
   },
   {
     "id": "1oBkvnpg",
@@ -3496,12 +2116,6 @@
     "staff_id": 20,
     "startDate": "2018-09-24T19:00:00.000Z",
     "endDate": "2018-09-25T02:00:00.000Z"
-  },
-  {
-    "id": "lGpw4uie",
-    "staff_id": 32,
-    "startDate": "2018-09-24T19:00:00.000Z",
-    "endDate": "2018-09-25T03:00:00.000Z"
   },
   {
     "id": "ivJgjPtd",
@@ -3540,34 +2154,10 @@
     "endDate": "2018-09-25T05:00:00.000Z"
   },
   {
-    "id": "t6VBOz9S",
-    "staff_id": 31,
-    "startDate": "2018-09-25T04:00:00.000Z",
-    "endDate": "2018-09-25T12:00:00.000Z"
-  },
-  {
-    "id": "sLKhNNXQ",
-    "staff_id": 34,
-    "startDate": "2018-09-25T04:00:00.000Z",
-    "endDate": "2018-09-25T09:00:00.000Z"
-  },
-  {
-    "id": "wnutpx4W",
-    "staff_id": 36,
-    "startDate": "2018-09-25T04:00:00.000Z",
-    "endDate": "2018-09-25T08:00:00.000Z"
-  },
-  {
     "id": "wRhvYdq0",
     "staff_id": 2,
     "startDate": "2018-09-25T05:00:00.000Z",
     "endDate": "2018-09-25T13:00:00.000Z"
-  },
-  {
-    "id": "zEV27zZr",
-    "staff_id": 41,
-    "startDate": "2018-09-25T05:00:00.000Z",
-    "endDate": "2018-09-25T11:00:00.000Z"
   },
   {
     "id": "jnQ7TJAp",
@@ -3576,28 +2166,10 @@
     "endDate": "2018-09-25T14:00:00.000Z"
   },
   {
-    "id": "yCsPnVpw",
-    "staff_id": 43,
-    "startDate": "2018-09-25T09:00:00.000Z",
-    "endDate": "2018-09-25T14:00:00.000Z"
-  },
-  {
-    "id": "zAKYShSf",
-    "staff_id": 44,
-    "startDate": "2018-09-25T10:00:00.000Z",
-    "endDate": "2018-09-25T17:00:00.000Z"
-  },
-  {
     "id": "KFY3BOsH",
     "staff_id": 17,
     "startDate": "2018-09-25T14:00:00.000Z",
     "endDate": "2018-09-25T19:00:00.000Z"
-  },
-  {
-    "id": "SBdxRDLP",
-    "staff_id": 39,
-    "startDate": "2018-09-25T14:00:00.000Z",
-    "endDate": "2018-09-25T21:00:00.000Z"
   },
   {
     "id": "eMIby6pn",
@@ -3606,34 +2178,10 @@
     "endDate": "2018-09-25T20:00:00.000Z"
   },
   {
-    "id": "MUoTUh1a",
-    "staff_id": 35,
-    "startDate": "2018-09-25T16:00:00.000Z",
-    "endDate": "2018-09-26T00:00:00.000Z"
-  },
-  {
-    "id": "NgPw9bD4",
-    "staff_id": 39,
-    "startDate": "2018-09-25T16:00:00.000Z",
-    "endDate": "2018-09-25T23:00:00.000Z"
-  },
-  {
     "id": "3aLaPWpi",
     "staff_id": 7,
     "startDate": "2018-09-25T19:00:00.000Z",
     "endDate": "2018-09-25T23:00:00.000Z"
-  },
-  {
-    "id": "Jq4xdexI",
-    "staff_id": 42,
-    "startDate": "2018-09-25T19:00:00.000Z",
-    "endDate": "2018-09-26T03:00:00.000Z"
-  },
-  {
-    "id": "4QxY4G3P",
-    "staff_id": 40,
-    "startDate": "2018-09-25T20:00:00.000Z",
-    "endDate": "2018-09-26T03:00:00.000Z"
   },
   {
     "id": "fm7bgrM4",
@@ -3654,18 +2202,6 @@
     "endDate": "2018-09-26T04:00:00.000Z"
   },
   {
-    "id": "OjizC2i9",
-    "staff_id": 48,
-    "startDate": "2018-09-26T00:00:00.000Z",
-    "endDate": "2018-09-26T05:00:00.000Z"
-  },
-  {
-    "id": "U4mrepOR",
-    "staff_id": 36,
-    "startDate": "2018-09-26T02:00:00.000Z",
-    "endDate": "2018-09-26T06:00:00.000Z"
-  },
-  {
     "id": "jyMwauuP",
     "staff_id": 11,
     "startDate": "2018-09-26T03:00:00.000Z",
@@ -3684,12 +2220,6 @@
     "endDate": "2018-09-26T08:00:00.000Z"
   },
   {
-    "id": "tk89NRck",
-    "staff_id": 33,
-    "startDate": "2018-09-26T03:00:00.000Z",
-    "endDate": "2018-09-26T08:00:00.000Z"
-  },
-  {
     "id": "c001IR2K",
     "staff_id": 10,
     "startDate": "2018-09-26T04:00:00.000Z",
@@ -3700,12 +2230,6 @@
     "staff_id": 19,
     "startDate": "2018-09-26T04:00:00.000Z",
     "endDate": "2018-09-26T09:00:00.000Z"
-  },
-  {
-    "id": "0HTjfciR",
-    "staff_id": 31,
-    "startDate": "2018-09-26T04:00:00.000Z",
-    "endDate": "2018-09-26T12:00:00.000Z"
   },
   {
     "id": "H2qjtdY6",
@@ -3732,12 +2256,6 @@
     "endDate": "2018-09-26T16:00:00.000Z"
   },
   {
-    "id": "rfjamZH5",
-    "staff_id": 50,
-    "startDate": "2018-09-26T11:00:00.000Z",
-    "endDate": "2018-09-26T15:00:00.000Z"
-  },
-  {
     "id": "pL1jSdXB",
     "staff_id": 1,
     "startDate": "2018-09-26T12:00:00.000Z",
@@ -3756,12 +2274,6 @@
     "endDate": "2018-09-26T20:00:00.000Z"
   },
   {
-    "id": "DqLJDncj",
-    "staff_id": 46,
-    "startDate": "2018-09-26T12:00:00.000Z",
-    "endDate": "2018-09-26T17:00:00.000Z"
-  },
-  {
     "id": "sgEbIqxy",
     "staff_id": 17,
     "startDate": "2018-09-26T13:00:00.000Z",
@@ -3772,12 +2284,6 @@
     "staff_id": 18,
     "startDate": "2018-09-26T14:00:00.000Z",
     "endDate": "2018-09-26T20:00:00.000Z"
-  },
-  {
-    "id": "er7K8Lpv",
-    "staff_id": 34,
-    "startDate": "2018-09-26T14:00:00.000Z",
-    "endDate": "2018-09-26T19:00:00.000Z"
   },
   {
     "id": "riFfxjeM",
@@ -3794,12 +2300,6 @@
   {
     "id": "649S6BHY",
     "staff_id": 28,
-    "startDate": "2018-09-26T18:00:00.000Z",
-    "endDate": "2018-09-27T02:00:00.000Z"
-  },
-  {
-    "id": "p9SYR7Oo",
-    "staff_id": 42,
     "startDate": "2018-09-26T18:00:00.000Z",
     "endDate": "2018-09-27T02:00:00.000Z"
   },
@@ -3828,21 +2328,9 @@
     "endDate": "2018-09-27T01:00:00.000Z"
   },
   {
-    "id": "DSLFSWvz",
-    "staff_id": 44,
-    "startDate": "2018-09-26T22:00:00.000Z",
-    "endDate": "2018-09-27T05:00:00.000Z"
-  },
-  {
     "id": "jqHpB9kE",
     "staff_id": 5,
     "startDate": "2018-09-26T23:00:00.000Z",
-    "endDate": "2018-09-27T07:00:00.000Z"
-  },
-  {
-    "id": "LI9ZStpn",
-    "staff_id": 39,
-    "startDate": "2018-09-27T00:00:00.000Z",
     "endDate": "2018-09-27T07:00:00.000Z"
   },
   {
@@ -3854,12 +2342,6 @@
   {
     "id": "wEugzVzO",
     "staff_id": 19,
-    "startDate": "2018-09-27T04:00:00.000Z",
-    "endDate": "2018-09-27T09:00:00.000Z"
-  },
-  {
-    "id": "ut0cHVYr",
-    "staff_id": 33,
     "startDate": "2018-09-27T04:00:00.000Z",
     "endDate": "2018-09-27T09:00:00.000Z"
   },
@@ -3882,40 +2364,16 @@
     "endDate": "2018-09-27T10:00:00.000Z"
   },
   {
-    "id": "10gPYnHo",
-    "staff_id": 35,
-    "startDate": "2018-09-27T05:00:00.000Z",
-    "endDate": "2018-09-27T13:00:00.000Z"
-  },
-  {
     "id": "3yaEzHIA",
     "staff_id": 30,
     "startDate": "2018-09-27T06:00:00.000Z",
     "endDate": "2018-09-27T11:00:00.000Z"
   },
   {
-    "id": "k1SyUsDv",
-    "staff_id": 43,
-    "startDate": "2018-09-27T07:00:00.000Z",
-    "endDate": "2018-09-27T12:00:00.000Z"
-  },
-  {
     "id": "xbvqEdOJ",
     "staff_id": 2,
     "startDate": "2018-09-27T08:00:00.000Z",
     "endDate": "2018-09-27T16:00:00.000Z"
-  },
-  {
-    "id": "1oPgrl0e",
-    "staff_id": 49,
-    "startDate": "2018-09-27T08:00:00.000Z",
-    "endDate": "2018-09-27T12:00:00.000Z"
-  },
-  {
-    "id": "Nvn1RyVH",
-    "staff_id": 32,
-    "startDate": "2018-09-27T09:00:00.000Z",
-    "endDate": "2018-09-27T17:00:00.000Z"
   },
   {
     "id": "pPJUgmcS",
@@ -3936,22 +2394,10 @@
     "endDate": "2018-09-28T02:00:00.000Z"
   },
   {
-    "id": "9G6iYkTS",
-    "staff_id": 33,
-    "startDate": "2018-09-27T19:00:00.000Z",
-    "endDate": "2018-09-28T00:00:00.000Z"
-  },
-  {
     "id": "JKPUbj7g",
     "staff_id": 18,
     "startDate": "2018-09-27T20:00:00.000Z",
     "endDate": "2018-09-28T02:00:00.000Z"
-  },
-  {
-    "id": "nClgFQpk",
-    "staff_id": 38,
-    "startDate": "2018-09-27T20:00:00.000Z",
-    "endDate": "2018-09-28T01:00:00.000Z"
   },
   {
     "id": "FlPBHhYL",
@@ -3966,46 +2412,16 @@
     "endDate": "2018-09-28T03:00:00.000Z"
   },
   {
-    "id": "tNXmMgXn",
-    "staff_id": 44,
-    "startDate": "2018-09-28T00:00:00.000Z",
-    "endDate": "2018-09-28T07:00:00.000Z"
-  },
-  {
     "id": "BXFP9nUd",
     "staff_id": 15,
     "startDate": "2018-09-28T02:00:00.000Z",
     "endDate": "2018-09-28T06:00:00.000Z"
   },
   {
-    "id": "Ahjlb7Vv",
-    "staff_id": 39,
-    "startDate": "2018-09-28T03:00:00.000Z",
-    "endDate": "2018-09-28T10:00:00.000Z"
-  },
-  {
     "id": "PhSlPt84",
     "staff_id": 26,
     "startDate": "2018-09-28T04:00:00.000Z",
     "endDate": "2018-09-28T08:00:00.000Z"
-  },
-  {
-    "id": "e2t66e8Q",
-    "staff_id": 31,
-    "startDate": "2018-09-28T07:00:00.000Z",
-    "endDate": "2018-09-28T15:00:00.000Z"
-  },
-  {
-    "id": "R5Ms7BMf",
-    "staff_id": 41,
-    "startDate": "2018-09-28T07:00:00.000Z",
-    "endDate": "2018-09-28T13:00:00.000Z"
-  },
-  {
-    "id": "jSyKQmol",
-    "staff_id": 50,
-    "startDate": "2018-09-28T09:00:00.000Z",
-    "endDate": "2018-09-28T13:00:00.000Z"
   },
   {
     "id": "UxZD1U4F",
@@ -4020,28 +2436,10 @@
     "endDate": "2018-09-28T16:00:00.000Z"
   },
   {
-    "id": "fHouDIEO",
-    "staff_id": 32,
-    "startDate": "2018-09-28T11:00:00.000Z",
-    "endDate": "2018-09-28T19:00:00.000Z"
-  },
-  {
-    "id": "McXL3iTy",
-    "staff_id": 45,
-    "startDate": "2018-09-28T11:00:00.000Z",
-    "endDate": "2018-09-28T15:00:00.000Z"
-  },
-  {
     "id": "GGkRR7Af",
     "staff_id": 12,
     "startDate": "2018-09-28T12:00:00.000Z",
     "endDate": "2018-09-28T19:00:00.000Z"
-  },
-  {
-    "id": "qlMCI9NC",
-    "staff_id": 34,
-    "startDate": "2018-09-28T12:00:00.000Z",
-    "endDate": "2018-09-28T17:00:00.000Z"
   },
   {
     "id": "UFUtfiQP",
@@ -4060,12 +2458,6 @@
     "staff_id": 10,
     "startDate": "2018-09-28T14:00:00.000Z",
     "endDate": "2018-09-28T18:00:00.000Z"
-  },
-  {
-    "id": "vKeZhaq1",
-    "staff_id": 49,
-    "startDate": "2018-09-28T15:00:00.000Z",
-    "endDate": "2018-09-28T19:00:00.000Z"
   },
   {
     "id": "1fydmyoU",
@@ -4090,12 +2482,6 @@
     "staff_id": 28,
     "startDate": "2018-09-28T17:00:00.000Z",
     "endDate": "2018-09-29T01:00:00.000Z"
-  },
-  {
-    "id": "mSP0En6I",
-    "staff_id": 32,
-    "startDate": "2018-09-28T19:00:00.000Z",
-    "endDate": "2018-09-29T03:00:00.000Z"
   },
   {
     "id": "zE1ns7GE",
@@ -4128,24 +2514,6 @@
     "endDate": "2018-09-29T06:00:00.000Z"
   },
   {
-    "id": "i1APM7U4",
-    "staff_id": 34,
-    "startDate": "2018-09-29T02:00:00.000Z",
-    "endDate": "2018-09-29T07:00:00.000Z"
-  },
-  {
-    "id": "RdLtLbDw",
-    "staff_id": 38,
-    "startDate": "2018-09-29T02:00:00.000Z",
-    "endDate": "2018-09-29T07:00:00.000Z"
-  },
-  {
-    "id": "hbLt4cJI",
-    "staff_id": 44,
-    "startDate": "2018-09-29T02:00:00.000Z",
-    "endDate": "2018-09-29T09:00:00.000Z"
-  },
-  {
     "id": "sNJs4fpR",
     "staff_id": 4,
     "startDate": "2018-09-29T03:00:00.000Z",
@@ -4158,20 +2526,8 @@
     "endDate": "2018-09-29T07:00:00.000Z"
   },
   {
-    "id": "Dlap4N1c",
-    "staff_id": 40,
-    "startDate": "2018-09-29T04:00:00.000Z",
-    "endDate": "2018-09-29T11:00:00.000Z"
-  },
-  {
     "id": "s5QH2sCk",
     "staff_id": 13,
-    "startDate": "2018-09-29T05:00:00.000Z",
-    "endDate": "2018-09-29T10:00:00.000Z"
-  },
-  {
-    "id": "SzPkkz42",
-    "staff_id": 47,
     "startDate": "2018-09-29T05:00:00.000Z",
     "endDate": "2018-09-29T10:00:00.000Z"
   },
@@ -4182,34 +2538,10 @@
     "endDate": "2018-09-29T11:00:00.000Z"
   },
   {
-    "id": "GbaFYDkW",
-    "staff_id": 31,
-    "startDate": "2018-09-29T06:00:00.000Z",
-    "endDate": "2018-09-29T14:00:00.000Z"
-  },
-  {
-    "id": "Kz8QUOga",
-    "staff_id": 42,
-    "startDate": "2018-09-29T07:00:00.000Z",
-    "endDate": "2018-09-29T15:00:00.000Z"
-  },
-  {
-    "id": "00P60rj0",
-    "staff_id": 45,
-    "startDate": "2018-09-29T08:00:00.000Z",
-    "endDate": "2018-09-29T12:00:00.000Z"
-  },
-  {
     "id": "YUnik09Y",
     "staff_id": 22,
     "startDate": "2018-09-29T09:00:00.000Z",
     "endDate": "2018-09-29T13:00:00.000Z"
-  },
-  {
-    "id": "fzqsFak2",
-    "staff_id": 41,
-    "startDate": "2018-09-29T13:00:00.000Z",
-    "endDate": "2018-09-29T19:00:00.000Z"
   },
   {
     "id": "K0ONsVWF",
@@ -4248,22 +2580,10 @@
     "endDate": "2018-09-30T05:00:00.000Z"
   },
   {
-    "id": "6QkZv7mL",
-    "staff_id": 45,
-    "startDate": "2018-09-30T02:00:00.000Z",
-    "endDate": "2018-09-30T06:00:00.000Z"
-  },
-  {
     "id": "8ECDNayw",
     "staff_id": 4,
     "startDate": "2018-09-30T03:00:00.000Z",
     "endDate": "2018-09-30T07:00:00.000Z"
-  },
-  {
-    "id": "okSXVywv",
-    "staff_id": 33,
-    "startDate": "2018-09-30T03:00:00.000Z",
-    "endDate": "2018-09-30T08:00:00.000Z"
   },
   {
     "id": "G3MFAydu",
@@ -4272,20 +2592,8 @@
     "endDate": "2018-09-30T08:00:00.000Z"
   },
   {
-    "id": "VJGFWndy",
-    "staff_id": 42,
-    "startDate": "2018-09-30T05:00:00.000Z",
-    "endDate": "2018-09-30T13:00:00.000Z"
-  },
-  {
     "id": "DiNUWrOX",
     "staff_id": 25,
-    "startDate": "2018-09-30T06:00:00.000Z",
-    "endDate": "2018-09-30T10:00:00.000Z"
-  },
-  {
-    "id": "9cRcPUL3",
-    "staff_id": 49,
     "startDate": "2018-09-30T06:00:00.000Z",
     "endDate": "2018-09-30T10:00:00.000Z"
   },
@@ -4302,22 +2610,10 @@
     "endDate": "2018-09-30T15:00:00.000Z"
   },
   {
-    "id": "BRWhQJk9",
-    "staff_id": 37,
-    "startDate": "2018-09-30T09:00:00.000Z",
-    "endDate": "2018-09-30T16:00:00.000Z"
-  },
-  {
     "id": "SeWhMmn9",
     "staff_id": 29,
     "startDate": "2018-09-30T10:00:00.000Z",
     "endDate": "2018-09-30T14:00:00.000Z"
-  },
-  {
-    "id": "2hRDOpet",
-    "staff_id": 35,
-    "startDate": "2018-09-30T10:00:00.000Z",
-    "endDate": "2018-09-30T18:00:00.000Z"
   },
   {
     "id": "WR72RTsh",
@@ -4330,17 +2626,5 @@
     "staff_id": 12,
     "startDate": "2018-09-30T13:00:00.000Z",
     "endDate": "2018-09-30T20:00:00.000Z"
-  },
-  {
-    "id": "h2DYFOOL",
-    "staff_id": 39,
-    "startDate": "2018-09-30T13:00:00.000Z",
-    "endDate": "2018-09-30T20:00:00.000Z"
-  },
-  {
-    "id": "B7oYsFep",
-    "staff_id": 44,
-    "startDate": "2018-09-30T14:00:00.000Z",
-    "endDate": "2018-09-30T21:00:00.000Z"
   }
 ]

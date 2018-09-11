@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import _ from 'lodash'
@@ -9,23 +8,18 @@ import {
 } from 'antd';
 
 import Gunttchart from './Gunttchart'
-import Setting from './Setting'
 import Profile from './Profile'
-import Mask from './Mask'
-import Loading from './Loading'
 
 import * as actions from './actions/tab2'
 
-const TAB_HEIGHT = 44
-const TABLE_HEADER = 44
-const MARGIN_BOTTOM = 40
+const TABLE_HEADER_HEIGHT = 44
 
 class Tab2 extends React.Component {
-  componentDidMount() {
-    const { actions } = this.props
-    actions.loadStaffs()
+  shouldComponentUpdate(nextProps, nextState) {
+    const { visible } = this.props
+    return visible || nextProps.visible
   }
-  renderProfile(visible) {
+  renderProfile() {
     const { actions, staffs, results, profileStaffId } = this.props
     let prop = {}
     let staffIndex = -1
@@ -48,58 +42,31 @@ class Tab2 extends React.Component {
     }
     return (
       <Profile
-        visible={visible}
+        visible={true}
         {...prop}
         onClose={() => actions.closeProfile()}
         />
     )
   }
   render() {
-    const { year, month, days, wdays, hours, height, actions, staffs, results, dayOffs, loadingStaffs, visibleProfile, visibleNestedProfile, visibleSetting, optimizating } = this.props
+    const { visible, year, month, days, wdays, hours, height, actions, staffs, results, loadingStaffs, visibleProfile, optimizating } = this.props
     return (
-      <div id="tab2" ref={refs => this.element = refs}>
-        <Gunttchart
-          year={year}
-          month={month}
-          days={days}
-          wdays={wdays}
-          hours={hours}
-          height={height - (TAB_HEIGHT + TABLE_HEADER + MARGIN_BOTTOM)}
-          staffs={staffs}
-          events={results}
-          onClickStaff={id => actions.showProfile(id)}
-          />
-        <Setting
-          title={"設定"}
-          width={800}
-          height={height}
-          year={year}
-          month={month}
-          days={days}
-          wdays={wdays}
-          staffs={staffs}
-          dayOffs={dayOffs}
-          visible={visibleSetting}
-          onClickStaff={id => actions.showProfileInSetting(id)}
-          onClose={() => actions.closeSetting()}
-          onSubmit={(dayOffs) => {
-            actions.updateDayOffs(dayOffs)
-            actions.optimize()
-          }}>
-          { this.renderProfile(visibleNestedProfile) }
-        </Setting>
-        { this.renderProfile(visibleProfile) }
-        <Mask visible={loadingStaffs || optimizating || _.isEmpty(results)}>
-          { loadingStaffs ? null :
-            optimizating ? <Loading text={optimizating && "シフトを最適化しています"} /> :
-            _.isEmpty(results) ? 
-            <Button type="primary" onClick={ ()=>actions.optimize() }>
-              最適化する
-            </Button>
-            : null
-          }
-        </Mask>
-      </div>
+      <div id="tab2" style={visible ? {} : {display: 'none'}}>
+        <div className="content-wrapper fadeIn">
+          <Gunttchart
+            year={year}
+            month={month}
+            days={days}
+            wdays={wdays}
+            hours={hours}
+            height={height - TABLE_HEADER_HEIGHT}
+            staffs={staffs}
+            events={results}
+            onClickStaff={id => actions.showProfile(id)}
+            />
+        </div>
+        { visibleProfile && this.renderProfile() }
+        </div>
     )
   }
 }
@@ -111,7 +78,6 @@ const mapStateToProps = state => {
     days: state.app.days,
     wdays: state.app.wdays,
     hours: state.app.hours,
-    height: state.app.height,
     staffs: state.tab2.staffs,
     results: state.tab2.results,
     dayOffs: state.tab2.dayOffs,
@@ -119,8 +85,6 @@ const mapStateToProps = state => {
     optimizating: state.tab2.optimizating,
     profileStaffId: state.tab2.profileStaffId,
     visibleProfile: state.tab2.visibleProfile,
-    visibleNestedProfile: state.tab2.visibleNestedProfile,
-    visibleSetting: state.tab2.visibleSetting,
   }
 }
 

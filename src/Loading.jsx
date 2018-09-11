@@ -1,11 +1,10 @@
 import React from 'react'
 import {
-  FulfillingSquareSpinner,
-  BreedingRhombusSpinner,
   FulfillingBouncingCircleSpinner,
   SemipolarSpinner,
-  SelfBuildingSquareSpinner,
-  RadarSpinner,
+  TrinityRingsSpinner,
+  AtomSpinner,
+  HalfCircleSpinner,
 } from 'react-epic-spinners'
 
 import { primaryColor } from './utils/color'
@@ -18,15 +17,14 @@ class Loading extends React.PureComponent {
       style['display'] = 'none'
     }
     const loadingComponent = _.sample([
-      FulfillingSquareSpinner,
-      BreedingRhombusSpinner,
       FulfillingBouncingCircleSpinner,
       SemipolarSpinner,
-      SelfBuildingSquareSpinner,
-      RadarSpinner,
+      TrinityRingsSpinner,
+      AtomSpinner,
+      HalfCircleSpinner,
     ])
     return (
-      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+      <div style={_.defaults(style, {display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'})}>
         {React.createElement(loadingComponent, {
           color: primaryColor,
           size: "40",

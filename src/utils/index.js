@@ -1,10 +1,5 @@
 import _ from 'lodash'
 
-export const offset = (date, offset=0) => {
-  let utc = date.getTime() + (date.getTimezoneOffset() * 60000)
-  return new Date(utc + (3600000 * offset))
-}
-
 export const formatDate = (year, month, day) => {
   const yyyy = _.padStart(year, 4, '0')
   const mm = _.padStart(month, 2, '0')
@@ -12,15 +7,11 @@ export const formatDate = (year, month, day) => {
   return `${yyyy}-${mm}-${dd}`
 }
 
-const blue400 = '#42A5F5'
-const pinkA100 = '#FF80AB'
-const grey500 = '#9E9E9E'
-
 const COLOR = {
-  'M': blue400, //M (Male)
-  'F': pinkA100, //F (Female)
-  'U': grey500, //U (Unknown)
-  'B': grey500, //B (Both)
+  'M': '#2979FF', //M (Male)
+  'F': '#FF4081', //F (Female)
+  'U': '#9E9E9E', //U (Unknown)
+  'B': '#9C27B0', //B (Both)
 }
 
 export const getColor = gender => {

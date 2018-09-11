@@ -4,13 +4,18 @@
   .column-header {
     font-size: 12px;
     text-align: center;
+
+    .italic {
+      font-style: italic;
+    }
   }
   .column-name {
-    font-size: 13px;
+    font-size: 12px;
     margin-left: 6px;
   }
   .data-index {
-    font-size: 14px;
+    font-size: 11px;
+    font-style: italic;
     text-align: center;
   }
   .data-name {

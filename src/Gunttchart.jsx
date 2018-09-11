@@ -8,18 +8,27 @@ import {
 } from 'antd'
 
 import { offset, formatDate } from './utils'
-import { blue400 } from './utils/color'
+import { primaryColor } from './utils/color'
 
 const columnWidth = 20
 
 class Gunttchart extends React.Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    const { height, year, month, events } = this.props;
+    return (
+      height !== nextProps.height ||
+      year !== nextProps.year ||
+      month !== nextProps.month ||
+      _.size(events) !== _.size(nextProps.events)
+    )
+  }
   render() {
     const { height, year, month, days, wdays, hours, staffs, events, onClickStaff } = this.props
-    
+
     let columns = [{
       key: "index",
       dataIndex: "index",
-      title: <div className={"column-header"}>No</div>,
+      title: <div className={"column-header italic"}>No</div>,
       fixed: true,
       width: 20,
     }, {
@@ -29,9 +38,9 @@ class Gunttchart extends React.Component {
       fixed: true,
       width: 120,
     }, {
-      key: "sumDays",
-      dataIndex: "sumDays",
-      title: <div className={"column-header"}>日数</div>,
+      key: "sumNums",
+      dataIndex: "sumNums",
+      title: <div className={"column-header"}>回数</div>,
       fixed: true,
       width: 30,
     }, {
@@ -66,11 +75,11 @@ class Gunttchart extends React.Component {
         name: <span className={"data-name"} onClick={() => onClickStaff(staff.id)}>{`${staff.first_name} ${staff.last_name}`}</span>,
         ...staff,
       }
-      let sumDays = 0
+      let eventIds = []
       let sumHours = 0
       _.each(days, day => {
-        let workingHours = 0
         _.each(hours, (hour, j) => {
+          let workingHours = 0
           const hourStr = _.padStart(hour, 2, '0')
           const cell = moment(`${formatDate(year, month, day)} ${hourStr}:00:00`)
           let label = null
@@ -80,15 +89,19 @@ class Gunttchart extends React.Component {
           })
           if (onEvent) {
             const duration = moment.duration(onEvent.end.diff(onEvent.start))
-            if (workingHours === 0) {
-              workingHours = duration.as('hours')
+            workingHours = duration.as('hours')
+            if (!_.includes(eventIds, onEvent.id)) {
+              eventIds.push(onEvent.id)
+              sumHours += workingHours
+            }
+            if (day === onEvent.start.date() && hour === onEvent.start.hour()) {
               label = (
                 <Popover
                   content={
-                    <span>{`${cell.format('M月D日 (dd)')}  ${onEvent.start.format('HH:MM')} - ${onEvent.end.format('HH:MM')} (${workingHours}H)`}</span>
+                    <span>{`${cell.format('M月D日 (dd)')}  ${onEvent.start.format('H:M')} - ${onEvent.end.format('H:M')} (${workingHours}H)`}</span>
                   }
                   title={
-                    <span style={{color: blue400, cursor: 'pointer'}} onClick={() => onClickStaff(staff.id)}>
+                    <span style={{color: primaryColor, cursor: 'pointer'}} onClick={() => onClickStaff(staff.id)}>
                       {`${staff.first_name} ${staff.last_name}`}
                     </span>}
                   >
@@ -105,12 +118,8 @@ class Gunttchart extends React.Component {
             </div>
           )
         })
-        sumHours += workingHours
-        if (workingHours > 0) {
-          sumDays += 1
-        }
       })
-      data['sumDays'] = <span className="to-right">{sumDays}</span>
+      data['sumNums'] = <span className="to-right">{_.size(eventIds)}</span>
       data['sumHours'] = <span className="to-right">{sumHours}</span>
       return data
     })
