@@ -2,13 +2,27 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Demo</title>
+    <title>Work Schedule Optimization</title>
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
   </head>
   <body>
+      <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="jquery.firefly-0.7.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          if ($('#intro').length) {
+            $.firefly({
+              on: '#intro',
+              minPixel: 4,
+              maxPixel: 8,
+              total : 30,
+            });
+          }
+        });
+      </script>    
     <div id="root"></div>
     <script src="./main.js"></script>
   </body>
