@@ -125,7 +125,7 @@ class EmployeeSchedule extends React.Component {
     })
 
     return (
-      <div className="employeeschedule">
+      <div className="schedule">
         <div className={"table"}>
           <Table 
             size="middle"
