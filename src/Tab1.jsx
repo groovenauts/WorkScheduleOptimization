@@ -22,6 +22,12 @@ class Tab1 extends React.Component {
   }
   render() {
     const { visible, width, height, year, month, results } = this.props
+    const formated = _.map(results, o => {
+      return {
+        ...o,
+        label: `${o.start.format("M/D H:00")}-${o.end.format("H:00")}`,
+      }
+    })
     return (
       <div id="tab1" style={visible ? {} : {display: 'none'}}>
         <div className="content-wrapper fadeIn">
@@ -29,9 +35,9 @@ class Tab1 extends React.Component {
             <BarChart
               width={width}
               height={height}
-              data={results}
-              xDataKey={'day'}
-              yDataKeys={[{key: 'num', label: `${year}/${month}`, color: primaryColor}]}
+              data={formated}
+              xDataKey={'label'}
+              yDataKeys={[{key: 'num', label: "予測件数", color: primaryColor}]}
               />
           }
         </div>
