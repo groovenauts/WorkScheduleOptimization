@@ -1,10 +1,10 @@
 import _ from 'lodash';
 import React from 'react';
-import { BarChart as RechartBarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, Legend } from 'recharts';
+import { BarChart as RechartBarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, Legend, Brush } from 'recharts';
 
 class BarChart extends React.Component {
   render() {
-    const { height, width, data, xDataKey, yDataKeys, yyAxis } = this.props;
+    const { height, width, data, xDataKey, yDataKeys, yyAxis, strokeColor } = this.props;
     if (_.isEmpty(data) || _.isEmpty(xDataKey) || _.isEmpty(yDataKeys)) {
       return null;
     }
@@ -16,6 +16,7 @@ class BarChart extends React.Component {
         <CartesianGrid strokeDasharray="2"/>
         <Tooltip />
         <Legend />
+        <Brush dataKey={xDataKey} height={20} {...strokeColor ? {stroke: strokeColor} : null } />
         {_.map(yDataKeys, (o, i) => {
           return <Bar key={`chart-${i}`}
                   dataKey={o.key}

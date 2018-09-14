@@ -38,6 +38,7 @@ class Tab1 extends React.Component {
               data={formated}
               xDataKey={'label'}
               yDataKeys={[{key: 'num', label: "予測件数", color: primaryColor}]}
+              strokeColor={primaryColor}
               />
           }
         </div>
