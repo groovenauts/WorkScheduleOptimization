@@ -7,7 +7,7 @@ import {
   Icon,
 } from 'antd';
 
-import Gunttchart from './Gunttchart'
+import EmployeeSchedule from './EmployeeSchedule'
 import Profile from './Profile'
 
 import * as actions from './actions/tab2'
@@ -53,7 +53,7 @@ class Tab2 extends React.Component {
     return (
       <div id="tab2" style={visible ? {} : {display: 'none'}}>
         <div className="content-wrapper fadeIn">
-          <Gunttchart
+          <EmployeeSchedule
             year={year}
             month={month}
             days={days}

@@ -5,9 +5,9 @@ import moment from 'moment'
 moment.locale(window.navigator.userLanguage || window.navigator.language)
 
 import { antdDecorator } from './Decorator'
-import Gunttchart from '../src/Gunttchart'
+import EmployeeSchedule from '../src/EmployeeSchedule'
 
-let stories = storiesOf('Gunttchart', module)
+let stories = storiesOf('EmployeeSchedule', module)
 stories.addDecorator(getStory => antdDecorator(getStory))
 
 const staffs = _.sampleSize(require('../data/staffs.json'), 30)
@@ -15,7 +15,7 @@ const days = _.times(moment(`${2018}-${_.padStart(9, 2, '0')}`).daysInMonth(), n
 const wdays = _.map(days, day => moment(`${2018}-${_.padStart(9, 2, '0')}-${_.padStart(day, 2, '0')}`).format('dd'))
 
 stories.add("normal", () => (
-  <Gunttchart
+  <EmployeeSchedule
     year={2018}
     month={9}
     days={days}

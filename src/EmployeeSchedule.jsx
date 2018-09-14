@@ -7,12 +7,12 @@ import {
   Popover,
 } from 'antd'
 
-import { offset, formatDate } from './utils'
+import { formatDate } from './utils'
 import { primaryColor } from './utils/color'
 
 const columnWidth = 20
 
-class Gunttchart extends React.Component {
+class EmployeeSchedule extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
     const { height, year, month, events } = this.props;
     return (
@@ -125,7 +125,7 @@ class Gunttchart extends React.Component {
     })
 
     return (
-      <div className="gunttchart">
+      <div className="employeeschedule">
         <div className={"table"}>
           <Table 
             size="middle"
@@ -142,4 +142,4 @@ class Gunttchart extends React.Component {
   }
 }
 
-export default Gunttchart
+export default EmployeeSchedule
