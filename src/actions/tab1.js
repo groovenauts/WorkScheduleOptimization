@@ -2,10 +2,10 @@ import { types } from '.'
 import moment from 'moment'
 moment.locale(window.navigator.userLanguage || window.navigator.language)
 
-const predicResult = (year, month, numOfEmployees) => {
+export const predicResult = (year, month, numOfEmployees) => {
   const MIN_PER_HOUR = 20
   const MAX_PER_HOUR = 60
-  const POWERS = [
+  const OFFSETS = [
     0.6, 0.5, 0.4, 0.3, 0.3, 0.3, // 00:00 - 05:00
     0.3, 0.4, 0.5, 0.7, 0.9, 1, // 06:00 - 11:00
     0.9, 0.8, 0.8, 0.8, 0.8, 0.8, // 12:00 - 17:00
@@ -19,11 +19,11 @@ const predicResult = (year, month, numOfEmployees) => {
     const baseNum = _.sample(_.range(MIN_PER_HOUR, MAX_PER_HOUR))
     _.each(_.times(24), i => {
       const numPerEmployee = _.toInteger(baseNum * _.sample([
-        POWERS[i] - 0.1,
-        POWERS[i],
-        POWERS[i] + 0.1,
-        POWERS[i] + 0.2,
-        POWERS[i] + 0.3,
+        OFFSETS[i] - 0.1,
+        OFFSETS[i],
+        OFFSETS[i] + 0.1,
+        OFFSETS[i] + 0.2,
+        OFFSETS[i] + 0.3,
       ]))
       const date = start.clone().utc().add('day', day).add('hours', i)
       results.push({
@@ -52,7 +52,7 @@ export const predict = () => (dispatch, getState) => {
   dispatch({ type: types.PREDICT })
   new Promise(resolve => {
     setTimeout(() => {
-      resolve(predicResult(year, month, _.size(staffs)))
+      resolve(predicResult(year, month, 5))
     }, 1000 * 8)
   }).then((results) => {
     dispatch({
