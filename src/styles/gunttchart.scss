@@ -42,17 +42,17 @@
 
 .cell {
   height: 21px;
-  background-color: #FFB74D;
+  background-color: #7986CB;
   position: relative;
   cursor: default;
 
-  &.b3 { background-color: #FFB74D; }
-  &.b4 { background-color: #FFA726; }
-  &.b5 { background-color: #FF9800; }
-  &.b6 { background-color: #FB8C00; }
-  &.b7 { background-color: #F57C00; }
-  &.b8 { background-color: #EF6C00; }
-  &.b9 { background-color: #E65100; }
+  &.b3 { background-color: #7986CB; }
+  &.b4 { background-color: #5C6BC0; }
+  &.b5 { background-color: #3F51B5; }
+  &.b6 { background-color: #3949AB; }
+  &.b7 { background-color: #303F9F; }
+  &.b8 { background-color: #283593; }
+  &.b9 { background-color: #1A237E; }
 
   .label {
     white-space: nowrap;

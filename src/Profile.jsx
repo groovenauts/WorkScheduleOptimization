@@ -42,7 +42,7 @@ class Profile extends React.Component {
         className="profile"
         closable={false}
         onClose={onClose}
-        visible={visible}
+        visible={visible && (first_name || last_name)}
         >
         <div className="profile-header">
           <div className={`icon ${_.isFunction(onPrev) ? '':'disabled'}`}>
@@ -94,6 +94,9 @@ class Profile extends React.Component {
             }}
             schedules={schedules} />
           </div>
+        </div>
+        <div className="profile-footer">
+          <div className="underline" />
         </div>
       </Drawer>
     )

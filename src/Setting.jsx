@@ -49,49 +49,57 @@ class Setting extends React.Component {
     } = this.props;
     return (
       <Drawer
+        style={{padding: 0}}
         className={"setting"}
-        title={title}
         width={width || 600}
         placement="right"
         closable={false}
         onClose={onClose}
         visible={visible}
         >
-        <div className="label">
-          <span style={{marginRight: 6}}>{`休日設定: ${year}/${month}`}</span>
+        <div className="setting-header">
+          <h2>{title}</h2>
         </div>
-        <MonthlyTable
-          height={height - (HEADER_HEIGHT + FOOTER_HEIGHT + TABLE_HEADER_HEIGHT + MARGIN)}
-          year={year}
-          month={month}
-          days={days}
-          wdays={wdays}
-          staffs={staffs}
-          dayOffs={dayOffs}
-          onUnClickCell={eventId => {
-            this.setState({
-              editDate: new Date(),
-              dayOffs: _.reject(dayOffs, {id: eventId})
-            })
-          }}
-          onClickCell={(staffId, year, month, day) => {
-            this.setState({
-              editDate: new Date(),
-              dayOffs: _.concat(dayOffs, [{
-                id: randomString(6),
-                staff_id: staffId,
-                year: year,
-                month: month,
-                day: day,
-              }])
-            })
-          }}
-          onClickStaff={staffId => onClickStaff(staffId)}
-        />
-        {this.props.children}
-        <div className="footer">
-          <Button onClick={() => onClose()}>{"キャンセル"}</Button>
-          <Button type="primary" style={{marginLeft: 10}} onClick={editDate ? ()=>onSubmit(dayOffs) : ()=>{}} disabled={!editDate}>{"シフトを最適化"}</Button>
+        <div className="setting-content">
+          <div className="label">
+            <span style={{marginRight: 6}}>{`休日設定: ${year}/${month}`}</span>
+          </div>
+          <MonthlyTable
+            height={height - (HEADER_HEIGHT + FOOTER_HEIGHT + TABLE_HEADER_HEIGHT + MARGIN)}
+            year={year}
+            month={month}
+            days={days}
+            wdays={wdays}
+            staffs={staffs}
+            dayOffs={dayOffs}
+            onUnClickCell={eventId => {
+              this.setState({
+                editDate: new Date(),
+                dayOffs: _.reject(dayOffs, {id: eventId})
+              })
+            }}
+            onClickCell={(staffId, year, month, day) => {
+              this.setState({
+                editDate: new Date(),
+                dayOffs: _.concat(dayOffs, [{
+                  id: randomString(6),
+                  staff_id: staffId,
+                  year: year,
+                  month: month,
+                  day: day,
+                }])
+              })
+            }}
+            onClickStaff={staffId => onClickStaff(staffId)}
+          />
+          {this.props.children}
+        </div>
+        <div className="setting-footer">
+          <div>
+            <Button className="button" onClick={() => onClose()}>{"キャンセル"}</Button>
+            <Button className="button" type="primary" style={{marginLeft: 10}} onClick={editDate ? ()=>onSubmit(dayOffs) : ()=>{}} disabled={!editDate}>{"シフトを最適化"}</Button>
+          </div>
+          <div className="underline"></div>
         </div>
       </Drawer>
     )

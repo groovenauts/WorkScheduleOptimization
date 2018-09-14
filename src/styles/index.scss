@@ -121,3 +121,19 @@ a {
 .ant-fullcalendar-header {
   display: none;
 }
+
+.ant-fullcalendar-header {
+  > div {
+    font-size: 12px;
+
+    ul > li {
+      font-size: 12px;
+    }
+  }
+  .ant-select {
+    margin-left: 6px;
+  }
+  // .ant-select-selection {
+  //   font-size: 12px;
+  // }
+}

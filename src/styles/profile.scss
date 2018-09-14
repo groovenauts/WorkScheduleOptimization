@@ -8,7 +8,8 @@
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    background-color: #edeff0;
+    background-color: #070182;
+    color: white;
     padding: 20px;
   
     .icon {
@@ -38,13 +39,14 @@
         > .name {
           margin-bottom: 4px;
           > h1 {
+            color: white;
             display: inline;
-            font-size: 24px;
+            font-size: 20px;
           }
           > p {
             font-size: 11px;
             display: inline;
-            color: #8c8c8c;
+            opacity: 0.7;
             padding-left: 4px;
           }
           > .age {
@@ -70,6 +72,17 @@
     margin-bottom: 10px;
 
   }
+  .profile-footer {
+    > .underline {
+      width: 100%;
+      height: 21px;
+      background-color: $primary-color;
+      position: absolute;
+      bottom: 0;
+      left: 0px;
+      right: 0px;
+    }
+  }
 }
 
 .calendar {
@@ -79,20 +92,4 @@
       font-size: 11px;
     }
   }
-}
-
-.ant-fullcalendar-header {
-  > div {
-    font-size: 12px;
-
-    ul > li {
-      font-size: 12px;
-    }
-  }
-  .ant-select {
-    margin-left: 6px;
-  }
-  // .ant-select-selection {
-  //   font-size: 12px;
-  // }
 }
