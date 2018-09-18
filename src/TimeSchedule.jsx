@@ -67,7 +67,7 @@ class TimeSchedule extends React.Component {
     let dataSource = []
     _.each(days, (day, i) => {
       _.each(hours, (hour, j) => {
-        const cell = moment(`${formatDate(year, month, day)} ${_.padStart(hour, '0', 2)}:00:00`)
+        const cell = moment(`${formatDate(year, month, day)} ${_.padStart(hour, 2, '0')}:00:00`)
         let data = {
           key: `${i}-${j}`,
           className: "cell",
