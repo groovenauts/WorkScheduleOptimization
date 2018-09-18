@@ -48,7 +48,7 @@ class Profile extends React.Component {
         visible={visible && !!(first_name || last_name)}
         >
         <div className="profile-header">
-          <Background height={height} width={width}>
+          <Background height={height} width={width} num={50}>
             <div className={`icon ${_.isFunction(onPrev) ? '':'disabled'}`}>
               <Icon type="left" theme="outlined" onClick={() => {
                 if (_.isFunction(onPrev)) {

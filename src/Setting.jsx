@@ -58,7 +58,7 @@ class Setting extends React.Component {
         onClose={onClose}
         visible={visible}
         >
-        <Background height={height} width={width}>
+        <Background height={height} width={width} num={50}>
           <div className="setting-header">
             <h2 style={{color: 'white'}}>{title}</h2>
           </div>
