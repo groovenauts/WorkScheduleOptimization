@@ -149,7 +149,7 @@ export const optimize = () => (dispatch, getState) => {
         optimizeWithoutPredict(year, month, staffs) :
         optimizeWithPredict(year, month, staffs, results)
       })
-    }, 1000 * 8)
+    }, 1000 * 3)
   }).then((ret) => {
     dispatch({
       type: types.OPTIMIZED,
