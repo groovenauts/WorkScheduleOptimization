@@ -30,6 +30,7 @@ const HEADER_HEIGHT = 80
 const MARGIN_BOTTOM = 30
 const MARGIN_WIDTH = 60
 const PADDING_SIDE = 26
+const PADDING_TABLE = 4 * 2
 
 const ANIMATION_DURATION = 1000
 
@@ -63,14 +64,14 @@ class App extends React.Component {
     );
   }
   renderProfile(visible) {
-    const { actions, staffs, results, profileStaffId } = this.props
+    const { height, width, actions, staffs, optimizeResults, profileStaffId } = this.props
     let prop = {}
     let staffIndex = -1
     if (!_.isNull(profileStaffId)) {
       staffIndex = _.findIndex(staffs, staff => staff.id == profileStaffId)
       prop = {
         ...staffs[staffIndex],
-        schedules: _.filter(results, event => event.staff_id == profileStaffId),
+        schedules: _.filter(optimizeResults, event => event.staff_id == profileStaffId),
       }
     }
     if (staffIndex !== -1) {
@@ -85,6 +86,8 @@ class App extends React.Component {
     }
     return (
       <Profile
+        height={height}
+        width={width}
         visible={visible}
         {...prop}
         onClose={() => actions.closeProfile()}
@@ -109,7 +112,7 @@ class App extends React.Component {
       top: HEADER_HEIGHT,
       left: PADDING_SIDE,
       right: PADDING_SIDE,
-      bottom: MARGIN_BOTTOM,
+      bottom: MARGIN_BOTTOM - (activeTabKey === 2 ? PADDING_TABLE : 0),
       borderRadius: '4px',
     }
     return (
