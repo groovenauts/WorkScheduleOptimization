@@ -4,26 +4,32 @@ import { action } from '@storybook/addon-actions'
 import moment from 'moment'
 moment.locale(window.navigator.userLanguage || window.navigator.language)
 
+import { optimizeWithoutPredict } from '../src/actions/tab2'
 import { antdDecorator } from './Decorator'
 import EmployeeSchedule from '../src/EmployeeSchedule'
 
 let stories = storiesOf('EmployeeSchedule', module)
 stories.addDecorator(getStory => antdDecorator(getStory))
 
-const staffs = _.sampleSize(require('../data/staffs.json'), 30)
+const staffs = require('../data/staffs.json')
 const days = _.times(moment(`${2018}-${_.padStart(9, 2, '0')}`).daysInMonth(), n => n + 1)
 const wdays = _.map(days, day => moment(`${2018}-${_.padStart(9, 2, '0')}-${_.padStart(day, 2, '0')}`).format('dd'))
 
+const defaultProps = {
+  year: 2018,
+  month: 9,
+  days: days,
+  wdays: wdays,
+  hours: _.times(24),
+  width: 800,
+  height: 500,
+  staffs: staffs,
+  onClickStaff: action('onClickStaff'),
+}
+
 stories.add("normal", () => (
   <EmployeeSchedule
-    year={2018}
-    month={9}
-    days={days}
-    wdays={wdays}
-    hours={_.times(24)}
-    width={800}
-    height={500}
-    staffs={staffs}
+    {...defaultProps}
     schedules={_.map([
       {
         id: "abc01",
@@ -44,6 +50,11 @@ stories.add("normal", () => (
         end: moment(event.endDate),
       }
     })}
-    onClickStaff={action('onClickStaff')}
+    />
+))
+stories.add("generated schedules", () => (
+  <EmployeeSchedule
+    {...defaultProps}
+    schedules={optimizeWithoutPredict(defaultProps.year, defaultProps.month, staffs)}
     />
 ))

@@ -20,7 +20,6 @@ const initState = {
   visibleProfile: false,
   visibleNestedProfile: false,
   visibleSetting: false,
-  numOfOptimize: 0,
 }
 
 const loadStaffs = (state, action) => {
@@ -117,7 +116,6 @@ const optimized = (state, action) => {
     optimized: true,
     optimizedAt: new Date(),
     results: action.results,
-    numOfOptimize: state.numOfOptimize + 1,
   }
 }
 
