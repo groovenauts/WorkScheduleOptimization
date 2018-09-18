@@ -122,7 +122,7 @@ class TimeSchedule extends React.Component {
           )
         }
         if (renderCells > 0) {
-          data[`cell${renderCells}`] = <div style={{fontStyle: 'italic', fontSize: 11}}>{renderCells}</div>
+          data[`cell${renderCells}`] = <div style={{fontStyle: 'italic', fontSize: 11}}>{_.get(result, 'num', '')}</div>
         }
         dataSource.push(data)
       })
