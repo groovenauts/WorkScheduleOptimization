@@ -14,7 +14,6 @@ const profile = {
   first_name: "福岡",
   last_name: "勘太郎",
   name_yomi: "フクオカ　カンタロウ",
-  gender: "男",
   birthday: "1986/8/1",
   phone: "090-0724-2607",
   email: "mGEBtkg@sample.jp"

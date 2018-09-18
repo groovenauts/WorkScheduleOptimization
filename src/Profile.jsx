@@ -7,7 +7,6 @@ import {
   Drawer,
 } from 'antd'
 
-import { getColor } from './utils'
 import Calendar from './Calendar'
 import Background from './Background'
 
@@ -29,7 +28,6 @@ class Profile extends React.Component {
       first_name,
       last_name,
       name_yomi,
-      gender,
       birthday,
       phone,
       email,
