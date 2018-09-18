@@ -68,7 +68,7 @@ export class SubTitle extends React.Component {
         onTypingDone={()=> _.isFunction(onFinish) ? onFinish():{}}>
         <span style={textStyle}>{"コールセンター　"}</span>
         <Typist.Delay ms={1000} />
-        <span style={textStyle}>{"入電予測 ✕ シフト最適化"}</span>
+        <span style={textStyle}>{"入電数予測 ✕ シフト最適化"}</span>
       </Typist>
     )
   }
