@@ -3,11 +3,12 @@ import { Icon } from 'antd'
 
 class Header extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
-    const { activeKey, year, month } = this.props
+    const { activeKey, year, month, children } = this.props
     return (
       activeKey !== nextProps.activeKey ||
       year !== nextProps.year ||
-      month !== nextProps.month
+      month !== nextProps.month ||
+      children !== nextProps.children
     )
   }
   render() {
