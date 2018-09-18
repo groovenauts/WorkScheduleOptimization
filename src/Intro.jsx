@@ -34,8 +34,7 @@ class Intro extends React.Component {
               visibility: this.state.visibility
             }}>
             <a className="white-logo" href="https://www.magellanic-clouds.com/blocks/" target="_blank"/>
-            <i className="material-icons">clear</i>
-            <div style={{paddingTop: 10, paddingBottom: 10, }}>
+            <div style={{marginTop: 50, marginBottom: 30, }}>
               <SubTitle onFinish={() => setTimeout(() => {
                 this.setState({typed: true})
               }, 1000)}/>
@@ -64,10 +63,9 @@ export class SubTitle extends React.Component {
     return (
       <Typist startDelay={1000} loop={true}
         onTypingDone={()=> _.isFunction(onFinish) ? onFinish():{}}>
-        <span style={textStyle}>{"コールセンター 入電予測"}</span>
+        <span style={textStyle}>{"コールセンター　"}</span>
         <Typist.Delay ms={1000} />
-        <Typist.Backspace count={4} delay={500} />
-        <span style={textStyle}>{"シフト最適化"}</span>
+        <span style={textStyle}>{"入電予測 ✕ シフト最適化"}</span>
       </Typist>
     )
   }
