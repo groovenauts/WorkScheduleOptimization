@@ -93,7 +93,7 @@ class TimeSchedule extends React.Component {
         _.each(_.times(maxCells), k => {
           const staff = _.get(grouped, `${assignStaffIds[k]}.0.id`, null)
           data[`cell${k}`] = (
-            <div className={`${renderCells > 0 && renderCells >= k && 'cell'}`}>
+            <div className={(renderCells > 0 && renderCells >= k) ? 'cell':''}>
               {staff && <Avatar style={{backgroundColor: 'white'}} size={16} src={require(`./styles/img/1.svg`)} />}
             </div>
           )
@@ -114,7 +114,7 @@ class TimeSchedule extends React.Component {
                     }})
                   }/>
               }>
-              <div className={_.size(assignStaffIds) <= renderCells && 'cell'}>
+              <div className={_.size(assignStaffIds) <= renderCells ? 'cell':''}>
                 <Icon type="caret-down" theme="filled" style={{color: primaryColor, cursor: 'pointer', fontSize: 10}}/>
               </div>
             </Popover>
