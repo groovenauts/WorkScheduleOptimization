@@ -21,9 +21,10 @@ stories.add("normal", () => (
     days={days}
     wdays={wdays}
     hours={_.times(24)}
+    width={800}
     height={500}
     staffs={staffs}
-    events={[
+    schedules={_.map([
       {
         id: "abc01",
         staff_id: _.chain(staffs).head().get('id').value(),
@@ -36,7 +37,13 @@ stories.add("normal", () => (
         startDate: "2018-09-25T03:00:00.000Z",
         endDate: "2018-09-25T10:00:00.000Z"
       },
-    ]}
+    ], event => {
+      return {
+        ...event,
+        start: moment(event.startDate),
+        end: moment(event.endDate),
+      }
+    })}
     onClickStaff={action('onClickStaff')}
     />
 ))

@@ -14,16 +14,16 @@ const columnWidth = 20
 
 class EmployeeSchedule extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
-    const { height, year, month, events } = this.props;
+    const { height, year, month, schedules } = this.props;
     return (
       height !== nextProps.height ||
       year !== nextProps.year ||
       month !== nextProps.month ||
-      _.size(events) !== _.size(nextProps.events)
+      _.size(schedules) !== _.size(nextProps.schedules)
     )
   }
   render() {
-    const { height, year, month, days, wdays, hours, staffs, events, onClickStaff } = this.props
+    const { height, width, year, month, days, wdays, hours, staffs, schedules, onClickStaff } = this.props
 
     let columns = [{
       key: "index",
@@ -67,7 +67,7 @@ class EmployeeSchedule extends React.Component {
       })
     })
 
-    const grouped = _.groupBy(events, 'staff_id')
+    const grouped = _.groupBy(schedules, 'staff_id')
     const dataSource = _.map(staffs, (staff, i) => {
       let data = {
         key: i,
