@@ -19,7 +19,7 @@ class Mask extends React.PureComponent {
       }
     })
     return (
-      <div id="mask"　style={defaultStyle} className="fadeIn">
+      <div id="mask"　style={defaultStyle}>
         <div className={"center slideUp"}>
           {children}
         </div>

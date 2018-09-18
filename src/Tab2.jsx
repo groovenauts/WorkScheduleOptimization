@@ -22,14 +22,14 @@ class Tab2 extends React.Component {
     return visible || nextProps.visible
   }
   renderProfile() {
-    const { actions, staffs, results, profileStaffId } = this.props
+    const { actions, staffs, optimizeResults, profileStaffId } = this.props
     let prop = {}
     let staffIndex = -1
     if (!_.isNull(profileStaffId)) {
       staffIndex = _.findIndex(staffs, staff => staff.id == profileStaffId)
       prop = {
         ...staffs[staffIndex],
-        schedules: _.filter(results, event => event.staff_id == profileStaffId),
+        schedules: _.filter(optimizeResults, event => event.staff_id == profileStaffId),
       }
     }
     if (staffIndex !== -1) {
@@ -54,7 +54,7 @@ class Tab2 extends React.Component {
     const { visible, viewMode, year, month, days, wdays, hours, height, width, actions, staffs, optimizeResults, predictResults, loadingStaffs, visibleProfile, optimizating } = this.props
     return (
       <div id="tab2" style={visible ? {} : {display: 'none'}}>
-        <div className="content-wrapper fadeIn">
+        <div className="content-wrapper">
           {viewMode === VIEW_MODE.PEOPLE ?
             <EmployeeSchedule
               year={year}

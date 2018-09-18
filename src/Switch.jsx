@@ -7,8 +7,8 @@ import { VIEW_MODE } from './reducers/tab2'
 
 class Switch extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
-    const { value } = this.props
-    return value !== nextProps.value
+    const { height, value } = this.props
+    return value !== nextProps.value || height !== nextProps.height
   }
   render() {
     const { height, size, value, onChange } = this.props

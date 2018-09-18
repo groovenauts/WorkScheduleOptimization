@@ -30,7 +30,7 @@ class Tab1 extends React.Component {
     })
     return (
       <div id="tab1" style={visible ? {} : {display: 'none'}}>
-        <div className="content-wrapper fadeIn">
+        <div className="content-wrapper">
           {_.isNumber(width) && _.isNumber(height) &&
             <BarChart
               width={width}
