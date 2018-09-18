@@ -46,13 +46,15 @@ class App extends React.Component {
     this.onWindowResize()
     window.addEventListener('resize', this.onWindowResize.bind(this))
   }
-  static getDerivedStateFromProps(nextProps, prevState) {
-    if (prevState.buttonFadeOut && (nextProps.predicted || nextProps.optimized)) {
-      return {
-        buttonFadeOut: false,
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    const { predicted, optimized } = this.props
+    const { buttonFadeOut } = this.state
+    if (buttonFadeOut) {
+      if ((predicted && !prevProps.predicted) ||
+          (optimized && !prevProps.optimized)) {
+        this.setState({buttonFadeOut: false})
       }
     }
-    return null
   }
   componentWillUnmount() {
     window.removeEventListener('resize', this.onWindowResize.bind(this));
@@ -258,9 +260,11 @@ const mapStateToProps = state => {
     staffs: state.tab2.staffs,
     predicting: state.tab1.predicting,
     predicted: state.tab1.predicted,
+    predictedAt: state.tab1.predictedAt,
     predictResults: state.tab1.results,
     optimizating: state.tab2.optimizating,
     optimized: state.tab2.optimized,
+    optimizedAt: state.tab2.optimizedAt,
     optimizeResults: state.tab2.results,
     dayOffs: state.tab2.dayOffs,
     visibleSetting: state.tab2.visibleSetting,
