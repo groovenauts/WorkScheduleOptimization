@@ -1,6 +1,7 @@
 import { types } from '.'
 import moment from 'moment'
 import { randomString } from '../utils'
+import { MIN_PER_HOUR, MAX_PER_HOUR } from './tab1'
 
 export const loadStaffs = () => (dispatch) => {
   dispatch({ type: types.LOAD_STAFFS })
@@ -80,9 +81,12 @@ export const optimizeWithoutPredict = (year, month, staffs) => {
     const workHour = _.sample([4, 5, 6, 7, 8])
     _.each(workDays, day => {
       const startWorkHour = _.sample(_.map(_.times(24)))
-      const start = moment(randomDate(moment([year, month - 1, day, startWorkHour]).toDate(), moment([year, month - 1, day, startWorkHour]).toDate()))
-      const startDate = moment(startDate).format()
-      const end = start.clone().add(workHour, 'hours')
+      const start = moment(randomDate(
+          moment([year, month - 1, day, startWorkHour]).toDate(),
+          moment([year, month - 1, day, startWorkHour]).toDate()
+        ).toISOString())
+      const startDate = start.format()
+      const end = start.clone().add('hours', workHour)
       const endDate = end.format()
       shiftSchedules.push({
         id: randomString(8),
@@ -97,6 +101,41 @@ export const optimizeWithoutPredict = (year, month, staffs) => {
   return shiftSchedules
 }
 
+export const optimizeWithPredict = (year, month, staffs, predictResults) => {
+  const ADJUST_INCREASE_NUM = 1.5
+  const schedules = optimizeWithoutPredict(year, month, staffs)
+  let nextSchedules = _.cloneDeep(schedules)
+  const staffIds = _.map(staffs, 'id')
+  _.each(predictResults, event => {
+    const onSchedules = _.filter(schedules, schedule => {
+      return (
+        event.start.month() === schedule.start.month() &&
+        event.start.days() === schedule.start.days() &&
+        event.start.hours() === schedule.start.hours()
+      )
+    })
+    const assignedStaffIds = _.chain(onSchedules).map('staff_id').uniq().value()
+
+    let needNumOfStaff = _.floor(event.num / (MAX_PER_HOUR * ADJUST_INCREASE_NUM))
+    needNumOfStaff -= _.size(assignedStaffIds)
+    if (needNumOfStaff > 0) {
+      const addStaffIds = _.sampleSize(_.difference(staffIds, assignedStaffIds), needNumOfStaff)
+      _.each(addStaffIds, id => {
+        let newSchedule = {
+          start: event.start.clone(),
+          end: event.end.clone(),
+          id: randomString(8),
+          staff_id: id,
+        }
+        newSchedule.startDate = newSchedule.start.toDate()
+        newSchedule.endDate = newSchedule.end.toDate()
+        nextSchedules.push(newSchedule)
+      })
+    }
+  })
+  return nextSchedules
+}
+
 export const optimize = () => (dispatch, getState) => {
   const { app, tab1, tab2 } = getState()
   const { year, month } = app
@@ -106,7 +145,10 @@ export const optimize = () => (dispatch, getState) => {
   dispatch({ type: types.OPTIMIZE })
   new Promise(resolve => {
     setTimeout(() => {
-      resolve({optimized: optimizeWithoutPredict(year, month, staffs)})
+      resolve({optimized: _.isEmpty(results) ?
+        optimizeWithoutPredict(year, month, staffs) :
+        optimizeWithPredict(year, month, staffs, results)
+      })
     }, 1000 * 8)
   }).then((ret) => {
     dispatch({

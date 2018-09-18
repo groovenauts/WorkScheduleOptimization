@@ -5,6 +5,7 @@ import { types } from '../actions'
 const initState = {
   predicting: false,
   predicted: false,
+  predictedAt: null,
   results: [],
 }
 
@@ -28,6 +29,7 @@ const predicted = (state, action) => {
     ...state,
     predicting: false,
     predicted: true,
+    predictedAt: new Date(),
     results: action.results,
   }
 }

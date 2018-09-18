@@ -2,9 +2,10 @@ import { types } from '.'
 import moment from 'moment'
 moment.locale(window.navigator.userLanguage || window.navigator.language)
 
-export const predicResult = (year, month, numOfEmployees) => {
-  const MIN_PER_HOUR = 20
-  const MAX_PER_HOUR = 60
+export const MIN_PER_HOUR = 20
+export const MAX_PER_HOUR = 60
+
+export const predictResult = (year, month, numOfEmployees) => {
   const OFFSETS = [
     0.6, 0.5, 0.4, 0.3, 0.3, 0.3, // 00:00 - 05:00
     0.3, 0.4, 0.5, 0.7, 0.9, 1, // 06:00 - 11:00
@@ -52,7 +53,7 @@ export const predict = () => (dispatch, getState) => {
   dispatch({ type: types.PREDICT })
   new Promise(resolve => {
     setTimeout(() => {
-      resolve(predicResult(year, month, 5))
+      resolve(predictResult(year, month, 5))
     }, 1000 * 8)
   }).then((results) => {
     dispatch({

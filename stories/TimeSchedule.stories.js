@@ -6,28 +6,33 @@ moment.locale(window.navigator.userLanguage || window.navigator.language)
 
 import { antdDecorator } from './Decorator'
 import TimeSchedule from '../src/TimeSchedule'
-import { predicResult } from '../src/actions/tab1'
+import { predictResult } from '../src/actions/tab1'
+import { optimizeWithPredict } from '../src/actions/tab2'
 import { randomString } from '../src/utils'
 
 let stories = storiesOf('TimeSchedule', module)
 stories.addDecorator(getStory => antdDecorator(getStory))
 
-const staffs = _.sampleSize(require('../data/staffs.json'), 30)
+const staffs = require('../data/staffs.json')
 const days = _.times(moment(`${2018}-${_.padStart(9, 2, '0')}`).daysInMonth(), n => n + 1)
 const wdays = _.map(days, day => moment(`${2018}-${_.padStart(9, 2, '0')}-${_.padStart(day, 2, '0')}`).format('dd'))
-const ret1 = predicResult(2018, 9, _.size(staffs))
+
+const defaultProps = {
+  year: 2018,
+  month: 9,
+  days: days,
+  wdays: wdays,
+  hours: _.times(24),
+  width: 800,
+  height: 500,
+  staffs: staffs,
+  onClickStaff: action('onClickStaff'),
+}
 
 stories.add("normal", () => (
   <TimeSchedule
-    year={2018}
-    month={9}
-    days={days}
-    wdays={wdays}
-    hours={_.times(24)}
-    width={800}
-    height={500}
-    staffs={staffs}
-    callbacks={ret1}
+    {...defaultProps}
+    callbacks={predictResult(defaultProps.month, defaultProps.days, _.size(staffs))}
     schedules={_.map([
       {
         id: randomString(6),
@@ -60,6 +65,16 @@ stories.add("normal", () => (
         end: moment(event.endDate),
       }
     })}
-    onClickStaff={action('onClickStaff')}
     />
 ))
+stories.add("generated schedules", () => {
+  const predictedResults = predictResult(defaultProps.year, defaultProps.month, _.size(staffs))
+  const optimizedResults = optimizeWithPredict(defaultProps.year, defaultProps.month, staffs, predictedResults)
+  return (
+    <TimeSchedule
+      {...defaultProps}
+      callbacks={predictedResults}
+      schedules={optimizedResults}
+      />
+  )
+})
