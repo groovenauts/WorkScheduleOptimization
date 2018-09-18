@@ -98,6 +98,11 @@ a {
 }
 
 .rocket-launch {
+  @keyframes button-fadeout {
+    to {
+      opacity: 0;
+    }
+  }
   @keyframes launch {
     0% {
       transform: translateY(0);
@@ -105,12 +110,14 @@ a {
     }
     100% {
       transform: translateY(-100px);
-      opacity: 0;
     }
   }
+  animation-name: button-fadeout;
+  animation-duration: 1.5s;
+  
   svg {
     animation-name: launch;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     // animation-iteration-count: 1;
   }
 }
