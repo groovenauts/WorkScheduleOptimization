@@ -97,16 +97,19 @@ class EmployeeSchedule extends React.Component {
             if (day === onEvent.start.date() && hour === onEvent.start.hour()) {
               label = (
                 <Popover
+                  trigger="click"
                   content={
-                    <span>{`${cell.format('M月D日 (dd)')}  ${onEvent.start.format('H:M')} - ${onEvent.end.format('H:M')} (${workingHours}H)`}</span>
+                    <div style={{display: 'flex', flexDirection: 'column', textAlign: 'right'}}>
+                      <span>{`${cell.format('M月D日 (dd)')}  ${onEvent.start.format('H:00')} - ${onEvent.end.format('H:00')} (${workingHours}H)`}</span>
+                      <span style={{color: primaryColor, cursor: 'pointer', fontSize: 11}} onClick={() => onClickStaff(staff.id)}>
+                        {"すべてのスケジュール"}
+                        <Icon type="arrow-right" theme="outlined" />
+                      </span>
+                    </div>
                   }
-                  title={
-                    <span style={{color: primaryColor, cursor: 'pointer'}} onClick={() => onClickStaff(staff.id)}>
-                      {`${staff.first_name} ${staff.last_name}`}
-                    </span>}
                   >
                   <p className="label">
-                    {`${workingHours}H`}
+                    {`${workingHours}h`}
                   </p>
                 </Popover>
               )
@@ -132,7 +135,7 @@ class EmployeeSchedule extends React.Component {
             bordered={true}
             dataSource={dataSource}
             columns={columns} 
-            width={600}
+            width={width}
             pagination={false}
             scroll={{y: height, x: tableWidth}}
           />
