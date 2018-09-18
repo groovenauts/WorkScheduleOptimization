@@ -1,0 +1,46 @@
+
+.list {
+
+  > .list-header {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  > ul {
+    list-style-type: none;
+    display: table;
+    width: 100%;
+    padding: 0px;
+
+    > li {
+      display: table-row;
+      height: 26px;
+      border-bottom: solid 1px grey;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #F5F5F5;
+      }
+  
+      > * {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      > .icon {
+        padding-right: 8px;
+        width: 30px;
+      }
+      > .title {
+        width: 120px;
+        font-size: 12px;
+        padding-top: 1px;
+      }
+      > .description {
+        width: 140px;
+        font-size: 11px;
+        opacity: 0.8;
+        padding-top: 1px;
+      }
+    }
+  }
+}
