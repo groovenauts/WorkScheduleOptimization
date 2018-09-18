@@ -10,7 +10,7 @@ let stories = storiesOf('Profile', module)
 stories.addDecorator(getStory => antdDecorator(getStory))
 
 const profile = {
-  id: "2",
+  id: 1,
   first_name: "福岡",
   last_name: "勘太郎",
   name_yomi: "フクオカ　カンタロウ",

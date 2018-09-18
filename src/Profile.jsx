@@ -20,6 +20,7 @@ class Profile extends React.Component {
   }
   render() {
     const {
+      id,
       first_name,
       last_name,
       name_yomi,
@@ -54,7 +55,7 @@ class Profile extends React.Component {
           </div>
           <div className="profile-detail-wrapper">
             <div className="profile-image">
-              <Avatar style={{ color: '#fff', backgroundColor: getColor(gender) }} size={64} icon={'user'} />
+              <Avatar style={{backgroundColor: 'white'}} size={54} src={require(`./styles/img/1.svg` /* `./styles/img/${id}.svg` */)} />
             </div>
             <div className="profile-detail">
               <div className="name">
