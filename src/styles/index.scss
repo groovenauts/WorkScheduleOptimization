@@ -10,6 +10,7 @@
 @import 'intro.scss';
 @import 'tab1.scss';
 @import 'tab2.scss';
+@import 'switch.scss';
 @import 'mask.scss';
 
 html, body {
@@ -27,7 +28,7 @@ html, body {
   left: 0;
   overflow: auto;
   font-size: 13px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto, RobotoDraft', Arial, sans-serif;
   font-weight: 400;
 }
 a {
