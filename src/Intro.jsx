@@ -24,6 +24,9 @@ class Intro extends React.Component {
       }, 1000)
     }
   }
+  componentWillUnmount() {
+    window.$.firefly.pause(true)
+  }
   render() {
     const { typed, fadeOut } = this.state
     const { height, width } = this.props
