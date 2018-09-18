@@ -25,7 +25,6 @@ class Intro extends React.Component {
     }
   }
   render() {
-    console.log("render", this.state.typed)
     const { typed, fadeOut } = this.state
     const { height, width } = this.props
     return (

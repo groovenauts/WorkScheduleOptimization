@@ -10,6 +10,14 @@
   align-items: center;
   justify-content: space-between;
 
+  > *:last-child {
+    margin-left: auto;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 200;
+  }
   .menu-button {
     cursor: pointer;
     text-align: center;
@@ -25,11 +33,13 @@
     display: inline-block;
     position: relative;
     transition: all 600ms ease;
+    margin-right: 10px;
     &:first-of-type {
-      margin-right: 20px;
+      margin-left: 10px;
     }
 
     span {
+      font-size: 15px;
       display: block;
       position: relative;
       z-index: 1;
@@ -72,22 +82,8 @@
     }
   }
 
-  .right {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    justify-content: flex-end;
-
-    > .item {
-      font-style: italic;
-      margin-right: 4px;
-    }
-    > .down-icon {
-      font-size: 10px;
-      margin-right: 6px;
-    }
-    > .setting-icon {
-      font-size: 16px;
-    }
+  > .setting-icon {
+    cursor: pointer;
+    font-size: 22px;
   }
 }

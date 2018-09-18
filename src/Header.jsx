@@ -13,8 +13,9 @@ class Header extends React.Component {
   render() {
     const { activeKey, year, month, onChange, onClickSetting } = this.props
     return (
-      <header className="header">
-        <div className={`slideDown menu-button ${activeKey == 1 ? 'active':''}`} onClick={e => {
+      <header className="header slideDown">
+        <span className="title">{`${year}年/ ${month}月`}</span>
+        <div className={`menu-button ${activeKey == 1 ? 'active':''}`} onClick={e => {
           if (activeKey != 1) {
             onChange(1)
           }}}>
@@ -24,7 +25,7 @@ class Header extends React.Component {
           </svg>
           <span>入電予測</span>
         </div>
-        <div className={`slideDown menu-button ${activeKey == 2 ? 'active':''}`} onClick={e => {
+        <div className={`menu-button ${activeKey == 2 ? 'active':''}`} onClick={e => {
           if (activeKey != 2) {
             onChange(2)
           }}}>
@@ -35,13 +36,8 @@ class Header extends React.Component {
           </svg>
           <span>シフト最適化</span>
         </div>
-        <div className="right">
-          <span className="item">{`${year}/${month}`}</span>
-          <Icon type="caret-down" theme="outlined" className="down-icon" />
-          {activeKey == 2 &&
-            <Icon type="setting" theme="filled" onClick={()=> onClickSetting()} className="setting-icon" />
-          }
-        </div>
+        {this.props.children}
+        <Icon type="setting" theme="filled" onClick={()=> onClickSetting()} className="setting-icon" />
       </header>
     )
   }

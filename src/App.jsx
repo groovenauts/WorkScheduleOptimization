@@ -12,6 +12,7 @@ import './styles/index.scss'
 import './styles/index.less'
 
 import Header from './Header'
+import Switch from './Switch'
 import Setting from './Setting'
 import Profile from './Profile'
 import Intro from './Intro'
@@ -153,6 +154,7 @@ class App extends React.Component {
     const {
       started,
       activeTabKey,
+      viewMode,
       year,
       month,
       days,
@@ -177,7 +179,14 @@ class App extends React.Component {
           month={month}
           onChange={key => actions.changeTab(key)}
           onClickSetting={() => actions.showSetting()}
-          />,
+          >
+          {activeTabKey === 2 &&
+            <Switch
+              value={viewMode}
+              onChange={v => actions.changeViewMode(v)}
+            />
+          }
+        </Header>,
         <Tab1 key="page1"
           visible={activeTabKey === 1}
           width={contentWidth}
@@ -185,6 +194,7 @@ class App extends React.Component {
           />,
         <Tab2 key="page2"
           visible={activeTabKey === 2}
+          width={contentWidth}
           height={contentHeight} />
       ]
     } else {
@@ -241,6 +251,7 @@ const mapStateToProps = state => {
     month: state.app.month,
     days: state.app.days,
     wdays: state.app.wdays,
+    viewMode: state.tab2.viewMode,
     staffs: state.tab2.staffs,
     predicting: state.tab1.predicting,
     predicted: state.tab1.predicted,
