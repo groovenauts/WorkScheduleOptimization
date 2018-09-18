@@ -13,14 +13,11 @@
       <script type="text/javascript" src="jquery.firefly-0.7.min.js"></script>
       <script type="text/javascript">
         $(document).ready(function() {
-          if ($('#intro').length) {
-            $.firefly({
-              on: '#intro',
-              minPixel: 4,
-              maxPixel: 8,
-              total : 30,
-            });
-          }
+          $.firefly({
+            minPixel: 4,
+            maxPixel: 8,
+            total : 30,
+          });
         });
       </script>    
     <div id="root"></div>

@@ -25,11 +25,7 @@ class Intro extends React.Component {
     }
   }
   componentWillUnmount() {
-    window.$.firefly({
-      on: 'document.body',
-      _paused: true,
-      total: 0,
-    });
+    window.$.firefly.pause(true)
   }
   render() {
     const { typed, fadeOut } = this.state
