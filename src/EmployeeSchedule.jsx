@@ -100,7 +100,7 @@ class EmployeeSchedule extends React.Component {
                   trigger="click"
                   content={
                     <div style={{display: 'flex', flexDirection: 'column', textAlign: 'right'}}>
-                      <span>{`${cell.format('M月D日 (dd)')}  ${onEvent.start.format('H:00')} - ${onEvent.end.format('H:00')} (${workingHours}H)`}</span>
+                      <span>{`${cell.format('M月D日 (dd)')}  ${onEvent.start.format('H:00')} - ${onEvent.end.format('H:00')} (${workingHours}h)`}</span>
                       <span style={{color: primaryColor, cursor: 'pointer', fontSize: 11}} onClick={() => onClickStaff(staff.id)}>
                         {"すべてのスケジュール"}
                         <Icon type="arrow-right" theme="outlined" />
