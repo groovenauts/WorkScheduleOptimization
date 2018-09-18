@@ -40,15 +40,15 @@ class EmployeeSchedule extends React.Component {
     }, {
       key: "sumNums",
       dataIndex: "sumNums",
-      title: <div className={"column-header"}>回数</div>,
+      title: <div className={"column-header"}>出勤数(月)</div>,
       fixed: true,
-      width: 30,
+      width: 70,
     }, {
       key: "sumHours",
       dataIndex: "sumHours",
-      title: <div className={"column-header"}>時間</div>,
+      title: <div className={"column-header"}>勤務時間(月)</div>,
       fixed: true,
-      width: 30,
+      width: 80,
     }]
     let tableWidth = _.sumBy(columns, o => o.width)
     _.each(days, (day, i) => {
