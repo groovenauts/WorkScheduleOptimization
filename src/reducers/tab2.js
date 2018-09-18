@@ -9,7 +9,7 @@ export const VIEW_MODE = {
 
 const initState = {
   loadingStaffs: false,
-  viewMode: VIEW_MODE.TIME,
+  viewMode: VIEW_MODE.PEOPLE,
   staffs: [],
   results: [],
   dayOffs: [],
