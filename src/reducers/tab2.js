@@ -2,8 +2,14 @@ import { handleActions } from 'redux-actions';
 import _ from 'lodash'
 import { types } from '../actions'
 
+export const VIEW_MODE = {
+  PEOPLE: 1,
+  TIME: 2,
+}
+
 const initState = {
   loadingStaffs: false,
+  viewMode: VIEW_MODE.TIME,
   staffs: [],
   results: [],
   dayOffs: [],
@@ -28,6 +34,14 @@ const loadedStaffs = (state, action) => {
     ...state,
     loadingStaffs: false,
     staffs: action.staffs,
+  }
+}
+
+const changeViewMode = (state, action) => {
+  const { viewMode } = state
+  return {
+    ...state,
+    viewMode: viewMode === VIEW_MODE.PEOPLE ? VIEW_MODE.TIME : VIEW_MODE.PEOPLE
   }
 }
 
@@ -108,6 +122,7 @@ const optimized = (state, action) => {
 const handlers = handleActions({
   [types.LOAD_STAFFS]: loadStaffs,
   [types.LOADED_STAFFS]: loadedStaffs,
+  [types.CHANGE_VIEW_MODE]: changeViewMode,
   [types.SHOW_PROFILE]: showProfile,
   [types.SHOW_NESTED_PROFILE]: showProfileInSetting,
   [types.CHANGE_PROFILE]: changeProfile,

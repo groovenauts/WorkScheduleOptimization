@@ -18,6 +18,12 @@ export const loadStaffs = () => (dispatch) => {
   })
 1}
 
+export const changeViewMode = () => {
+  return {
+    type: types.CHANGE_VIEW_MODE
+  }
+}
+
 export const showSetting = () => {
   return {
     type: types.SHOW_SETTING

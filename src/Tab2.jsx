@@ -8,9 +8,11 @@ import {
 } from 'antd';
 
 import EmployeeSchedule from './EmployeeSchedule'
+import TimeSchedule from './TimeSchedule'
 import Profile from './Profile'
 
 import * as actions from './actions/tab2'
+import { VIEW_MODE } from './reducers/tab2';
 
 const TABLE_HEADER_HEIGHT = 44
 
@@ -49,21 +51,38 @@ class Tab2 extends React.Component {
     )
   }
   render() {
-    const { visible, year, month, days, wdays, hours, height, actions, staffs, results, loadingStaffs, visibleProfile, optimizating } = this.props
+    const { visible, viewMode, year, month, days, wdays, hours, height, width, actions, staffs, optimizeResults, predictResults, loadingStaffs, visibleProfile, optimizating } = this.props
     return (
       <div id="tab2" style={visible ? {} : {display: 'none'}}>
         <div className="content-wrapper fadeIn">
-          <EmployeeSchedule
-            year={year}
-            month={month}
-            days={days}
-            wdays={wdays}
-            hours={hours}
-            height={height - TABLE_HEADER_HEIGHT}
-            staffs={staffs}
-            events={results}
-            onClickStaff={id => actions.showProfile(id)}
-            />
+          {viewMode === VIEW_MODE.PEOPLE ?
+            <EmployeeSchedule
+              year={year}
+              month={month}
+              days={days}
+              wdays={wdays}
+              hours={hours}
+              height={height - TABLE_HEADER_HEIGHT}
+              width={width}
+              staffs={staffs}
+              schedules={optimizeResults}
+              onClickStaff={id => actions.showProfile(id)}
+              />
+            :
+            <TimeSchedule
+              year={year}
+              month={month}
+              days={days}
+              wdays={wdays}
+              hours={hours}
+              height={height}
+              width={width}
+              staffs={staffs}
+              callbacks={predictResults}
+              schedules={optimizeResults}
+              onClickStaff={id => actions.showProfile(id)}
+              />
+          }
         </div>
         { visibleProfile && this.renderProfile() }
         </div>
@@ -78,8 +97,10 @@ const mapStateToProps = state => {
     days: state.app.days,
     wdays: state.app.wdays,
     hours: state.app.hours,
+    viewMode: state.tab2.viewMode,
     staffs: state.tab2.staffs,
-    results: state.tab2.results,
+    predictResults: state.tab1.results,
+    optimizeResults: state.tab2.results,
     dayOffs: state.tab2.dayOffs,
     loadingStaffs: state.tab2.loadingStaffs,
     optimizating: state.tab2.optimizating,
