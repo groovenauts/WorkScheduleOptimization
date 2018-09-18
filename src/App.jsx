@@ -218,7 +218,7 @@ class App extends React.Component {
       style.zIndex = 2
     }
     return (
-      <div id="container" className="gradiention" style={style}>
+      <div id="container" className={started ? '':'gradiention'} style={style}>
         <LocaleProvider locale={jaJP}>
           <Background height={height} width={width}>
             {components}
