@@ -51,12 +51,13 @@ class Tab2 extends React.Component {
     )
   }
   render() {
-    const { visible, viewMode, year, month, days, wdays, hours, height, width, actions, staffs, optimizeResults, predictResults, loadingStaffs, visibleProfile, optimizating } = this.props
+    const { visible, viewMode, year, month, days, wdays, hours, height, width, actions, staffs, optimizeResults, predictResults, loadingStaffs, visibleProfile, optimizating, optimizedAt } = this.props
     return (
       <div id="tab2" style={visible ? {} : {display: 'none'}}>
         <div className="content-wrapper">
           {viewMode === VIEW_MODE.PEOPLE ?
             <EmployeeSchedule
+              optimizedAt={optimizedAt}
               year={year}
               month={month}
               days={days}
@@ -70,6 +71,7 @@ class Tab2 extends React.Component {
               />
             :
             <TimeSchedule
+              optimizedAt={optimizedAt}
               year={year}
               month={month}
               days={days}
@@ -100,6 +102,7 @@ const mapStateToProps = state => {
     viewMode: state.tab2.viewMode,
     staffs: state.tab2.staffs,
     predictResults: state.tab1.results,
+    optimizedAt: state.tab2.optimizedAt,
     optimizeResults: state.tab2.results,
     dayOffs: state.tab2.dayOffs,
     loadingStaffs: state.tab2.loadingStaffs,

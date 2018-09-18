@@ -14,12 +14,12 @@ const columnWidth = 20
 
 class EmployeeSchedule extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
-    const { height, year, month, schedules } = this.props;
+    const { height, year, month, optimizedAt } = this.props;
     return (
       height !== nextProps.height ||
       year !== nextProps.year ||
       month !== nextProps.month ||
-      _.size(schedules) !== _.size(nextProps.schedules)
+      optimizedAt < nextProps.optimizedAt
     )
   }
   render() {

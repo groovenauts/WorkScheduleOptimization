@@ -15,6 +15,7 @@ const initState = {
   dayOffs: [],
   optimizating: false,
   optimized: false,
+  optimizedAt: null,
   profileStaffId: null,
   visibleProfile: false,
   visibleNestedProfile: false,
@@ -114,6 +115,7 @@ const optimized = (state, action) => {
     ...state,
     optimizating: false,
     optimized: true,
+    optimizedAt: new Date(),
     results: action.results,
     numOfOptimize: state.numOfOptimize + 1,
   }

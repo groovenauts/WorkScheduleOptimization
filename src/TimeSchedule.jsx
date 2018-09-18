@@ -16,13 +16,12 @@ const columnWidth = 20
 
 class TimeSchedule extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
-    const { height, year, month, schedules, callbacks } = this.props;
+    const { height, year, month, optimizedAt } = this.props;
     return (
       height !== nextProps.height ||
       year !== nextProps.year ||
       month !== nextProps.month ||
-      _.size(schedules) !== _.size(nextProps.schedules) ||
-      _.size(callbacks) !== _.size(nextProps.callbacks)
+      optimizedAt < nextProps.optimizedAt
     )
   }
   render() {
