@@ -14,7 +14,7 @@ class List extends React.PureComponent {
         <ul>
           {_.map(data, (o, i) => {
             return (
-              <li key={`list-${i}`}>
+              <li key={`list-${i}`} onClick={e => o.onClick()}>
                 <div className="icon">
                   {o.icon && <img src={o.icon} />}
                 </div>
