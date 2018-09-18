@@ -86,7 +86,7 @@ export const optimizeWithoutPredict = (year, month, staffs) => {
           moment([year, month - 1, day, startWorkHour]).toDate()
         ).toISOString())
       const startDate = start.format()
-      const end = start.clone().add('hours', workHour)
+      const end = start.clone().add(workHour, 'hours')
       const endDate = end.format()
       shiftSchedules.push({
         id: randomString(8),

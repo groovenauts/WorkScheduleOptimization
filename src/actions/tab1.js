@@ -26,11 +26,11 @@ export const predictResult = (year, month, numOfEmployees) => {
         OFFSETS[i] + 0.2,
         OFFSETS[i] + 0.3,
       ]))
-      const date = start.clone().utc().add('day', day).add('hours', i)
+      const date = start.clone().utc().add(day, 'day').add(i, 'hours')
       results.push({
         date: date.format(),
         start: date,
-        end: start.clone().utc().add('day', day).add('hours', i + 1),
+        end: start.clone().utc().add(day, 'day').add(i + 1, 'hours'),
         num: numPerEmployee * numOfEmployees,
       })
     })
