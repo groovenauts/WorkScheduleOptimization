@@ -212,8 +212,13 @@ class App extends React.Component {
         />
       ]
     }
+    let style = {}
+    if (started) {
+      // more than z-index of the jQuery.firefly setting in index.html
+      style.zIndex = 2
+    }
     return (
-      <div id="container" className="gradiention">
+      <div id="container" className="gradiention" style={style}>
         <LocaleProvider locale={jaJP}>
           <Background height={height} width={width}>
             {components}
