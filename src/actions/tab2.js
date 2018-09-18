@@ -147,7 +147,8 @@ export const optimize = () => (dispatch, getState) => {
     setTimeout(() => {
       resolve({optimized: _.isEmpty(results) ?
         optimizeWithoutPredict(year, month, staffs) :
-        optimizeWithPredict(year, month, staffs, results)
+        // optimizeWithPredict(year, month, staffs, results)
+        optimizeWithoutPredict(year, month, staffs)
       })
     }, 1000 * 3)
   }).then((ret) => {
