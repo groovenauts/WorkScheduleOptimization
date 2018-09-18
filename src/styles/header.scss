@@ -1,7 +1,7 @@
 @import 'animation.css';
 
 .header {
-  $color: #0a00cb;
+  $color: $primary-color;
   color: white;
   padding-right: 26px;
   padding-left: 26px;
@@ -55,7 +55,7 @@
     }
 
     &:hover {
-      color: #0a00cb;
+      color: $primary-color;
       background: white;
       transition-duration: 800ms;
       svg {
@@ -64,14 +64,14 @@
       }
     }
     &.active {
-      color: #0a00cb;
+      color: $primary-color;
       background: white;
       svg {
-        fill: #0a00cb;
+        fill: $primary-color;
       }
       &:hover {
         svg {
-          fill: #0a00cb;
+          fill: $primary-color;
           animation-name: slideUp;
           -webkit-animation-name: slideUp;
           animation-duration: 1.5s;
