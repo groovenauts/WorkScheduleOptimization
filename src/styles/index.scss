@@ -101,7 +101,7 @@ a {
   @keyframes launch {
     0% {
       transform: translateY(0);
-      opacity: 1;
+      color: $primary-color;
     }
     100% {
       transform: translateY(-100px);
