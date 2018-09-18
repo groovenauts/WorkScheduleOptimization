@@ -9,17 +9,22 @@ import {
 
 import { getColor } from './utils'
 import Calendar from './Calendar'
+import Background from './Background'
 
 class Profile extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
-    const { visible, id } = this.props;
+    const { visible, id, height, width } = this.props;
     return (
+      height !== nextProps.height ||
+      width !== nextProps.width ||
       visible !== nextProps.visible ||
       id !== nextProps.id
     )
   }
   render() {
     const {
+      height,
+      width,
       id,
       first_name,
       last_name,
@@ -28,7 +33,6 @@ class Profile extends React.Component {
       birthday,
       phone,
       email,
-      width,
       visible,
       schedules,
       onPrev,
@@ -43,16 +47,18 @@ class Profile extends React.Component {
         className="profile"
         closable={false}
         onClose={onClose}
-        visible={visible && (first_name || last_name)}
+        visible={visible && !!(first_name || last_name)}
         >
         <div className="profile-header">
-          <div className={`icon ${_.isFunction(onPrev) ? '':'disabled'}`}>
-            <Icon type="left" theme="outlined" onClick={() => {
-              if (_.isFunction(onPrev)) {
-                onPrev()
-              }
-            }}/>
-          </div>
+          <Background height={height} width={width}>
+            <div className={`icon ${_.isFunction(onPrev) ? '':'disabled'}`}>
+              <Icon type="left" theme="outlined" onClick={() => {
+                if (_.isFunction(onPrev)) {
+                  onPrev()
+                }
+              }}/>
+            </div>
+          </Background>
           <div className="profile-detail-wrapper">
             <div className="profile-image">
               <Avatar style={{backgroundColor: 'white'}} size={54} src={require(`./styles/img/1.svg` /* `./styles/img/${id}.svg` */)} />
@@ -95,9 +101,6 @@ class Profile extends React.Component {
             }}
             schedules={schedules} />
           </div>
-        </div>
-        <div className="profile-footer">
-          <div className="underline" />
         </div>
       </Drawer>
     )

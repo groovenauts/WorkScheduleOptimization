@@ -6,6 +6,7 @@ import {
 } from 'antd';
 
 import MonthlyTable from './MonthlyTable'
+import Background from './Background'
 import { randomString } from './utils'
 
 const HEADER_HEIGHT = 55
@@ -57,9 +58,11 @@ class Setting extends React.Component {
         onClose={onClose}
         visible={visible}
         >
-        <div className="setting-header">
-          <h2>{title}</h2>
-        </div>
+        <Background height={height} width={width}>
+          <div className="setting-header">
+            <h2 style={{color: 'white'}}>{title}</h2>
+          </div>
+        </Background>
         <div className="setting-content">
           <div className="label">
             <span style={{marginRight: 6}}>{`休日設定: ${year}/${month}`}</span>
@@ -95,11 +98,8 @@ class Setting extends React.Component {
           {this.props.children}
         </div>
         <div className="setting-footer">
-          <div>
-            <Button className="button" onClick={() => onClose()}>{"キャンセル"}</Button>
-            <Button className="button" type="primary" style={{marginLeft: 10}} onClick={editDate ? ()=>onSubmit(dayOffs) : ()=>{}} disabled={!editDate}>{"シフトを最適化"}</Button>
-          </div>
-          <div className="underline"></div>
+          <Button className="button" onClick={() => onClose()}>{"キャンセル"}</Button>
+          <Button className="button" type="primary" style={{marginLeft: 10}} onClick={editDate ? ()=>onSubmit(dayOffs) : ()=>{}} disabled={!editDate}>{"シフトを最適化"}</Button>
         </div>
       </Drawer>
     )

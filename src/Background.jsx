@@ -6,8 +6,8 @@ const random = (min, max) => Math.floor(Math.random() * (max - min) + min)
 const createDots = (maxTop, maxLeft, num=200) => {
   return _.map(_.times(num), i => {
     return {
-      top: Math.floor(Math.random() * maxTop),
-      left: Math.floor(Math.random() * maxLeft),
+      top: Math.floor(Math.random() * (maxTop || document.body.clientHeight)),
+      left: Math.floor(Math.random() * (maxLeft || document.body.clientWidth)),
       size: random(2, 5),
     }
   })
