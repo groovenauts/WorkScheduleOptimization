@@ -8,7 +8,7 @@ import {
 } from 'antd'
 
 import t from './i18n'
-import { formatDate } from './utils'
+import { formatDate, displayName } from './utils'
 import { primaryColor } from './utils/color'
 
 const columnWidth = 20
@@ -74,7 +74,11 @@ class EmployeeSchedule extends React.Component {
       let data = {
         key: i,
         index: <div className={"data-index"}>{i}</div>,
-        name: <span className={"data-name"} onClick={() => onClickStaff(staff.id)}>{`${staff.first_name} ${staff.last_name}`}</span>,
+        name: (
+          <span className={"data-name"} onClick={() => onClickStaff(staff.id)}>
+            {displayName({first_name: staff.first_name, last_name: staff.last_name})}
+          </span>
+        ),
         ...staff,
       }
       let eventIds = []

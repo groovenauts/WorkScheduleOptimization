@@ -7,6 +7,7 @@ import {
   Drawer,
 } from 'antd'
 
+import { displayName } from './utils'
 import Calendar from './Calendar'
 import Background from './Background'
 
@@ -63,7 +64,7 @@ class Profile extends React.Component {
             </div>
             <div className="profile-detail">
               <div className="name">
-                <h1>{`${first_name} ${last_name}`}</h1>
+                <h1>{displayName({first_name, last_name})}</h1>
                 <p className="age">{`(${moment().diff(moment(birthday, "YYYY/M/D"), 'years')})`}</p>
                 {name_yomi && <p>{name_yomi}</p>}
               </div>

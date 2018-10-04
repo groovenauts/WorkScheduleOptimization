@@ -9,7 +9,7 @@ import {
 } from 'antd'
 
 import t from './i18n'
-import { formatDate } from './utils'
+import { formatDate, displayName } from './utils'
 import { primaryColor } from './utils/color'
 import List from './List'
 
@@ -111,7 +111,7 @@ class TimeSchedule extends React.Component {
                   data={_.map(workingStaffs, staff => {
                     return {
                       icon: require('./styles/img/1.svg'),
-                      title: `${staff.first_name} ${staff.last_name}`,
+                      title: displayName({first_name: staff.first_name, last_name: staff.last_name}),
                       onClick: () => onClickStaff(staff.id),
                     }})
                   }/>

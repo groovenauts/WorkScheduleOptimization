@@ -1,4 +1,5 @@
 import _ from 'lodash'
+import { getLanguage } from '../i18n'
 
 export const formatDate = (year, month, day) => {
   const yyyy = _.padStart(year, 4, '0')
@@ -12,3 +13,8 @@ export const randomString = (length, chars='0123456789abcdefghijklmnopqrstuvwxyz
   for (let i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
   return result;
 }
+
+const language = getLanguage()
+export const displayName = language === 'ja' ?
+              _.template("<%= first_name %> <%= last_name %>") :
+              _.template("<%= last_name %> <%= first_name %>")

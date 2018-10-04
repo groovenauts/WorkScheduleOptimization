@@ -8,6 +8,7 @@ import {
 
 import t, { getLanguage }  from './i18n'
 moment.locale(getLanguage())
+import { displayName } from './utils'
 
 class MonthlyTable extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
@@ -60,7 +61,11 @@ class MonthlyTable extends React.Component {
       let data = {
         key: i,
         index: <div className={"data-index"}>{i}</div>,
-        name: <span className="data-name" onClick={() => onClickStaff(staff.id)}>{`${staff.first_name} ${staff.last_name}`}</span>
+        name: (
+          <span className="data-name" onClick={() => onClickStaff(staff.id)}>
+            {displayName({first_name: staff.first_name, last_name: staff.last_name})}
+          </span>
+        )
       }
       _.each(columns, column => {
         if (/^day/.test(column.dataIndex)) {
