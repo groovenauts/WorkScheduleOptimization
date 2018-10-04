@@ -2,6 +2,7 @@ import React from 'react'
 import _ from 'lodash'
 import Typist from 'react-typist'
 
+import t from './i18n'
 import Background from './Background'
 
 class Intro extends React.Component {
@@ -66,9 +67,7 @@ export class SubTitle extends React.Component {
     return (
       <Typist startDelay={1000} loop={true}
         onTypingDone={()=> _.isFunction(onFinish) ? onFinish():{}}>
-        <span style={textStyle}>{"コールセンター　"}</span>
-        <Typist.Delay ms={1000} />
-        <span style={textStyle}>{"入電数予測 ✕ シフト最適化"}</span>
+        <span style={textStyle}>{t("intro.title")}</span>
       </Typist>
     )
   }

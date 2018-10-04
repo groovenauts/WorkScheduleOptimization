@@ -7,6 +7,7 @@ import {
   Button,
 } from 'antd';
 
+import t from './i18n'
 import { primaryColor } from './utils/color'
 import BarChart from './BarChart'
 
@@ -37,7 +38,7 @@ class Tab1 extends React.Component {
               height={height}
               data={formated}
               xDataKey={'label'}
-              yDataKeys={[{key: 'num', label: "予測件数", color: primaryColor}]}
+              yDataKeys={[{key: 'num', label: t("main.numOfPredicted"), color: primaryColor}]}
               strokeColor={primaryColor}
               />
           }

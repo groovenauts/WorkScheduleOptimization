@@ -7,6 +7,7 @@ import {
   Popover,
 } from 'antd'
 
+import t from './i18n'
 import { formatDate } from './utils'
 import { primaryColor } from './utils/color'
 
@@ -29,25 +30,25 @@ class EmployeeSchedule extends React.Component {
     let columns = [{
       key: "index",
       dataIndex: "index",
-      title: <div className={"column-header italic"}>No</div>,
+      title: <div className={"column-header italic"}>{t("main.number")}</div>,
       fixed: true,
       width: 20,
     }, {
       key: "name",
       dataIndex: "name",
-      title: <span className={"column-name"}>名前</span>,
+      title: <span className={"column-name"}>{t("main.name")}</span>,
       fixed: true,
       width: 120,
     }, {
       key: "sumNums",
       dataIndex: "sumNums",
-      title: <div className={"column-header"}>出勤数(月)</div>,
+      title: <div className={"column-header"}>{t("main.numOfWorks")}</div>,
       fixed: true,
       width: 70,
     }, {
       key: "sumHours",
       dataIndex: "sumHours",
-      title: <div className={"column-header"}>勤務時間(月)</div>,
+      title: <div className={"column-header"}>{t("main.workingHours")}</div>,
       fixed: true,
       width: 80,
     }]
@@ -96,14 +97,15 @@ class EmployeeSchedule extends React.Component {
               sumHours += workingHours
             }
             if (day === onEvent.start.date() && hour === onEvent.start.hour()) {
+              const dateFormat = t("popover.dateFormat")
               label = (
                 <Popover
                   trigger="click"
                   content={
                     <div style={{display: 'flex', flexDirection: 'column', textAlign: 'right'}}>
-                      <span>{`${cell.format('M月D日 (dd)')}  ${onEvent.start.format('H:00')} - ${onEvent.end.format('H:00')} (${workingHours}h)`}</span>
+                      <span>{`${cell.format(dateFormat)}  ${onEvent.start.format('H:00')} - ${onEvent.end.format('H:00')} (${workingHours}h)`}</span>
                       <span style={{color: primaryColor, cursor: 'pointer', fontSize: 11}} onClick={() => onClickStaff(staff.id)}>
-                        {"すべてのスケジュール"}
+                        {t("popover.allSchedule")}
                         <Icon type="arrow-right" theme="outlined" />
                       </span>
                     </div>

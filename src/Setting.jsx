@@ -5,6 +5,7 @@ import {
   Button,
 } from 'antd';
 
+import t from './i18n'
 import MonthlyTable from './MonthlyTable'
 import Background from './Background'
 import { randomString } from './utils'
@@ -65,7 +66,7 @@ class Setting extends React.Component {
         </Background>
         <div className="setting-content">
           <div className="label">
-            <span style={{marginRight: 6}}>{`休日設定: ${year}/${month}`}</span>
+            <span style={{marginRight: 6}}>{`${t("settings.formLabelHoliday")}: ${year}/${month}`}</span>
           </div>
           <MonthlyTable
             height={height - (HEADER_HEIGHT + FOOTER_HEIGHT + TABLE_HEADER_HEIGHT + MARGIN)}
@@ -98,8 +99,8 @@ class Setting extends React.Component {
           {this.props.children}
         </div>
         <div className="setting-footer">
-          <Button className="button" onClick={() => onClose()}>{"キャンセル"}</Button>
-          <Button className="button" type="primary" style={{marginLeft: 10}} onClick={editDate ? ()=>onSubmit(dayOffs) : ()=>{}} disabled={!editDate}>{"シフトを最適化"}</Button>
+          <Button className="button" onClick={() => onClose()}>{t("settings.cancel")}</Button>
+          <Button className="button" type="primary" style={{marginLeft: 10}} onClick={editDate ? ()=>onSubmit(dayOffs) : ()=>{}} disabled={!editDate}>{t("settings.submit")}</Button>
         </div>
       </Drawer>
     )

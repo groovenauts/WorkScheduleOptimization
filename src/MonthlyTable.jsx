@@ -7,6 +7,8 @@ import {
   Table,
 } from 'antd'
 
+import t  from './i18n'
+
 class MonthlyTable extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
     const { dayOffs } = this.props;
@@ -37,14 +39,14 @@ class MonthlyTable extends React.Component {
     columns.unshift({
       key: "name",
       dataIndex: "name",
-      title: <span className={"column-name"}>名前</span>,
+      title: <span className={"column-name"}>{t("main.name")}</span>,
       fixed: true,
       width: 120,
     })
     columns.unshift({
       key: "index",
       dataIndex: "index",
-      title: <span className={"column-header italic"}>No</span>,
+      title: <span className={"column-header italic"}>{t("main.number")}</span>,
       fixed: true,
       width: 20,
     })

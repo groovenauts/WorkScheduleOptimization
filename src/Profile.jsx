@@ -65,7 +65,7 @@ class Profile extends React.Component {
               <div className="name">
                 <h1>{`${first_name} ${last_name}`}</h1>
                 <p className="age">{`(${moment().diff(moment(birthday, "YYYY/M/D"), 'years')})`}</p>
-                <p>{name_yomi}</p>
+                {name_yomi && <p>{name_yomi}</p>}
               </div>
               <div className="details">
                 <span className="phone"><Icon type="phone" theme="filled" style={{marginRight: 4}}/>{phone}</span>

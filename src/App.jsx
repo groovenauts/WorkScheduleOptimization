@@ -6,8 +6,8 @@ import {
   LocaleProvider,
   Button,
 } from 'antd';
-import jaJP from 'antd/lib/locale-provider/ja_JP';
-
+import { jaJP, en_US } from 'antd/lib/locale-provider';
+import { getLanguage } from './i18n'
 import './styles/index.scss'
 import './styles/index.less'
 
@@ -219,7 +219,7 @@ class App extends React.Component {
     }
     return (
       <div id="container" className={started ? '':'gradiention'} style={style}>
-        <LocaleProvider locale={jaJP}>
+        <LocaleProvider locale={getLanguage() === 'en' ? en_US : jaJP}>
           <Background height={height} width={width}>
             {components}
             <Setting

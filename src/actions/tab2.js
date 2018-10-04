@@ -7,7 +7,8 @@ import { getLanguage } from '../i18n'
 export const loadStaffs = () => (dispatch) => {
   dispatch({ type: types.LOAD_STAFFS })
   new Promise(resolve => {
-    resolve(require(`../../data/staffs.ja.json`))
+    const lang = getLanguage()
+    resolve(require(`../../data/staffs.${lang}.json`))
   }).then((results) => {
     dispatch({
       type: types.LOADED_STAFFS,
