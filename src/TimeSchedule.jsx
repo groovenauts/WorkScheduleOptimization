@@ -8,6 +8,7 @@ import {
   Avatar,
 } from 'antd'
 
+import t from './i18n'
 import { formatDate } from './utils'
 import { primaryColor } from './utils/color'
 import List from './List'
@@ -106,7 +107,7 @@ class TimeSchedule extends React.Component {
               trigger="click"
               content={
                 <List
-                  header={`${month}/${day} ${hour}:00〜 ${_.size(workingStaffs)} 名  (入電数: ${_.get(result, 'num', '-')})`}
+                  header={`${month}/${day} ${hour}:00〜 ${_.size(workingStaffs)} 名  (${t("main.numOfPredicted")}: ${_.get(result, 'num', '-')})`}
                   data={_.map(workingStaffs, staff => {
                     return {
                       icon: require('./styles/img/1.svg'),
