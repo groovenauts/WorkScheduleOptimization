@@ -1,6 +1,7 @@
 import { types } from '.'
 import moment from 'moment'
-moment.locale(window.navigator.userLanguage || window.navigator.language)
+import { getLanguage } from '../i18n'
+moment.locale(getLanguage())
 
 export const MIN_PER_HOUR = 20
 export const MAX_PER_HOUR = 60

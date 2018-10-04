@@ -1,7 +1,9 @@
 import { handleActions } from 'redux-actions';
 import _ from 'lodash'
 import moment from 'moment'
-moment.locale(window.navigator.userLanguage || window.navigator.language)
+
+import { getLanguage } from '../i18n'
+moment.locale(getLanguage())
 
 import { types } from '../actions'
 

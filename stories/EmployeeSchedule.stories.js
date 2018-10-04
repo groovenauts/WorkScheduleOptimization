@@ -2,8 +2,9 @@ import React from 'react'
 import { storiesOf, addDecorator } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import moment from 'moment'
-moment.locale(window.navigator.userLanguage || window.navigator.language)
 
+import { getLanguage } from '../src/i18n'
+moment.locale(getLanguage())
 import { optimizeWithoutPredict } from '../src/actions/tab2'
 import { antdDecorator } from './Decorator'
 import EmployeeSchedule from '../src/EmployeeSchedule'

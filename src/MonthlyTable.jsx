@@ -1,13 +1,13 @@
 import React from 'react'
 import _ from 'lodash'
 import moment from 'moment'
-moment.locale(window.navigator.userLanguage || window.navigator.language)
 import {
   Icon,
   Table,
 } from 'antd'
 
-import t  from './i18n'
+import t, { getLanguage }  from './i18n'
+moment.locale(getLanguage())
 
 class MonthlyTable extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
