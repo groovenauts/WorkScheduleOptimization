@@ -11,7 +11,7 @@ import EmployeeSchedule from '../src/EmployeeSchedule'
 let stories = storiesOf('EmployeeSchedule', module)
 stories.addDecorator(getStory => antdDecorator(getStory))
 
-const staffs = require('../data/staffs.json')
+const staffs = require('../data/staffs.ja.json')
 const days = _.times(moment(`${2018}-${_.padStart(9, 2, '0')}`).daysInMonth(), n => n + 1)
 const wdays = _.map(days, day => moment(`${2018}-${_.padStart(9, 2, '0')}-${_.padStart(day, 2, '0')}`).format('dd'))
 

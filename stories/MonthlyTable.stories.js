@@ -10,7 +10,7 @@ import MonthlyTable from '../src/MonthlyTable'
 let stories = storiesOf('MonthlyTable', module)
 stories.addDecorator(getStory => antdDecorator(getStory))
 
-const staffs = _.sampleSize(require('../data/staffs.json'), 30)
+const staffs = _.sampleSize(require('../data/staffs.ja.json'), 30)
 const days = _.times(moment(`${2018}-${_.padStart(9, 2, '0')}`).daysInMonth(), n => n + 1)
 const wdays = _.map(days, day => moment(`${2018}-${_.padStart(9, 2, '0')}-${_.padStart(day, 2, '0')}`).format('dd'))
 

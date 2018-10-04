@@ -2,11 +2,12 @@ import { types } from '.'
 import moment from 'moment'
 import { randomString } from '../utils'
 import { MIN_PER_HOUR, MAX_PER_HOUR } from './tab1'
+import { getLanguage } from '../i18n'
 
 export const loadStaffs = () => (dispatch) => {
   dispatch({ type: types.LOAD_STAFFS })
   new Promise(resolve => {
-    resolve(require('../../data/staffs.json'))
+    resolve(require(`../../data/staffs.ja.json`))
   }).then((results) => {
     dispatch({
       type: types.LOADED_STAFFS,
